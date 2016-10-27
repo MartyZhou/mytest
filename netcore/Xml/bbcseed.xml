@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title><![CDATA[BBC News - World]]></title>
+    <description><![CDATA[BBC News - World]]></description>
+    <link>http://www.bbc.co.uk/news/</link>
+    <image>
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+      <title>BBC News - World</title>
+      <link>http://www.bbc.co.uk/news/</link>
+    </image>
+    <generator>RSS for Node</generator>
+    <lastBuildDate>Wed, 12 Oct 2016 14:24:43 GMT</lastBuildDate>
+    <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+    <language><![CDATA[en-gb]]></language>
+    <ttl>15</ttl>
+    <item>
+      <title><![CDATA[Syria conflict: Rebels set up internment camp for IS defectors]]></title>
+      <description><![CDATA[An internment camp for former Islamic State militants and their families, including many Europeans, has been established in Syria, the BBC learns.]]></description>
+      <link>http://www.bbc.co.uk/news/world-middle-east-37629679</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-middle-east-37629679</guid>
+      <pubDate>Wed, 12 Oct 2016 09:46:36 GMT</pubDate>
+      <media:thumbnail width="1920" height="1080" url="http://c.files.bbci.co.uk/7055/production/_91775782_1cb13637-04a4-4005-830e-abc31289b3f4.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[US election: Trump presidency 'dangerous', says UN rights chief]]></title>
+      <description><![CDATA[Donald Trump's "deeply unsettling and disturbing" comments make him a danger internationally, the UN's human rights chief says.]]></description>
+      <link>http://www.bbc.co.uk/news/election-us-2016-37628345</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/election-us-2016-37628345</guid>
+      <pubDate>Wed, 12 Oct 2016 11:37:52 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/810D/production/_91773033_035821673-1.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Singer Janet Jackson confirms she is expecting first child, aged 50]]></title>
+      <description><![CDATA[Singer Janet Jackson has confirmed she is expecting her first child, at the age of 50, calling it "our blessing".]]></description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-37630463</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-37630463</guid>
+      <pubDate>Wed, 12 Oct 2016 12:58:12 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/12C39/production/_91775867_gettyimages-162637847.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Paris attacks: Lawyers for Salah Abdeslam 'will not defend him']]></title>
+      <description><![CDATA[Lawyers for the main suspect in last year's Islamist attacks in Paris, Salah Abdeslam, say they will no longer defend him.]]></description>
+      <link>http://www.bbc.co.uk/news/world-europe-37628038</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-37628038</guid>
+      <pubDate>Wed, 12 Oct 2016 09:38:51 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/12D1B/production/_88938077_abdeslam.gif"/>
+    </item>
+    <item>
+      <title><![CDATA[Creepy clown craze: McDonald's mascot to limit appearance]]></title>
+      <description><![CDATA[McDonald's says its iconic mascot will keep a low profile following creepy clown sightings around the world.]]></description>
+      <link>http://www.bbc.co.uk/news/world-37630460</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-37630460</guid>
+      <pubDate>Wed, 12 Oct 2016 10:22:44 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1AC9/production/_91775860_gettyimages-468152616.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[IS conflict: Booby-trapped drone kills Kurdish fighters in Iraq]]></title>
+      <description><![CDATA[A booby-trapped drone kills two Kurdish Peshmerga fighters and badly wounds two French soldiers battling so-called Islamic State in northern Iraq.]]></description>
+      <link>http://www.bbc.co.uk/news/world-middle-east-37629517</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-middle-east-37629517</guid>
+      <pubDate>Wed, 12 Oct 2016 12:07:30 GMT</pubDate>
+      <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/B321/production/_91775854_mediaitem91775853.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Western contact with China began long before Marco Polo, experts say]]></title>
+      <description><![CDATA[China and the West were in contact more than 1,500 years before European explorer Marco Polo arrived in China, new finds suggest.]]></description>
+      <link>http://www.bbc.co.uk/news/world-asia-china-37624943</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-asia-china-37624943</guid>
+      <pubDate>Wed, 12 Oct 2016 14:16:22 GMT</pubDate>
+      <media:thumbnail width="624" height="351" url="http://news.bbcimg.co.uk/media/images/63466000/jpg/_63466290_terracotta_face_afp624.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Hong Kong rebel lawmakers protest China at oath-taking]]></title>
+      <description><![CDATA[Three incoming Hong Kong lawmakers are not sworn into the Legislative Council after using their oaths to stage anti-China protests.]]></description>
+      <link>http://www.bbc.co.uk/news/world-asia-china-37627503</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-asia-china-37627503</guid>
+      <pubDate>Wed, 12 Oct 2016 11:03:41 GMT</pubDate>
+      <media:thumbnail width="768" height="432" url="http://c.files.bbci.co.uk/21B3/production/_91772680_mediaitem91772679.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Bowie and Prince on dead rich list]]></title>
+      <description><![CDATA[David Bowie and Prince are new entries in the latest list of top-earning dead celebrities to be compiled by Forbes.]]></description>
+      <link>http://www.bbc.co.uk/news/entertainment-arts-37628731</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/entertainment-arts-37628731</guid>
+      <pubDate>Wed, 12 Oct 2016 14:00:04 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/15407/production/_91774078_richlist1.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Abortion laws may be relaxed for rape cases in El Salvador]]></title>
+      <description><![CDATA[Rape victims in El Salvador, where abortion laws are strict, may be allowed to abort under proposals put forward by the governing party.]]></description>
+      <link>http://www.bbc.co.uk/news/world-latin-america-37629236</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-latin-america-37629236</guid>
+      <pubDate>Wed, 12 Oct 2016 10:00:21 GMT</pubDate>
+      <media:thumbnail width="594" height="334" url="http://c.files.bbci.co.uk/1817/production/_91776160_mediaitem91776159.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Chinese authorities hunt for 50 cobras after mass escape]]></title>
+      <description><![CDATA[Authorities in eastern China are searching for 50 monocled baby cobras, after about 200 escape from an illegal farm in August.]]></description>
+      <link>http://www.bbc.co.uk/news/world-asia-china-37627348</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-asia-china-37627348</guid>
+      <pubDate>Wed, 12 Oct 2016 04:47:24 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/13A2B/production/_91772408_thinkstockphotos-200352556-001.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Kim Kardashian West sues over claims she faked robbery]]></title>
+      <description><![CDATA[US reality TV star Kim Kardashian West sues a celebrity gossip website for claiming that she faked being the victim of a robbery in Paris.]]></description>
+      <link>http://www.bbc.co.uk/news/world-europe-37627482</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-37627482</guid>
+      <pubDate>Wed, 12 Oct 2016 04:44:02 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/AD9F/production/_91774444_hi035678638.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Samsung slashes profit forecast over Galaxy Note 7 crisis]]></title>
+      <description><![CDATA[Samsung Electronics cuts its quarterly profit forecast by a third due to the scrapping of its Galaxy Note 7 smartphone.]]></description>
+      <link>http://www.bbc.co.uk/news/business-37627178</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/business-37627178</guid>
+      <pubDate>Wed, 12 Oct 2016 07:38:14 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/15263/production/_91772668_gettyimages-613845968-1.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA['Four soldiers dead' in Myanmar clashes]]></title>
+      <description><![CDATA[At least four soldiers are killed in a third day of violent clashes in Myanmar's troubled Rakhine state, the army says.]]></description>
+      <link>http://www.bbc.co.uk/news/world-asia-37627498</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-asia-37627498</guid>
+      <pubDate>Wed, 12 Oct 2016 04:24:12 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/3D0B/production/_91772651_mediaitem91772647.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA['Sex traffickers put a gun to my head']]></title>
+      <description><![CDATA[Hundreds of women are trafficked from Romania and forced into prostitution. Naomi Grimley has spoken to survivors - and one unrepentant trafficker.]]></description>
+      <link>http://www.bbc.co.uk/news/world-europe-37625823</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-37625823</guid>
+      <pubDate>Wed, 12 Oct 2016 00:57:41 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/164BF/production/_91772319_p04brh0h.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA['Trump commented on contestant's breast size']]></title>
+      <description><![CDATA[Former contestant on the US Apprentice discusses Mr Trump's behaviour on the programme.]]></description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-37628424</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-37628424</guid>
+      <pubDate>Wed, 12 Oct 2016 06:53:50 GMT</pubDate>
+      <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/0921/production/_91773320_p04brrcv.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Trump urges people to vote - on wrong date]]></title>
+      <description><![CDATA[At a rally in Florida, Donald Trump urges people to vote on the 28 November, but the election is 20 days earlier.]]></description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-37628704</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-37628704</guid>
+      <pubDate>Wed, 12 Oct 2016 07:55:47 GMT</pubDate>
+      <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/171AD/production/_91773649_p04brt01.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Lily Allen in Calais: 'I apologise on behalf of my country']]></title>
+      <description><![CDATA[Singer Lily Allen has apologised "on behalf of my country" after visiting a refugee camp in Calais.]]></description>
+      <link>http://www.bbc.co.uk/news/world-europe-37628854</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-37628854</guid>
+      <pubDate>Wed, 12 Oct 2016 07:50:38 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/DD5C/production/_91886665_p04brsqm.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Arkansas bridge refuses to budge]]></title>
+      <description><![CDATA[Demolition of a bridge in the US state of Arkansas proved more challenging when explosions failed to bring it down.]]></description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-37630823</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-37630823</guid>
+      <pubDate>Wed, 12 Oct 2016 11:30:40 GMT</pubDate>
+      <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/8B35/production/_91773653_p04bsf8w.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[How Syrians are using barrels to create electricity]]></title>
+      <description><![CDATA[Syrians are using barrels to help create electricity.]]></description>
+      <link>http://www.bbc.co.uk/news/world-middle-east-37618592</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-middle-east-37618592</guid>
+      <pubDate>Tue, 11 Oct 2016 13:46:39 GMT</pubDate>
+      <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/D7E2/production/_91766255_p04bq0jj.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[The cinema whisperers who help blind people 'see' films]]></title>
+      <description><![CDATA[A group of volunteers in Indonesia have found a way of helping help blind people enjoy the movies - by whispering to them.]]></description>
+      <link>http://www.bbc.co.uk/news/world-asia-37627968</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-asia-37627968</guid>
+      <pubDate>Wed, 12 Oct 2016 07:22:08 GMT</pubDate>
+      <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/95C1/production/_91773383_p04brrzn.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Danish anglers urged to catch 80,000 escaped trout]]></title>
+      <description><![CDATA[Anglers are urged to start fishing off the Danish coast after a ship crashed into a fish farm, releasing up to 80,000 rainbow trout.]]></description>
+      <link>http://www.bbc.co.uk/news/world-europe-37629377</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-37629377</guid>
+      <pubDate>Wed, 12 Oct 2016 11:30:47 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/12D65/production/_91775177_gettyimages-511966320.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[CoverGirl cosmetics get first cover boy]]></title>
+      <description><![CDATA[CoverGirl cosmetics introduces its first ever male ambassador. James Charles will front the beauty campaign for their latest mascara.]]></description>
+      <link>http://www.bbc.co.uk/newsbeat/articles/37629727</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/newsbeat/articles/37629727</guid>
+      <pubDate>Wed, 12 Oct 2016 11:41:07 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/0EA3/production/_91774730_landscape-1476212039-1476197178-covergirl-james-charles-copy-1.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[UK school pupil ethnicity question angers Italy]]></title>
+      <description><![CDATA[Ambassador criticises forms that singled out southern Italians as separate groups.]]></description>
+      <link>http://www.bbc.co.uk/news/blogs-news-from-elsewhere-37631062</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/blogs-news-from-elsewhere-37631062</guid>
+      <pubDate>Wed, 12 Oct 2016 13:04:33 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/13074/production/_91804977_terracciano.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Denmark develops 'super grass' to cut cow burp emissions]]></title>
+      <description><![CDATA[Scientists in Denmark say the grass is easier to digest, meaning fewer burps.]]></description>
+      <link>http://www.bbc.co.uk/news/blogs-news-from-elsewhere-37618474</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/blogs-news-from-elsewhere-37618474</guid>
+      <pubDate>Tue, 11 Oct 2016 11:06:32 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/15FA0/production/_91761009_gettyimages-463747568.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Russian social media site set up for pets]]></title>
+      <description><![CDATA[Russian social media site launches platform for pets.]]></description>
+      <link>http://www.bbc.co.uk/news/blogs-news-from-elsewhere-37611923</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/blogs-news-from-elsewhere-37611923</guid>
+      <pubDate>Mon, 10 Oct 2016 15:04:29 GMT</pubDate>
+      <media:thumbnail width="904" height="508" url="http://c.files.bbci.co.uk/CA7B/production/_91753815_dog1.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Coming home]]></title>
+      <description><![CDATA[A humanitarian catastrophe is looming as thousands of Afghan refugees are sent home this winter. Ahmed Rashid asks who is speaking up for Afghans?]]></description>
+      <link>http://www.bbc.co.uk/news/world-asia-37607785</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-asia-37607785</guid>
+      <pubDate>Tue, 11 Oct 2016 23:55:45 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/BBA3/production/_91753084_035701784.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Counting chickens]]></title>
+      <description><![CDATA[With a growing appetite for chicken in Africa, the BBC's Kim Chakanetsa investigates why the continent does not produce enough birds to feed itself.]]></description>
+      <link>http://www.bbc.co.uk/news/world-africa-37617379</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-africa-37617379</guid>
+      <pubDate>Wed, 12 Oct 2016 12:13:19 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/1802B/production/_91774389_chicken_lagos_afp.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Red-nosed peril]]></title>
+      <description><![CDATA[Creepy clowns are terrifying people across the world - but just how dangerous are these white-faced, red-nosed entertainers?]]></description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-37628664</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-37628664</guid>
+      <pubDate>Wed, 12 Oct 2016 11:03:52 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/5241/production/_91775012_54f45da7-7546-4ead-a7db-ab0223782bcb.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA['Cut with a blade' ]]></title>
+      <description><![CDATA[BBC Mundo's Natalio Cosoy reports from Colombia on the indigenous groups which are discussing whether to abandon the practice of female genital mutilation.]]></description>
+      <link>http://www.bbc.co.uk/news/world-latin-america-37374006</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-latin-america-37374006</guid>
+      <pubDate>Wed, 12 Oct 2016 00:18:51 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/42CC/production/_91300171_868e9a65-2a6d-4715-aeff-47da30db5f40.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[The missing]]></title>
+      <description><![CDATA[Why have so many unaccompanied migrant children gone missing in Europe over the last few years?]]></description>
+      <link>http://www.bbc.co.uk/news/world-europe-37617234</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-37617234</guid>
+      <pubDate>Wed, 12 Oct 2016 00:54:43 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/EAB3/production/_89738006_gettyimages-493898520-1.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Uncovering Capote]]></title>
+      <description><![CDATA[A new exhibit in Brooklyn, New York, features photographer David Attie's never-before-seen images of a young Truman Capote from the 1950s.]]></description>
+      <link>http://www.bbc.co.uk/news/world-us-canada-37623354</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/world-us-canada-37623354</guid>
+      <pubDate>Tue, 11 Oct 2016 23:27:02 GMT</pubDate>
+      <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/11505/production/_91771907_p04br3xx.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA['Women are trash']]></title>
+      <description><![CDATA[On a day promoting the rights of the 1.1 billion girls around the world, #womenaretrash is trending in South Africa on International Day of the Girl Child.]]></description>
+      <link>http://www.bbc.co.uk/news/blogs-trending-37621269</link>
+      <guid isPermaLink="true">http://www.bbc.co.uk/news/blogs-trending-37621269</guid>
+      <pubDate>Tue, 11 Oct 2016 17:21:05 GMT</pubDate>
+      <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/14C68/production/_91769058_featured-image-background.jpg"/>
+    </item>
+  </channel>
+</rss>
