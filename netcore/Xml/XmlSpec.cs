@@ -38,7 +38,7 @@ namespace netcore.Xml
             xmlReaderSettings.IgnoreProcessingInstructions = true;
             xmlReaderSettings.IgnoreWhitespace = true;
             XmlReader xmlReader = XmlReader.Create(new FileStream("./Http/bbcnews.html", FileMode.Open), xmlReaderSettings);
-
+            // XmlTextReader xmlTextReader = new XmlTextReader(new FileStream("./Http/bbcnews.html", FileMode.Open));
             xml.Load(xmlReader);
 
             //string html = File.ReadAllText("./Http/bbcnews.html");
