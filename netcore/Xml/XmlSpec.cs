@@ -11,8 +11,10 @@ namespace netcore.Xml
         public void XmlParse()
         {
             XmlDocument xml = new XmlDocument();
-            FileStream fileStream = new FileStream("./Xml/bbcseed.xml", FileMode.Open);
-            xml.Load(fileStream);
+            using (FileStream fileStream = new FileStream("./Xml/bbcseed.xml", FileMode.Open))
+            {
+                xml.Load(fileStream);
+            }
 
             XmlNodeList feeds = xml["rss"]["channel"].ChildNodes;
 
@@ -32,17 +34,22 @@ namespace netcore.Xml
         {
             // For security reasons DTD is prohibited in this XML document. To enable DTD processing set the DtdProcessing property on XmlReaderSettings to Parse and pass the settings into XmlReader.Create method.
             XmlDocument xml = new XmlDocument();
-            XmlReaderSettings xmlReaderSettings = new XmlReaderSettings();
-            xmlReaderSettings.DtdProcessing = DtdProcessing.Ignore;
-            xmlReaderSettings.IgnoreComments = true;
-            xmlReaderSettings.IgnoreProcessingInstructions = true;
-            xmlReaderSettings.IgnoreWhitespace = true;
-            XmlReader xmlReader = XmlReader.Create(new FileStream("./Http/bbcnews.html", FileMode.Open), xmlReaderSettings);
+            //XmlReaderSettings xmlReaderSettings = new XmlReaderSettings();
+            //xmlReaderSettings.DtdProcessing = DtdProcessing.Ignore;
+            //xmlReaderSettings.IgnoreComments = true;
+            //xmlReaderSettings.IgnoreProcessingInstructions = false;
+            //xmlReaderSettings.IgnoreWhitespace = true;
+            Stream stream = new FileStream("./Http/bbcnews.html", FileMode.Open);
+            //XmlReader xmlReader = XmlReader.Create(stream, xmlReaderSettings);
             // XmlTextReader xmlTextReader = new XmlTextReader(new FileStream("./Http/bbcnews.html", FileMode.Open));
-            xml.Load(xmlReader);
+            // xml.Load(xmlReader);
 
-            //string html = File.ReadAllText("./Http/bbcnews.html");
+            HtmlReader htmlReader = new HtmlReader(stream);
+            // xml.Load(htmlReader);
+
+            //string html = File.ReadAllText("./Http/bbcnews.html").Replace("&", " and ").Replace("<!DOCTYPE html>", "");
             //xml.LoadXml(html);
+            
         }
     }
 }
