@@ -10,7 +10,7 @@ namespace netcore.Xml
         [Fact]
         public void XmlParse()
         {
-            HtmlReader reader = new HtmlReader(null);
+            //HtmlReader reader = new HtmlReader(null);
 
             // Assert.Equal("rss", xml.ChildNodes[2].Name);
         }

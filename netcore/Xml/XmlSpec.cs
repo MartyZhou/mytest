@@ -7,7 +7,7 @@ namespace netcore.Xml
 {
     public class XmlSpec
     {
-        [Fact]
+        /*[Fact]
         public void XmlParse()
         {
             XmlDocument xml = new XmlDocument();
@@ -27,7 +27,7 @@ namespace netcore.Xml
             //}
 
             // Assert.Equal("rss", xml.ChildNodes[2].Name);
-        }
+        }*/
 
         [Fact]
         public void HtmlParse()
@@ -49,7 +49,16 @@ namespace netcore.Xml
 
             //string html = File.ReadAllText("./Http/bbcnews.html").Replace("&", " and ").Replace("<!DOCTYPE html>", "");
             //xml.LoadXml(html);
-            Console.Write("HtmlParse");
+            Console.WriteLine("HtmlParse " + xml["html"].GetAttribute("lang") + " " + xml["html"].GetAttribute("id"));
+            Console.WriteLine("HtmlParse " + xml["html"]["head"].Attributes[0].Name);
+            Console.WriteLine("HtmlParse " + xml["html"]["head"].GetAttribute(" prefix"));
+            Console.WriteLine("HtmlParse " + xml.ChildNodes.Count);
+            Console.WriteLine("HtmlParse " + xml.ChildNodes[0].Name);
+            Console.WriteLine("HtmlParse " + xml.ChildNodes[0].ChildNodes.Count);
+            Console.WriteLine("HtmlParse " + xml.ChildNodes[0].ChildNodes[0].Name);
+            Console.WriteLine("HtmlParse " + xml.ChildNodes[0].ChildNodes[0].ChildNodes.Count);
+            Console.WriteLine("HtmlParse " + xml.ChildNodes[0].ChildNodes[0].ChildNodes[0].Name);
+            Console.WriteLine("HtmlParse " + xml.ChildNodes[0].ChildNodes[0].ChildNodes[0].ChildNodes.Count);
         }
     }
 }

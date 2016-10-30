@@ -47,6 +47,7 @@ namespace netcore.Xml
 
             position++;
 
+            /*
             long localNameOffset = position;
             long localNameEnd = 0;
             for (long i = position; i < buffer.Length; i++)
@@ -74,6 +75,8 @@ namespace netcore.Xml
             localName = encoding.GetString(tagArray);
 
             nodeType = XmlNodeType.Element;
+            */
+
             isEmptyElement = false;
 
             byte[] b2 = new byte[100];
@@ -346,7 +349,7 @@ namespace netcore.Xml
                 {
                     nodeType = XmlNodeType.Element;
                     result = false;
-                    position = i + 1;
+                    position = i;
                     break;
                 }
 
@@ -387,7 +390,12 @@ namespace netcore.Xml
 
         public override bool Read()
         {
-            Console.Write("Read");
+            Console.Write("Read at position ****** " + position + " ******");
+
+            if(position > 5000){
+                nodeType = XmlNodeType.EndElement;
+                return false;
+            }
 
             long offset = 0;
             long end = 0;
