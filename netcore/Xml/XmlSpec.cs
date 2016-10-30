@@ -45,11 +45,11 @@ namespace netcore.Xml
             // xml.Load(xmlReader);
 
             HtmlReader htmlReader = new HtmlReader(stream);
-            // xml.Load(htmlReader);
+            xml.Load(htmlReader);
 
             //string html = File.ReadAllText("./Http/bbcnews.html").Replace("&", " and ").Replace("<!DOCTYPE html>", "");
             //xml.LoadXml(html);
-            
+            Console.Write("HtmlParse");
         }
     }
 }
