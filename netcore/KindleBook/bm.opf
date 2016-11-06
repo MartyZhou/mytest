@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" unique-identifier="tst">
+  <metadata>
+    <dc-metadata>
+      <dc_x003A_title>BM</dc_x003A_title>
+      <dc_x003A_creator>Marty</dc_x003A_creator>
+      <dc_x003A_publisher>marty</dc_x003A_publisher>
+      <dc_x003A_subject>bm</dc_x003A_subject>
+      <dc_x003A_date>2016-11-06T17:14:20.12655+08:00</dc_x003A_date>
+      <dc_x003A_description>test</dc_x003A_description>
+    </dc-metadata>
+    <x-metadata>
+      <output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8" />
+    </x-metadata>
+  </metadata>
+  <spine toc="test">
+    <itemref idref="tstes" />
+    <itemref idref="tstes" />
+  </spine>
+  <manifest>
+    <item href="test" media-type="fsakl" id="application/xhtml+xml" />
+    <item href="test" media-type="fsakl" id="application/xhtml+xml" />
+  </manifest>
+  <guide>
+    <reference href="test" type="type" title="table of contents" />
+    <reference href="test" type="type" title="table of contents" />
+  </guide>
+</package>
