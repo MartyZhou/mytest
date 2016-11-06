@@ -7,6 +7,14 @@ namespace KindleBook
     [XmlRoot("package")]
     public class OPF
     {
+        public OPF()
+        {
+            Metadata = new OPFMetadata();
+            Spine = new OPFSpine();
+            Items = new List<OPFItem>();
+            RefItems = new List<OPFReference>();
+        }
+
         [XmlAttribute("unique-identifier")]
         public string ID { get; set; }
 
@@ -14,8 +22,6 @@ namespace KindleBook
         public OPFMetadata Metadata { get; set; }
 
         [XmlElement("spine")]
-        //[XmlArray("spine")]
-        //[XmlArrayItem("itemref2")]
         public OPFSpine Spine { get; set; }
 
         [XmlArray("manifest")]
@@ -29,6 +35,12 @@ namespace KindleBook
 
     public class OPFMetadata
     {
+        public OPFMetadata()
+        {
+            DC = new DCMetadata();
+            X = new XMetadata();
+        }
+
         [XmlElement("dc-metadata")]
         public DCMetadata DC { get; set; }
 
@@ -38,27 +50,35 @@ namespace KindleBook
 
     public class DCMetadata
     {
-        [XmlElement("dc:title")]
+        [XmlElement(ElementName = "language", Namespace = "http://dc.mock")]
+        public string Language { get; set; }
+
+        [XmlElement(ElementName = "title", Namespace = "http://dc.mock")]
         public string Title { get; set; }
 
-        [XmlElement("dc:creator")]
+        [XmlElement(ElementName = "creator", Namespace = "http://dc.mock")]
         public string Creator { get; set; }
 
-        [XmlElement("dc:publisher")]
+        [XmlElement(ElementName = "publisher", Namespace = "http://dc.mock")]
         public string Publisher { get; set; }
 
-        [XmlElement("dc:subject")]
+        [XmlElement(ElementName = "subject", Namespace = "http://dc.mock")]
         public string Subject { get; set; }
 
-        [XmlElement("dc:date")]
+        [XmlElement(ElementName = "date", Namespace = "http://dc.mock")]
         public DateTime DateTime { get; set; }
 
-        [XmlElement("dc:description")]
+        [XmlElement(ElementName = "description", Namespace = "http://dc.mock")]
         public string Description { get; set; }
     }
 
     public class XMetadata
     {
+        public XMetadata()
+        {
+            Output = new XOutput();
+        }
+
         [XmlElement("output")]
         public XOutput Output { get; set; }
     }
@@ -75,12 +95,22 @@ namespace KindleBook
 
     public class OPFManifest
     {
+        public OPFManifest()
+        {
+            Items = new List<OPFItem>();
+        }
+
         [XmlArrayItem("item")]
         public List<OPFItem> Items { get; set; }
     }
 
     public class OPFSpine
     {
+        public OPFSpine()
+        {
+            Items = new List<OPFItemRef>();
+        }
+
         [XmlAttribute("toc")]
         public string Toc { get; set; }
 
@@ -93,10 +123,10 @@ namespace KindleBook
         [XmlAttribute("href")]
         public string Href { get; set; }
 
-        [XmlAttribute("media-type")]
+        [XmlAttribute("id")]
         public string Id { get; set; }
 
-        [XmlAttribute("id")]
+        [XmlAttribute("media-type")]
         public string MediaType { get; set; }
     }
 
@@ -120,6 +150,11 @@ namespace KindleBook
 
     public class OPFGuide
     {
+        public OPFGuide()
+        {
+            Reference = new OPFReference();
+        }
+        
         [XmlElement("reference")]
         public OPFReference Reference { get; set; }
     }

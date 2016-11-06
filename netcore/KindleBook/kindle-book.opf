@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dc="http://dc.mock">
+  <metadata>
+    <dc-metadata>
+      <dc:title>kindle 11/06/2016 21:48:51</dc:title>
+      <dc:language>en-GB</dc:language>
+      <dc:creator>kindle</dc:creator>
+      <dc:publisher>kindle</dc:publisher>
+      <dc:subject>news</dc:subject>
+      <dc:date>2016-11-06T21:48:51.963735+08:00</dc:date>
+      <dc:description>kindle</dc:description>
+    </dc-metadata>
+    <x-metadata>
+      <output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8" />
+    </x-metadata>
+  </metadata>
+  <spine toc="nav-contents">
+    <itemref idref="1" />
+    <itemref idref="2" />
+    <itemref idref="3" />
+    <itemref idref="4" />
+    <itemref idref="5" />
+    <itemref idref="6" />
+    <itemref idref="7" />
+    <itemref idref="8" />
+    <itemref idref="9" />
+    <itemref idref="10" />
+  </spine>
+  <manifest>
+    <item href="BM/1.html" id="1" media-type="application/xhtml+xml" />
+    <item href="BM/2.html" id="2" media-type="application/xhtml+xml" />
+    <item href="BM/3.html" id="3" media-type="application/xhtml+xml" />
+    <item href="BM/4.html" id="4" media-type="application/xhtml+xml" />
+    <item href="BM/5.html" id="5" media-type="application/xhtml+xml" />
+    <item href="BM/6.html" id="6" media-type="application/xhtml+xml" />
+    <item href="BM/7.html" id="7" media-type="application/xhtml+xml" />
+    <item href="BM/8.html" id="8" media-type="application/xhtml+xml" />
+    <item href="BM/9.html" id="9" media-type="application/xhtml+xml" />
+    <item href="BM/10.html" id="10" media-type="application/xhtml+xml" />
+  </manifest>
+  <guide>
+    <reference href="BM/1.html" type="toc" title="Familia şi avocaţii lui Schumacher au anunţat presa. Din păcate, anunţul dramatic confirmă toate zvonurile" />
+    <reference href="BM/2.html" type="toc" title="În ciuda controverselor s-a decis: Cine îl va juca pe Freddie Mercury în filmul biografic &quot;Bohemian Rhapsody&quot; " />
+    <reference href="BM/3.html" type="toc" title="Istoria scandaloasă şi neştiută a marelui Sadoveanu. Mason convins, i-a eliminat apoi pe toţi ''fraţii'' săi" />
+    <reference href="BM/4.html" type="toc" title="IMPLICAREA  Rusiei în campania electorală din SUA, fără precedent: &quot;Dacă Putin vrea RĂZBUNARE, probabil că deja o are&quot;" />
+    <reference href="BM/5.html" type="toc" title="Lovitură de proporţii pentru Samsung: Nici nu s-a pus praful pe episodul Galaxy Note 7 că un nou scandal a izbucnit pentru companie" />
+    <reference href="BM/6.html" type="toc" title="Cea mai slabă companie aeriană din lume: Este fondată de 27 de ani şi nu a efectuat niciun zbor. Dar încă mai speră" />
+    <reference href="BM/7.html" type="toc" title="Topul băncilor care îşi plătesc cel mai prost angajaţii. Diferenţa dintre primul şi ultimul loc este de 10.000 de lei pe lună " />
+    <reference href="BM/8.html" type="toc" title="Jobul din România care se plăteşte cu 18.000 de lei pe lună, şi nu se găsesc angajaţi! ”Fără să exagerez cu nimic, cererea este cu 80% mai mare decât disponibilitatea”" />
+    <reference href="BM/9.html" type="toc" title="ALEGERI SUA: Hillary Clinton, avans de 1,8% comparativ cu Donald Trump - sondaje Real Clear Politics" />
+    <reference href="BM/10.html" type="toc" title="Statele Unite se tem că Rusia va lansa un atac cibernetic pe 8 noiembrie şi pregătesc o ripostă" />
+  </guide>
+</package>

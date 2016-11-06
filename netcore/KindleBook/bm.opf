@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" unique-identifier="tst">
+<package xmlns:dc="http://dc.mock" unique-identifier="tst">
   <metadata>
     <dc-metadata>
-      <dc_x003A_title>BM</dc_x003A_title>
-      <dc_x003A_creator>Marty</dc_x003A_creator>
-      <dc_x003A_publisher>marty</dc_x003A_publisher>
-      <dc_x003A_subject>bm</dc_x003A_subject>
-      <dc_x003A_date>2016-11-06T17:14:20.12655+08:00</dc_x003A_date>
-      <dc_x003A_description>test</dc_x003A_description>
+      <dc:title>BM</dc:title>
+      <dc:creator>Marty</dc:creator>
+      <dc:publisher>marty</dc:publisher>
+      <dc:subject>bm</dc:subject>
+      <dc:date>2016-11-06T19:46:29.035752+08:00</dc:date>
+      <dc:description>test</dc:description>
     </dc-metadata>
     <x-metadata>
       <output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8" />

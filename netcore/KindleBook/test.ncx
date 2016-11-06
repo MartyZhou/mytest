@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns:mbp="http://mobipocket.com/ns/mbp" xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-GB">
+	<head>
+		<meta content="KindleFere_2015-10-22" name="dtb:uid" />
+		<meta content="2" name="dtb:depth" />
+		<meta content="0" name="dtb:totalPageCount" />
+		<meta content="0" name="dtb:maxPageNumber" />
+	</head>
+	<!-- 标题 -->
+	<docTitle>
+		<text>Kindle伴侣期刊（模板）</text>
+	</docTitle>
+	<!-- 作者 -->
+	<docAuthor>
+		<text>Kindle伴侣</text>
+	</docAuthor>
+	<!-- 导航 -->
+	<navMap>
+		<navPoint playOrder="0" class="periodical" id="periodical">
+			
+
+			<!-- 目录 -->
+			<navLabel>
+				<text>目录</text>
+			</navLabel>
+			<content src="../html/contents.html" />
+
+			<!-- 分类 1 -->
+			<navPoint playOrder="1" class="section" id="Weekly">
+				<!-- 分类标题 -->
+				<navLabel>
+					<text>每周一书</text>
+				</navLabel>
+				<!-- 网格模式第一篇文章链接页面 -->
+				<content src="../html/0.html" />
+				<!-- 文章 1 -->
+				<navPoint playOrder="2" class="article" id="item-001">
+					<!-- 文章标题 -->
+					<navLabel>
+						<text>《自由选择》地球人不可不读的书</text>
+					</navLabel>
+					<!-- 文章摘要 -->
+					<content src="../html/0.html" />
+					<!-- 文章摘要 -->
+					<mbp:meta name="description">活在世上，我们经常在抱怨好人没好报，坏人没坏下场，也许真正应该检讨的是我们，我们有没有珍惜好人？认出坏人！在这方面，《自由选择》可以给我们很大的帮助。</mbp:meta>
+					<!-- 文章作者 -->
+					<mbp:meta name="author">Kindle伴侣</mbp:meta>
+				</navPoint>
+				<!-- 文章 2 -->
+				<navPoint playOrder="3" class="article" id="item-002">
+					<navLabel>
+						<text>《无后为大》不只是生与不生的问题</text>
+					</navLabel>
+					<content src="../html/1.html" />
+					<mbp:meta name="description">这本书在豆瓣读书中遭到删除。你可能会认为这是一本探讨关于生不生孩子的话题，其实不然，作者的主要着墨之处在于隐藏在生育背后的那些我们不可能用“难得糊涂”就能搪塞过去的问题。</mbp:meta>
+					<mbp:meta name="author">Kindle伴侣</mbp:meta>
+				</navPoint>
+			</navPoint>
+
+
+		</navPoint>
+	</navMap>
+</ncx>

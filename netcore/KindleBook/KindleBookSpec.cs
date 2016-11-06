@@ -37,7 +37,7 @@ namespace KindleBook
         }
 
         [Fact]
-        public void SerializerOPF()
+        public void SerializeOPF()
         {
             OPF opf = new OPF();
             opf.ID = "tst";
@@ -98,8 +98,82 @@ namespace KindleBook
             using (FileStream fileStream = new FileStream("./KindleBook/bm.opf", FileMode.Create))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(OPF));
-                serializer.Serialize(fileStream, opf);
+                XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
+                ns.Add("dc", "http://dc.mock");
+                serializer.Serialize(fileStream, opf, ns);
             }
+        }
+
+        [Fact]
+        public void SerializeNCX()
+        {
+            NCX ncx = new NCX();
+            ncx.Version = "text version";
+
+            List<NCXMeta> metas = new List<NCXMeta>();
+            NCXMeta meta = new NCXMeta();
+            meta.Content = "test content";
+            meta.Name = "test name";
+            metas.Add(meta);
+            metas.Add(meta);
+
+            ncx.Head = metas;
+
+            NCXText title = new NCXText("test");
+            title.Text = "test title";
+
+            ncx.Title = title;
+
+            List<NavPoint> navMap = new List<NavPoint>();
+            NavPoint root = new NavPoint();
+            root.Content = new NavContent();
+            root.Content.Src = "test src";
+
+            root.Id = "testId";
+            root.Label = new NCXText("label");
+            root.Label.Text = "test label";
+
+            NavPoint p2 = new NavPoint();
+            p2.Content = new NavContent();
+            p2.Content.Src = "test src";
+
+            p2.Id = "testId";
+            p2.Label = new NCXText("llll");
+            p2.Label.Text = "test label";
+
+            p2.MBP = new List<NCXMBP>();
+            NCXMBP mbpname = new NCXMBP();
+            mbpname.Name = "author";
+            mbpname.Text = "test author";
+            NCXMBP mbpdesc = new NCXMBP();
+            mbpdesc.Name = "description";
+            mbpdesc.Text = "this is a test description";
+
+            p2.MBP.Add(mbpname);
+            p2.MBP.Add(mbpdesc);
+
+            root.Items = new List<NavPoint>();
+            root.Items.Add(p2);
+            root.Items.Add(p2);
+
+            navMap.Add(root);
+
+            ncx.NavMap = navMap;
+
+            using (FileStream fileStream = new FileStream("./KindleBook/bm.ncx", FileMode.Create))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(NCX));
+                XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
+                ns.Add("mbp", "http://mbp.mock");
+                serializer.Serialize(fileStream, ncx, ns);
+            }
+        }
+
+        [Fact]
+        public async Task TestTest()
+        {
+            Test test = new Test();
+            await test.Run();
         }
     }
 }

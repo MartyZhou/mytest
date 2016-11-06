@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns:mbp="http://mbp.mock">
+  <head />
+  <docTitle>
+    <text>Kindle Magazine</text>
+  </docTitle>
+  <docAuthor>
+    <text>kindle</text>
+  </docAuthor>
+  <navMap>
+    <navPoint class="section" id="Actualitate">
+      <navLabel>
+        <text>Actualitate</text>
+      </navLabel>
+      <content src="Actualitate-content.html" />
+      <navPoint class="artical" id="1">
+        <navLabel>
+          <text>Familia şi avocaţii lui Schumacher au anunţat presa. Din păcate, anunţul dramatic confirmă toate zvonurile</text>
+        </navLabel>
+        <content src="BM/1.html" />
+        <mbp:meta name="name">Familia şi avocaţii lui Schumacher au anunţat presa. Din păcate, anunţul dramatic confirmă toate zvonurile</mbp:meta>
+        <mbp:meta name="description"></mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="2">
+        <navLabel>
+          <text>În ciuda controverselor s-a decis: Cine îl va juca pe Freddie Mercury în filmul biografic "Bohemian Rhapsody" </text>
+        </navLabel>
+        <content src="BM/2.html" />
+        <mbp:meta name="name">În ciuda controverselor s-a decis: Cine îl va juca pe Freddie Mercury în filmul biografic "Bohemian Rhapsody" </mbp:meta>
+        <mbp:meta name="description">
+				Rami Malek, starul din "Mr. Robot", care a câştigat recent premiul Emmy, a fost ales de producătorii filmului biografic "Bohemian Rhapsody" pentru rolul lui Freddie Mercury, relatează Variety.com.
+
+
+
+						</mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="3">
+        <navLabel>
+          <text>Istoria scandaloasă şi neştiută a marelui Sadoveanu. Mason convins, i-a eliminat apoi pe toţi ''fraţii'' săi</text>
+        </navLabel>
+        <content src="BM/3.html" />
+        <mbp:meta name="name">Istoria scandaloasă şi neştiută a marelui Sadoveanu. Mason convins, i-a eliminat apoi pe toţi ''fraţii'' săi</mbp:meta>
+        <mbp:meta name="description">
+				Figura lui Sadoveanu este extrem de controversată.
+
+						</mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="4">
+        <navLabel>
+          <text>IMPLICAREA  Rusiei în campania electorală din SUA, fără precedent: "Dacă Putin vrea RĂZBUNARE, probabil că deja o are"</text>
+        </navLabel>
+        <content src="BM/4.html" />
+        <mbp:meta name="name">IMPLICAREA  Rusiei în campania electorală din SUA, fără precedent: "Dacă Putin vrea RĂZBUNARE, probabil că deja o are"</mbp:meta>
+        <mbp:meta name="description">
+				Ingerinţele Rusiei în campania din SUA sunt la un nivel fără precedent, părând a fi o replică a Kremlinului faţă de criticile Washingtonului după scrutinul rus din 2011, scrie Financial Times, notând că, indiferent de rezultat, "factorul rus" a atins obiectivul - polarizarea societăţii americane.
+
+
+
+						</mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="5">
+        <navLabel>
+          <text>Lovitură de proporţii pentru Samsung: Nici nu s-a pus praful pe episodul Galaxy Note 7 că un nou scandal a izbucnit pentru companie</text>
+        </navLabel>
+        <content src="BM/5.html" />
+        <mbp:meta name="name">Lovitură de proporţii pentru Samsung: Nici nu s-a pus praful pe episodul Galaxy Note 7 că un nou scandal a izbucnit pentru companie</mbp:meta>
+        <mbp:meta name="description"></mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="6">
+        <navLabel>
+          <text>Cea mai slabă companie aeriană din lume: Este fondată de 27 de ani şi nu a efectuat niciun zbor. Dar încă mai speră</text>
+        </navLabel>
+        <content src="BM/6.html" />
+        <mbp:meta name="name">Cea mai slabă companie aeriană din lume: Este fondată de 27 de ani şi nu a efectuat niciun zbor. Dar încă mai speră</mbp:meta>
+        <mbp:meta name="description"></mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="7">
+        <navLabel>
+          <text>Topul băncilor care îşi plătesc cel mai prost angajaţii. Diferenţa dintre primul şi ultimul loc este de 10.000 de lei pe lună </text>
+        </navLabel>
+        <content src="BM/7.html" />
+        <mbp:meta name="name">Topul băncilor care îşi plătesc cel mai prost angajaţii. Diferenţa dintre primul şi ultimul loc este de 10.000 de lei pe lună </mbp:meta>
+        <mbp:meta name="description"></mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="8">
+        <navLabel>
+          <text>Jobul din România care se plăteşte cu 18.000 de lei pe lună, şi nu se găsesc angajaţi! ”Fără să exagerez cu nimic, cererea este cu 80% mai mare decât disponibilitatea”</text>
+        </navLabel>
+        <content src="BM/8.html" />
+        <mbp:meta name="name">Jobul din România care se plăteşte cu 18.000 de lei pe lună, şi nu se găsesc angajaţi! ”Fără să exagerez cu nimic, cererea este cu 80% mai mare decât disponibilitatea”</mbp:meta>
+        <mbp:meta name="description"></mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="9">
+        <navLabel>
+          <text>ALEGERI SUA: Hillary Clinton, avans de 1,8% comparativ cu Donald Trump - sondaje Real Clear Politics</text>
+        </navLabel>
+        <content src="BM/9.html" />
+        <mbp:meta name="name">ALEGERI SUA: Hillary Clinton, avans de 1,8% comparativ cu Donald Trump - sondaje Real Clear Politics</mbp:meta>
+        <mbp:meta name="description"></mbp:meta>
+      </navPoint>
+      <navPoint class="artical" id="10">
+        <navLabel>
+          <text>Statele Unite se tem că Rusia va lansa un atac cibernetic pe 8 noiembrie şi pregătesc o ripostă</text>
+        </navLabel>
+        <content src="BM/10.html" />
+        <mbp:meta name="name">Statele Unite se tem că Rusia va lansa un atac cibernetic pe 8 noiembrie şi pregătesc o ripostă</mbp:meta>
+        <mbp:meta name="description"></mbp:meta>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

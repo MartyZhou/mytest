@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns:mbp="http://mbp.mock">
+  <version>text version</version>
+  <head>
+    <meta name="test name" content="test content" />
+    <meta name="test name" content="test content" />
+  </head>
+  <docTitle>
+    <text>test title</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="testId">
+      <navLabel>
+        <text>test label</text>
+      </navLabel>
+      <content src="test src" />
+      <navPoint id="testId">
+        <navLabel>
+          <text>test label</text>
+        </navLabel>
+        <content src="test src" />
+        <mbp:meta name="author">test author</mbp:meta>
+        <mbp:meta name="description">this is a test description</mbp:meta>
+      </navPoint>
+      <navPoint id="testId">
+        <navLabel>
+          <text>test label</text>
+        </navLabel>
+        <content src="test src" />
+        <mbp:meta name="author">test author</mbp:meta>
+        <mbp:meta name="description">this is a test description</mbp:meta>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
