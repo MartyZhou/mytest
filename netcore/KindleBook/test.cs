@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
+using AngleSharp;
+using AngleSharp.Dom.Html;
+using AngleSharp.Dom;
+using AngleSharp.Html;
 
 namespace KindleBook
 {
@@ -15,8 +18,6 @@ namespace KindleBook
         private const string OPF_NAME = "kindle-book";
         private NCX ncx = new NCX();
         private OPF opf = new OPF();
-
-        private Dictionary<string, NavPoint> navs = new Dictionary<string, NavPoint>();
 
         public Test()
         {
@@ -69,53 +70,50 @@ namespace KindleBook
                         string title = node["title"].InnerText;
                         string category = node["category"].InnerText;
                         string description = node["description"].InnerText;
+                        if (string.IsNullOrWhiteSpace(description))
+                        {
+                            description = title;
+                        }
                         string localHref = string.Format("BM/{0}.html", index);
                         string path = string.Format("./KindleBook/{0}", localHref);
 
-                        HttpResponseMessage response = await client.GetAsync(url).ConfigureAwait(false);
-                        using (FileStream fileStream = new FileStream(path, FileMode.Create))
+                        try
                         {
-                            await response.Content.CopyToAsync(fileStream).ConfigureAwait(false);
-                            OPFItem item = new OPFItem();
-                            item.Href = localHref;
-                            item.Id = index.ToString();
-                            item.MediaType = "application/xhtml+xml";
-                            opf.Items.Add(item);
-
-                            OPFItemRef itemRef = new OPFItemRef();
-                            itemRef.IdRef = index.ToString();
-                            opf.Spine.Items.Add(itemRef);
-
-                            OPFReference reference = new OPFReference();
-                            reference.Href = localHref;
-                            reference.Title = title;
-                            reference.RefType = "toc";
-                            opf.RefItems.Add(reference);
-
-                            if (!navs.ContainsKey(category))
+                            HttpResponseMessage response = await client.GetAsync(url).ConfigureAwait(false);
+                            using (FileStream fileStream = new FileStream(path, FileMode.Create))
                             {
-                                NavPoint nav = new NavPoint();
-                                nav.Label.Text = category;
-                                nav.Id = category;
-                                nav.NavClass = "section";
-                                nav.Content.Src = string.Format("{0}-content.html", category);
-                                nav.Items = new List<NavPoint>();
+                                StreamWriter writer = new StreamWriter(fileStream);
+                                var document = await ModifyArticle(response.Content);
+                                document.ToHtml(writer, HtmlMarkupFormatter.Instance);
+                                writer.Flush();
 
-                                navs.Add(category, nav);
+                                OPFItem item = new OPFItem();
+                                item.Href = localHref;
+                                item.Id = index.ToString();
+                                item.MediaType = "application/xhtml+xml";
+                                opf.Items.Add(item);
+
+                                OPFItemRef itemRef = new OPFItemRef();
+                                itemRef.IdRef = index.ToString();
+                                opf.Spine.Items.Add(itemRef);
+
+                                NavPoint articalNav = new NavPoint();
+                                articalNav.Id = index.ToString();
+                                articalNav.Label.Text = title;
+                                articalNav.NavClass = "artical";
+                                articalNav.Content.Src = localHref;
+                                articalNav.MBP = new List<NCXMBP>();
+                                articalNav.MBP.Add(new NCXMBP("name", title));
+                                articalNav.MBP.Add(new NCXMBP("description", description));
+
+                                ncx.NavMap.Add(articalNav);
+
+                                await Task.Delay(5000);
                             }
-
-                            NavPoint articalNav = new NavPoint();
-                            articalNav.Id = index.ToString();
-                            articalNav.Label.Text = title;
-                            articalNav.NavClass = "artical";
-                            articalNav.Content.Src = localHref;
-                            articalNav.MBP = new List<NCXMBP>();
-                            articalNav.MBP.Add(new NCXMBP("name", title));
-                            articalNav.MBP.Add(new NCXMBP("description", description));
-
-                            navs[category].Items.Add(articalNav);
-
-                            await Task.Delay(5000);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Ignore the exception and continue. " + e.Message);
                         }
                     }
                 }
@@ -124,7 +122,6 @@ namespace KindleBook
 
         private void Write()
         {
-            ncx.NavMap = navs.Values.ToList();
             using (FileStream fileStream = new FileStream(string.Format("./KindleBook/{0}.ncx", NAV_CONTENTS), FileMode.Create))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(NCX));
@@ -133,6 +130,7 @@ namespace KindleBook
                 serializer.Serialize(fileStream, ncx, ns);
             }
 
+            AddNavItem();
             using (FileStream fileStream = new FileStream(string.Format("./KindleBook/{0}.opf", OPF_NAME), FileMode.Create))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(OPF));
@@ -140,6 +138,39 @@ namespace KindleBook
                 ns.Add("dc", "http://dc.mock");
                 serializer.Serialize(fileStream, opf, ns);
             }
+        }
+
+        private async Task<IDocument> ModifyArticle(HttpContent content)
+        {
+            var context = BrowsingContext.New();
+            var stream = await content.ReadAsStreamAsync().ConfigureAwait(false);
+            var document = await context.OpenAsync(res => res.Content(stream, true));
+            var contentTypeElement = document.QuerySelector("meta");
+            var titleElement = document.QuerySelector("title");
+            var storyElement = document.QuerySelector(".a-entry");
+            var body = document.CreateElement("body");
+            body.AppendChild(storyElement);
+
+            while (document.Head.Children.Length > 0)
+            {
+                document.Head.RemoveChild(document.Head.FirstChild);
+            }
+
+            document.Head.AppendChild(contentTypeElement);
+            document.Head.AppendChild(titleElement);
+            document.Body.Remove();
+            document.Body = (IHtmlElement)body;
+
+            return document;
+        }
+
+        private void AddNavItem()
+        {
+            OPFItem item = new OPFItem();
+            item.Href = "nav-contents.ncx";
+            item.Id = NAV_CONTENTS;
+            item.MediaType = "application/x-dtbncx+xml";
+            opf.Items.Add(item);
         }
 
     }

@@ -80,7 +80,7 @@ namespace KindleBook
             guide.Add(opfref);
             guide.Add(opfref);
 
-            opf.RefItems = guide;
+            //opf.RefItems = guide;
 
             OPFSpine spine = new OPFSpine();
             spine.Items = new List<OPFItemRef>();

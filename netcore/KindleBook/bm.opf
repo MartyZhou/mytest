@@ -6,7 +6,7 @@
       <dc:creator>Marty</dc:creator>
       <dc:publisher>marty</dc:publisher>
       <dc:subject>bm</dc:subject>
-      <dc:date>2016-11-06T19:46:29.035752+08:00</dc:date>
+      <dc:date>2016-11-11T16:53:43.0116241+08:00</dc:date>
       <dc:description>test</dc:description>
     </dc-metadata>
     <x-metadata>
@@ -18,11 +18,8 @@
     <itemref idref="tstes" />
   </spine>
   <manifest>
-    <item href="test" media-type="fsakl" id="application/xhtml+xml" />
-    <item href="test" media-type="fsakl" id="application/xhtml+xml" />
+    <item href="test" id="fsakl" media-type="application/xhtml+xml" />
+    <item href="test" id="fsakl" media-type="application/xhtml+xml" />
   </manifest>
-  <guide>
-    <reference href="test" type="type" title="table of contents" />
-    <reference href="test" type="type" title="table of contents" />
-  </guide>
+  <guide />
 </package>
