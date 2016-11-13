@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Moq;
 using Xunit;
 
 namespace AsyncSpec
@@ -39,7 +38,6 @@ namespace AsyncSpec
         [Fact]
         public void ColdTaskSpec()
         {
-            Mock<IList<object>> mockList = new Mock<IList<object>>();
             Task task = new Task(() => { });
 
             Assert.Equal(TaskStatus.Created, task.Status);

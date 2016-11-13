@@ -10,7 +10,8 @@
     "dotnet-test-xunit": "1.0.0-rc2-build10025",
     "System.Xml.XmlSerializer": "4.0.11",
     "AngleSharp": "0.9.9",
-    "Moq": "4.6.38-alpha"
+    "Moq": "4.6.38-alpha",
+    "Microsoft.Composition": "1.0.30"
   },
   "frameworks": {
     "netcoreapp1.0": {
