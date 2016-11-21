@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace ExceptionSpec
@@ -9,7 +10,7 @@ namespace ExceptionSpec
         [Fact]
         public void ThrowTest()
         {
-            Assert.ThrowsAsync<Exception>(() =>
+            Assert.ThrowsAny<Exception>(() =>
             {
                 throw new Exception();
             });
