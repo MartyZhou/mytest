@@ -1,0 +1,15 @@
+{
+  "name": "geotravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "exif-js": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "browser-sync start --server"
+  },
+  "author": "",
+  "license": "ISC"
+}
