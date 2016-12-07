@@ -1,32 +1,55 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <style>
-       #map {
-        height: 600px;
-        width: 100%;
-       }
+        #map {
+            height: 600px;
+            width: 100%;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="map"></div>
+    <img id="imgtest" src="./imgs/IMG_5136.JPG"
+        width="660" height="495">
     <script>
+      var gmap;
+
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = {lat: 45.363, lng: 131.044};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 3,
           center: uluru
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+        gmap = map;
+      }
+
+      document.getElementById("imgtest").onclick = function() {
+        EXIF.getData(this, function() {
+            var exifdata = this.exifdata;
+            var lat = exifdata.GPSLatitude;
+            var lon = exifdata.GPSLongitude;
+            var latRef = exifdata.GPSLatitudeRef;
+            var lonRef = exifdata.GPSLongitudeRef;
+            var latResult = (lat[0] + lat[1]/60 + lat[2]/3600) * (latRef == "N" ? 1 : -1);
+            var lonResult = (lon[0] + lon[1]/60 + lon[2]/3600) * (lonRef == "W" ? -1 : 1);
+
+            var location = {lat: latResult, lng: lonResult};
+
+            if(gmap){
+                var testMarker = new google.maps.Marker({
+                    position: location,
+                    map: gmap
+                })
+            }
         });
       }
     </script>
     <script src="./node_modules/exif-js/exif.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE&callback=initMap">
     </script>
-  </body>
+</body>
+
 </html>
