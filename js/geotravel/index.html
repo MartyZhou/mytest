@@ -12,79 +12,10 @@
 
 <body>
     <div id="map"></div>
-    <img id="imgtest" src="./imgs/IMG_5136.JPG" width="660" height="495">
-    <button id="objecturltest">Object URL Test</button>
-    <!--<img class="aligncenter" src="https://0nnwaa.bn1303.livefilestore.com/y3mcfj_pf4G6erWYpiOaz-vAwe489-H9WxGEfOM1vAeZucJTLP4w89S05-PAN7oJd5dbOVOgctKYmnXeuyE0sorMqV72YVCPmdZu6rFK4Jd2KgHBhdCMkA82U9LwGD2v_-XH9W5_-ruprD-2PieTTNlpBML3-cmoIQ9D4Hh3NPCh58?width=495&amp;height=660&amp;cropmode=none" width="495" height="660">-->
-    <script>
-      var gmap;
-
-      function initMap() {
-        var uluru = {lat: 45.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
-          center: uluru
-        });
-        gmap = map;
-      }
-
-      document.getElementById("imgtest").onclick = function() {
-        EXIF.getData(this, function() {
-            var exifdata = this.exifdata;
-            var lat = exifdata.GPSLatitude;
-            var lon = exifdata.GPSLongitude;
-            var latRef = exifdata.GPSLatitudeRef;
-            var lonRef = exifdata.GPSLongitudeRef;
-            var latResult = (lat[0] + lat[1]/60 + lat[2]/3600) * (latRef == "N" ? 1 : -1);
-            var lonResult = (lon[0] + lon[1]/60 + lon[2]/3600) * (lonRef == "W" ? -1 : 1);
-
-            var location = {lat: latResult, lng: lonResult};
-
-            if(gmap){
-                var testMarker = new google.maps.Marker({
-                    position: location,
-                    map: gmap
-                })
-            }
-        });
-      }
-
-      document.getElementById("objecturltest").onclick = function() {
-    var http = new XMLHttpRequest();
-    http.open("GET", "https://0nnwaa.bn1303.livefilestore.com/y3mcfj_pf4G6erWYpiOaz-vAwe489-H9WxGEfOM1vAeZucJTLP4w89S05-PAN7oJd5dbOVOgctKYmnXeuyE0sorMqV72YVCPmdZu6rFK4Jd2KgHBhdCMkA82U9LwGD2v_-XH9W5_-ruprD-2PieTTNlpBML3-cmoIQ9D4Hh3NPCh58?width=495&amp;height=660&amp;cropmode=none", true);
-    http.responseType = "blob";
-    http.onload = function(e) {
-        if (this.status === 200) {
-            var image = new Image();
-            image.onload = function() {
-                EXIF.getData(image, function() {
-                    var exifdata = this.exifdata;
-            var lat = exifdata.GPSLatitude;
-            var lon = exifdata.GPSLongitude;
-            var latRef = exifdata.GPSLatitudeRef;
-            var lonRef = exifdata.GPSLongitudeRef;
-            var latResult = (lat[0] + lat[1]/60 + lat[2]/3600) * (latRef == "N" ? 1 : -1);
-            var lonResult = (lon[0] + lon[1]/60 + lon[2]/3600) * (lonRef == "W" ? -1 : 1);
-
-            var location = {lat: latResult, lng: lonResult};
-
-            if(gmap){
-                var testMarker = new google.maps.Marker({
-                    position: location,
-                    map: gmap
-                })
-            }
-                });
-            };
-            image.src = URL.createObjectURL(http.response);
-
-        }
-    };
-    http.send();
-}
-    </script>
+    <button id="objecturltest">Load Photo</button>
     <script src="./node_modules/exif-js/exif.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE&callback=initMap">
-    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE&callback=initMap"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
