@@ -6,7 +6,9 @@
   "dependencies": {
     "exif-js": "^2.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "exif-parser": "^0.1.9"
+  },
   "scripts": {
     "start": "browser-sync start -c bs-config.js"
   },
