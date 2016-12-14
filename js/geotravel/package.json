@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "exif-js": "^2.1.1",
-    "exif-parser": "^0.1.9"
+    "exif-parser": "^0.1.9",
+    "mysql": "^2.12.0"
   },
   "scripts": {
     "start": "browser-sync start -c bs-config.js"

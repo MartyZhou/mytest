@@ -18,6 +18,7 @@ exports.save_pic_metadata = function(req, res, next) {
             var pic_url = data.pic_url;
             
             extractExif(pic_url, (imgData) => {
+                persistImageMetadata({exif: imgData, url: pic_url});
                 res.end(JSON.stringify(imgData));
             });
         });
@@ -27,7 +28,7 @@ exports.save_pic_metadata = function(req, res, next) {
 }
 
 function extractExif(url, callback){
-    https.get('https://0nnwaa.bn1303.livefilestore.com/y3mcfj_pf4G6erWYpiOaz-vAwe489-H9WxGEfOM1vAeZucJTLP4w89S05-PAN7oJd5dbOVOgctKYmnXeuyE0sorMqV72YVCPmdZu6rFK4Jd2KgHBhdCMkA82U9LwGD2v_-XH9W5_-ruprD-2PieTTNlpBML3-cmoIQ9D4Hh3NPCh58?width=495&amp;height=660&amp;cropmode=none', (res) => {
+    /*https.get('https://0nnwaa.bn1303.livefilestore.com/y3mcfj_pf4G6erWYpiOaz-vAwe489-H9WxGEfOM1vAeZucJTLP4w89S05-PAN7oJd5dbOVOgctKYmnXeuyE0sorMqV72YVCPmdZu6rFK4Jd2KgHBhdCMkA82U9LwGD2v_-XH9W5_-ruprD-2PieTTNlpBML3-cmoIQ9D4Hh3NPCh58?width=495&amp;height=660&amp;cropmode=none', (res) => {
         var chunks = [];
         var length = 0;
         res.on('data', (chunk) => {
@@ -49,6 +50,14 @@ function extractExif(url, callback){
                 appendGPS(exifInfo);
                 callback(exifInfo);
         });
+    });*/
+
+    fs.readFile('./imgs/IMG_5136.JPG', (err, data) => {
+        var parser = exifparser.create(data);
+        var exifInfo = parser.parse();
+        console.log(`EXIF: ${JSON.stringify(exifInfo)}`);
+        appendGPS(exifInfo);
+        callback(exifInfo);
     });
 }
 
@@ -65,3 +74,10 @@ function appendGPS(exifInfo){
             exifInfo.location = { lat: latResult, lng: lonResult };
         }
 }
+
+function persistImageMetadata(metadata){
+    
+}
+
+
+    
