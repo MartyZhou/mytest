@@ -4,10 +4,10 @@ var fs = require('fs');
 var querystring = require('querystring');
 var exifparser = require('./node_modules/exif-parser');
 var mysql = require('./node_modules/mysql');
-    
-exports.save_pic_metadata = function(req, res, next) {
-    if(req.method === "POST"){
-        var body='';
+
+exports.save_pic_metadata = function (req, res, next) {
+    if (req.method === "POST") {
+        var body = '';
 
         req.on('data', (chunk) => {
             body += chunk;
@@ -17,18 +17,18 @@ exports.save_pic_metadata = function(req, res, next) {
         req.on('end', () => {
             var data = querystring.parse(body);
             var pic_url = data.pic_url;
-            
+
             extractExif(pic_url, (imgData) => {
-                persistImageMetadata({exif: imgData, url: pic_url});
+                persistImageMetadata({ exif: imgData, url: pic_url });
                 res.end(JSON.stringify(imgData));
             });
         });
-    }else{
+    } else {
         res.end("method not supported.");
     }
 }
 
-function extractExif(url, callback){
+function extractExif(url, callback) {
     /*https.get('https://0nnwaa.bn1303.livefilestore.com/y3mcfj_pf4G6erWYpiOaz-vAwe489-H9WxGEfOM1vAeZucJTLP4w89S05-PAN7oJd5dbOVOgctKYmnXeuyE0sorMqV72YVCPmdZu6rFK4Jd2KgHBhdCMkA82U9LwGD2v_-XH9W5_-ruprD-2PieTTNlpBML3-cmoIQ9D4Hh3NPCh58?width=495&amp;height=660&amp;cropmode=none', (res) => {
         var chunks = [];
         var length = 0;
@@ -62,25 +62,26 @@ function extractExif(url, callback){
     });
 }
 
-function appendGPS(exifInfo){
-        var lat = exifInfo.tags.GPSLatitude;
-        var lon = exifInfo.tags.GPSLongitude;
-        var latRef = exifInfo.tags.GPSLatitudeRef;
-        var lonRef = exifInfo.tags.GPSLongitudeRef;
+function appendGPS(exifInfo) {
+    var lat = exifInfo.tags.GPSLatitude;
+    var lon = exifInfo.tags.GPSLongitude;
+    var latRef = exifInfo.tags.GPSLatitudeRef;
+    var lonRef = exifInfo.tags.GPSLongitudeRef;
 
-        if (lat && lon && latRef && lonRef) {
-            var latResult = lat * (latRef == "N" ? 1 : -1);
-            var lonResult = lon * (lonRef == "W" ? -1 : 1);
+    if (lat && lon && latRef && lonRef) {
+        var latResult = lat * (latRef == "N" ? 1 : -1);
+        var lonResult = lon * (lonRef == "W" ? -1 : 1);
 
-            exifInfo.location = { lat: latResult, lng: lonResult };
-        }
+        exifInfo.location = { lat: latResult, lng: lonResult };
+    }
 }
 
-function persistImageMetadata(metadata){
+function persistImageMetadata(metadata) {
+    // save url, lat, lon, date, raw
     var connection = mysql.createConnection({
-        host     : 'example.org',
-        user     : 'bob',
-        password : 'secret',
+        host: 'example.org',
+        user: 'martyzho_wrdp1',
+        password: 'secret',
     });
 
     connection.connect((err) => {
@@ -93,4 +94,3 @@ function persistImageMetadata(metadata){
 }
 
 
-    
