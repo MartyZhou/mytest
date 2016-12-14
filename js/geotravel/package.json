@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "exif-js": "^2.1.1"
-  },
-  "devDependencies": {
+    "exif-js": "^2.1.1",
     "exif-parser": "^0.1.9"
   },
   "scripts": {
