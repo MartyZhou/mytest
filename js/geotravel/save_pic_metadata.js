@@ -3,6 +3,7 @@ var https = require('https');
 var fs = require('fs');
 var querystring = require('querystring');
 var exifparser = require('./node_modules/exif-parser');
+var mysql = require('./node_modules/mysql');
     
 exports.save_pic_metadata = function(req, res, next) {
     if(req.method === "POST"){
@@ -76,7 +77,19 @@ function appendGPS(exifInfo){
 }
 
 function persistImageMetadata(metadata){
-    
+    var connection = mysql.createConnection({
+        host     : 'example.org',
+        user     : 'bob',
+        password : 'secret',
+    });
+
+    connection.connect((err) => {
+        console.log(`Mysql connection error: ${JSON.stringify(err)}`);
+    });
+
+    connection.query('INSERT INTO posts SET ?', metadata, (err, result) => {
+        console.log(`Mysql insert error: ${JSON.stringify(err)}`);
+    });
 }
 
 
