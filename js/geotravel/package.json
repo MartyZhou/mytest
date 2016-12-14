@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "browser-sync start --server"
+    "start": "browser-sync start -c bs-config.js"
   },
   "author": "",
   "license": "ISC"
