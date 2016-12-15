@@ -61,7 +61,7 @@ function initMap() {
 }*/
 
 document.getElementById("objecturltest").onclick = function () {
-    if (clicktimes < photos.length) {
+    /* if (clicktimes < photos.length) {
         var http = new XMLHttpRequest();
         http.open("GET", photos[clicktimes].url, true);
         http.responseType = "blob";
@@ -96,4 +96,7 @@ document.getElementById("objecturltest").onclick = function () {
         http.send();
     }
     clicktimes++;
+    */
+
+
 }
