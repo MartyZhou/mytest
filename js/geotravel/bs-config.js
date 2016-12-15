@@ -11,7 +11,7 @@ module.exports = {
     "watchOptions": {},
     "server": true,
     "proxy": false,
-    "port": 3000,
+    "port": 3005,
     "middleware": [
         {
             route: "/save_pic_metadata",
