@@ -1,6 +1,7 @@
 using System.IO;
 using System.Text;
 using Xunit;
+using SmallFIX;
 
 namespace FIXClientSpec
 {
@@ -15,6 +16,15 @@ namespace FIXClientSpec
             FileStream fileStream = new FileStream("./Application/FIXClientSpec/TestData/simplemessage.txt", FileMode.Create);
             fileStream.Write(rawData, 0, rawData.Length);
             fileStream.Flush();
+        }
+
+        [Fact]
+        public void GetFIXTagFromMessage()
+        {
+            FIXMessage message = new FIXMessage();
+            message.BeginString = "FIX 4.2";
+            message.AvgPx = 12.21F;
+
         }
     }
 }
