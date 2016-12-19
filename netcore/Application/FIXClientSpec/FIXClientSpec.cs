@@ -2,6 +2,8 @@ using System.IO;
 using System.Text;
 using Xunit;
 using SmallFIX;
+using System;
+using System.Reflection;
 
 namespace FIXClientSpec
 {
@@ -25,6 +27,11 @@ namespace FIXClientSpec
             message.BeginString = "FIX 4.2";
             message.AvgPx = 12.21F;
 
+            Type type = message.GetType();
+            foreach(var pi in type.GetProperties())
+            {
+                
+            }
         }
     }
 }
