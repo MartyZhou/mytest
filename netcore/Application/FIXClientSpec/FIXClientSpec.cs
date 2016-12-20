@@ -24,6 +24,8 @@ namespace FIXClientSpec
         public void GetFIXTagFromMessage()
         {
             StringBuilder sb = new StringBuilder();
+            FileStream fileStream = new FileStream("./Application/FIXClientSpec/TestData/simplefix.txt", FileMode.Create);
+
             FIXMessage message = new FIXMessage();
             message.BeginString = "FIX 4.2";
             message.AvgPx = 12.21F;
@@ -36,10 +38,13 @@ namespace FIXClientSpec
                 if (attr != null)
                 {
                     sb.AppendFormat("{0:d}={1}\u0001", attr.Tag, value);
+                    var rawData = Encoding.UTF8.GetBytes(string.Format("{0:d}={1}\u0001", attr.Tag, value));
                     Console.WriteLine(attr.Tag);
+                    fileStream.Write(rawData, 0, rawData.Length);
                 }
             }
             Console.WriteLine(sb.ToString());
+            fileStream.Flush();
         }
     }
 }
