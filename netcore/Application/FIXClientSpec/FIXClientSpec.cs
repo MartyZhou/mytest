@@ -23,15 +23,23 @@ namespace FIXClientSpec
         [Fact]
         public void GetFIXTagFromMessage()
         {
+            StringBuilder sb = new StringBuilder();
             FIXMessage message = new FIXMessage();
             message.BeginString = "FIX 4.2";
             message.AvgPx = 12.21F;
 
             Type type = message.GetType();
-            foreach(var pi in type.GetProperties())
+            foreach (var pi in type.GetProperties())
             {
-                
+                var value = pi.GetValue(message);
+                var attr = pi.GetCustomAttribute<FIXTagAttribute>();
+                if (attr != null)
+                {
+                    sb.AppendFormat("{0:d}={1}\u0001", attr.Tag, value);
+                    Console.WriteLine(attr.Tag);
+                }
             }
+            Console.WriteLine(sb.ToString());
         }
     }
 }
