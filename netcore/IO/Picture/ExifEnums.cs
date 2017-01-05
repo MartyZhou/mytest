@@ -23,4 +23,10 @@ namespace Cluj.Exif
         SLONG = 9,
         SRATIONAL = 10
     }
+
+    public enum MetadataFormat
+    {
+        EXIF,
+        JFIF
+    }
 }

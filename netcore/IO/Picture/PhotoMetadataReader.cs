@@ -9,7 +9,7 @@ namespace Cluj.Photo
     public class PhotoMetadataReader
     {
         private readonly Stream stream;
-        private const short APP1_START_POSITION = 12;
+        private short APP1_START_POSITION = 12;
         private const short APP1_HEADER_LENGTH = 8;
 
         public PhotoMetadataReader(Stream stream)
@@ -18,6 +18,22 @@ namespace Cluj.Photo
         }
 
         public PhotoMetadata ParseMetadata()
+        {
+            var meta = new PhotoMetadata();
+            var format = ParseFormat();
+            if (format == MetadataFormat.EXIF)
+            {
+                APP1_START_POSITION = 12;
+            }
+            else if (format == MetadataFormat.JFIF)
+            {
+                APP1_START_POSITION = 30;
+            }
+
+            return ParseExif();
+        }
+
+        private PhotoMetadata ParseExif()
         {
             var meta = new PhotoMetadata();
 
@@ -50,6 +66,19 @@ namespace Cluj.Photo
             }
 
             return meta;
+        }
+
+        private MetadataFormat ParseFormat()
+        {
+            var format = MetadataFormat.EXIF;
+            stream.Position = 2;
+            var app1Maker = Convert2BytesToUShort(ReadBytes(2));
+            if (app1Maker == 0xffe0)
+            {
+                format = MetadataFormat.JFIF;
+            }
+
+            return format;
         }
 
         private byte[] ReadBytes(int length)
