@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using Xunit;
 using Cluj.Exif;
+using Cluj.Photo;
 
 namespace IO.Picture
 {
@@ -20,6 +21,17 @@ namespace IO.Picture
 9 = SLONG A 32-bit (4-byte) signed integer (2's complement notation).
 10 = SRATIONAL Two SLONGs. The first SLONG is the numerator and the second SLONG is the denominator.
         */
+
+        [Fact]
+        public void UseExifMetadataReader()
+        {
+            using (FileStream stream = new FileStream("./IO/Picture/p2.jpg", FileMode.Open))
+            {
+                var reader = new PhotoMetadataReader(stream);
+                var meta = reader.ParseMetadata();
+            }
+        }
+
         [Fact]
         public void GetExifMetadata()
         {
