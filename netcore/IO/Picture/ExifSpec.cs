@@ -6,6 +6,7 @@ using System.Text;
 using Xunit;
 using Cluj.Exif;
 using Cluj.Photo;
+using Newtonsoft.Json;
 
 namespace IO.Picture
 {
@@ -29,7 +30,7 @@ namespace IO.Picture
             {
                 var reader = new PhotoMetadataReader(stream);
                 var meta = reader.ParseMetadata();
-                
+
                 Assert.Equal<string>("GoPro", meta.Make);
                 Assert.Equal<string>("HERO5 Black", meta.Model);
                 Assert.Equal<char>('N', meta.GPS.LatRef);
@@ -44,7 +45,7 @@ namespace IO.Picture
             {
                 var reader = new PhotoMetadataReader(stream);
                 var meta = reader.ParseMetadata();
-                
+
                 Assert.Equal<string>("Apple", meta.Make);
                 Assert.Equal<string>("iPhone SE", meta.Model);
                 Assert.Equal<char>('N', meta.GPS.LatRef);
@@ -59,11 +60,61 @@ namespace IO.Picture
             {
                 var reader = new PhotoMetadataReader(stream);
                 var meta = reader.ParseMetadata();
-                
+
                 Assert.Equal<string>("NIKON CORPORATION", meta.Make);
                 Assert.Equal<string>("NIKON D40", meta.Model);
                 Assert.Equal<char>('N', meta.GPS.LatRef);
                 Assert.Equal<char>('E', meta.GPS.LonRef);
+            }
+        }
+
+        [Fact]
+        public void ReadPhotosFromDirectory()
+        {
+            // Use the following api to get address namespace
+            // https://maps.googleapis.com/maps/api/geocode/json?latlng=31.3105545,120.602219&key=AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE
+            try
+            {
+                var jpgFiles = Directory.EnumerateFiles("./", "*.jpg", SearchOption.AllDirectories);
+                var jpgFiles2 = Directory.EnumerateFiles("./", "*.JPG", SearchOption.AllDirectories);
+
+                foreach (var filePath in jpgFiles)
+                {
+                    var meta = ReadMeta(filePath);
+                    Console.WriteLine(meta.Make);
+                }
+
+                foreach (var filePath in jpgFiles2)
+                {
+                    var meta = ReadMeta(filePath);
+                    Console.WriteLine(meta.Make);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        [Fact]
+        public void ExtractAddress()
+        {
+            using (var stream = new FileStream("./IO/Picture/SampleAddress.json", FileMode.Open))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    var addressString = reader.ReadToEnd();
+                    var address = JsonConvert.DeserializeObject<GoogleAddressResult>(addressString);
+                }
+            }
+        }
+
+        private PhotoMetadata ReadMeta(string path)
+        {
+            using (FileStream stream = new FileStream(path, FileMode.Open))
+            {
+                var reader = new PhotoMetadataReader(stream);
+                return reader.ParseMetadata();
             }
         }
     }
