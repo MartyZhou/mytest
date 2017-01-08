@@ -23,6 +23,21 @@ namespace IO.Picture
         */
 
         [Fact]
+        public void UseExifMetadataReader3()
+        {
+            using (FileStream stream = new FileStream("./IO/Picture/p3.jpg", FileMode.Open))
+            {
+                var reader = new PhotoMetadataReader(stream);
+                var meta = reader.ParseMetadata();
+                
+                Assert.Equal<string>("GoPro", meta.Make);
+                Assert.Equal<string>("HERO5 Black", meta.Model);
+                Assert.Equal<char>('N', meta.GPS.LatRef);
+                Assert.Equal<char>('E', meta.GPS.LonRef);
+            }
+        }
+
+        [Fact]
         public void UseExifMetadataReader2()
         {
             using (FileStream stream = new FileStream("./IO/Picture/p2.jpg", FileMode.Open))
