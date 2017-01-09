@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Cluj.Exif;
@@ -14,8 +16,9 @@ namespace Cluj.Photo
         private static List<GoogleAddressResult> googleCache = new List<GoogleAddressResult>();
         private static List<GoogleAddressInfo> addressCache = new List<GoogleAddressInfo>();
         private static List<PhotoMetadata> photoMetaCache = new List<PhotoMetadata>();
-        private static int apiCount = 0;
+        private static ConcurrentQueue<PhotoMetadata> photoQueue = new ConcurrentQueue<PhotoMetadata>();
         private static Config config;
+        private static bool inProgress = true;
 
         public static async Task Process()
         {
@@ -23,6 +26,7 @@ namespace Cluj.Photo
             {
                 config = GetConfig();
                 var filePaths = Directory.EnumerateFiles(config.path, "*.jpg", SearchOption.AllDirectories);
+                var copyPhotosTask = Task.Run(() => CopyPhotosTask());
 
                 foreach (var filePath in filePaths)
                 {
@@ -36,8 +40,7 @@ namespace Cluj.Photo
                         }
                         else
                         {
-
-                            Console.WriteLine(string.Format("Load address for {0}", meta.FilePath));
+                            Console.WriteLine(string.Format("Loading address for {0}", meta.FilePath));
                             var foundAddress = false;
                             var address = await GetAddress(meta.GPS).ConfigureAwait(false);
                             googleCache.Add(address);
@@ -68,10 +71,92 @@ namespace Cluj.Photo
                         }
                     }
 
-                    photoMetaCache.Add(meta);
+                    photoQueue.Enqueue(meta);
                 }
 
-                CopyPhotos();
+                inProgress = false;
+                Task.WaitAll(copyPhotosTask);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(string.Format("Error: {0}", e.Message));
+            }
+        }
+
+        private static void CopyPhotosTask()
+        {
+            while (inProgress)
+            {
+                PhotoMetadata meta;
+                if (photoQueue.TryDequeue(out meta))
+                {
+                    CopyPhoto(meta);
+                }
+
+                Task.Delay(500);
+            }
+        }
+
+        private static void CopyPhoto(PhotoMetadata meta)
+        {
+            var country = string.Empty;
+            var level1 = string.Empty;
+            var city = string.Empty;
+
+            try
+            {
+                if (meta.Address.address_components != null)
+                {
+                    foreach (var addr in meta.Address.address_components)
+                    {
+                        if (addr.types[0] == "country" && addr.types[1] == "political")
+                        {
+                            country = addr.long_name;
+                        }
+                        else if (addr.types[0] == "administrative_area_level_1" && addr.types[1] == "political")
+                        {
+                            level1 = addr.long_name;
+                        }
+                        else if (addr.types[0] == "locality" && addr.types[1] == "political")
+                        {
+                            city = addr.long_name;
+                        }
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(country))
+                    {
+                        if (string.IsNullOrWhiteSpace(city))
+                        {
+                            meta.NewDirPath = string.Format(@"{0}/{1}", config.new_path, country);
+                            meta.NewFilePath = string.Format(@"{0}/{1}-{2}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country);
+                        }
+                        else
+                        {
+                            meta.NewDirPath = string.Format(@"{0}/{1}/{2}", config.new_path, country, city);
+                            meta.NewFilePath = string.Format(@"{0}/{1}-{2}-{3}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country, city);
+                        }
+
+                        if (!Directory.Exists(meta.NewDirPath))
+                        {
+                            Directory.CreateDirectory(meta.NewDirPath);
+                        }
+                    }
+                }
+                else
+                {
+                    meta.NewDirPath = string.Format(@"{0}/{1}", config.path, meta.TakenDate.ToString("yyyy-MM-dd"));
+                    meta.NewFilePath = string.Format(@"{0}/{1}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"));
+                }
+
+                if (!File.Exists(meta.NewFilePath))
+                {
+                    Console.WriteLine(string.Format("Copying file: {0}", meta.NewFilePath));
+                    File.Copy(meta.FilePath, meta.NewFilePath);
+                }
+                else
+                {
+                    Console.WriteLine(string.Format("File exists: {0}", meta.NewFilePath));
+                }
             }
             catch (Exception e)
             {
@@ -83,71 +168,10 @@ namespace Cluj.Photo
         {
             foreach (var meta in photoMetaCache)
             {
-                var country = string.Empty;
-                var level1 = string.Empty;
-                var city = string.Empty;
-
-                try
-                {
-                    if (meta.Address.address_components != null)
-                    {
-                        foreach (var addr in meta.Address.address_components)
-                        {
-                            if (addr.types[0] == "country" && addr.types[1] == "political")
-                            {
-                                country = addr.long_name;
-                            }
-                            else if (addr.types[0] == "administrative_area_level_1" && addr.types[1] == "political")
-                            {
-                                level1 = addr.long_name;
-                            }
-                            else if (addr.types[0] == "locality" && addr.types[1] == "political")
-                            {
-                                city = addr.long_name;
-                            }
-                        }
-
-                        if (!string.IsNullOrWhiteSpace(country))
-                        {
-                            if (string.IsNullOrWhiteSpace(city))
-                            {
-                                meta.NewDirPath = string.Format(@"{0}/{1}", config.new_path, country);
-                                meta.NewFilePath = string.Format(@"{0}/{1}-{2}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country);
-                            }
-                            else
-                            {
-                                meta.NewDirPath = string.Format(@"{0}/{1}/{2}", config.new_path, country, city);
-                                meta.NewFilePath = string.Format(@"{0}/{1}-{2}-{3}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country, city);
-                            }
-
-                            if (!Directory.Exists(meta.NewDirPath))
-                            {
-                                Directory.CreateDirectory(meta.NewDirPath);
-                            }
-
-                            if (!File.Exists(meta.NewFilePath))
-                            {
-                                File.Copy(meta.FilePath, meta.NewFilePath);
-                            }
-                            else
-                            {
-                                Console.WriteLine(string.Format("File exists: {0}", meta.NewFilePath));
-                            }
-                        }
-                    }
-                    else
-                    {
-                        meta.NewDirPath = string.Format(@"{0}/{1}", config.path, meta.TakenDate.ToString("yyyy-MM-dd"));
-                        meta.NewFilePath = string.Format(@"{0}/{1}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"));
-                    }
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(string.Format("Error: {0}", e.Message));
-                }
-
-                SaveMetadata();
+                CopyPhoto(meta);
             }
+
+            SaveMetadata();
         }
 
         private static void SaveMetadata()
@@ -169,18 +193,26 @@ namespace Cluj.Photo
 
         private static async Task<GoogleAddressResult> GetAddress(GPSInfo gps)
         {
-            using (var httpClient = new HttpClient())
+            try
             {
-                var lat = gps.LatRef == 'N' ? gps.Lat : -gps.Lat;
-                var lng = gps.LonRef == 'E' ? gps.Lon : -gps.Lon;
-                var url = string.Format("https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key={2}", lat, lng, API_KEY);
-                apiCount++;
-                var response = await httpClient.GetStreamAsync(url).ConfigureAwait(false);
-                using (var reader = new StreamReader(response))
+                using (var httpClient = new HttpClient())
                 {
-                    var addressString = reader.ReadToEnd();
-                    return JsonConvert.DeserializeObject<GoogleAddressResult>(addressString);
+                    var lat = gps.LatRef == 'N' ? gps.Lat : -gps.Lat;
+                    var lng = gps.LonRef == 'E' ? gps.Lon : -gps.Lon;
+                    var url = string.Format("https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key={2}", lat, lng, API_KEY);
+
+                    var response = await httpClient.GetStreamAsync(url).ConfigureAwait(false);
+                    using (var reader = new StreamReader(response))
+                    {
+                        var addressString = reader.ReadToEnd();
+                        return JsonConvert.DeserializeObject<GoogleAddressResult>(addressString);
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(string.Format("Failed to call google map API: {0}", e.Message));
+                return new GoogleAddressResult();
             }
         }
 
