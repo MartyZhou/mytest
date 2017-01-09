@@ -36,7 +36,7 @@ namespace Cluj.Photo
         private PhotoMetadata ParseExif()
         {
             var meta = new PhotoMetadata();
-
+            
             stream.Position = APP1_START_POSITION + APP1_HEADER_LENGTH;
 
             var count = Convert2BytesToShort(ReadBytes(2));
@@ -61,6 +61,7 @@ namespace Cluj.Photo
                 }
                 else if (tagId == ExifTagId.GPSOffset)
                 {
+                    meta.HasLocation = true;
                     meta.GPS = ReadGPSInfo(Convert4BytesToInt(valueBuffer));
                 }
             }

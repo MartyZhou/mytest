@@ -7,6 +7,7 @@ using Xunit;
 using Cluj.Exif;
 using Cluj.Photo;
 using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace IO.Picture
 {
@@ -69,22 +70,37 @@ namespace IO.Picture
         }
 
         [Fact]
+        public async void ReadAddressFromGoogleApi()
+        {
+            var lat = 39.950000;
+            var lng = 116.350000;
+            using (var httpClient = new HttpClient())
+            {
+                var url = string.Format("https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key=AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE", lat, lng);
+                var response = await httpClient.GetStreamAsync(url).ConfigureAwait(false);
+                using (var reader = new StreamReader(response))
+                {
+                    var addressString = reader.ReadToEnd();
+                    var address = JsonConvert.DeserializeObject<GoogleAddressResult>(addressString);
+                }
+            }
+        }
+
+        [Fact]
         public void ReadPhotosFromDirectory()
         {
             // Use the following api to get address namespace
             // https://maps.googleapis.com/maps/api/geocode/json?latlng=31.3105545,120.602219&key=AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE
+            // Consider the following in one area so that I don't call googleapis too often.
+            // Northwest 39.950000, 116.350000, Northeast 39.950000, 116.44000
+            // Southwest 39.900000, 116.350000, Southeast 39.900000, 116.44000
+            // |Latitude| = 0.05, |Longtitude| = 0.08
             try
             {
+                // In Windows, "*.jpg" returns files end with both .jpg and .JPG, but in Mac, it only returns .jpg.
                 var jpgFiles = Directory.EnumerateFiles("./", "*.jpg", SearchOption.AllDirectories);
-                var jpgFiles2 = Directory.EnumerateFiles("./", "*.JPG", SearchOption.AllDirectories);
 
                 foreach (var filePath in jpgFiles)
-                {
-                    var meta = ReadMeta(filePath);
-                    Console.WriteLine(meta.Make);
-                }
-
-                foreach (var filePath in jpgFiles2)
                 {
                     var meta = ReadMeta(filePath);
                     Console.WriteLine(meta.Make);
@@ -106,6 +122,23 @@ namespace IO.Picture
                     var addressString = reader.ReadToEnd();
                     var address = JsonConvert.DeserializeObject<GoogleAddressResult>(addressString);
                 }
+            }
+        }
+
+        [Fact]
+        public async void ProcessPhotoFiles()
+        {
+            await PhotoProcessor.Process().ConfigureAwait(false);
+            PhotoProcessor.CopyPhotos();
+        }
+
+        [Fact]
+        public void CheckDirectory()
+        {
+            var path = @"D:\photo\Photos\test3\sub1";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
             }
         }
 

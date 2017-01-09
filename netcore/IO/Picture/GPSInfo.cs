@@ -1,10 +1,10 @@
 namespace Cluj.Exif
 {
-    public class GPSInfo
+    public struct GPSInfo
     {
         public char LatRef { get; set; }
-        public float Lat { get; set; }
+        public double Lat { get; set; }
         public char LonRef { get; set; }
-        public float Lon { get; set; }
+        public double Lon { get; set; }
     }
 }
