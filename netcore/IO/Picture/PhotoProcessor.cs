@@ -11,17 +11,18 @@ namespace Cluj.Photo
     public static class PhotoProcessor
     {
         private const string API_KEY = "AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE";
-        private const string FolderPath = @"D:\photo\Photos\test";
-        private const string NewFolderPath = @"D:\photo\Photos\test2";
+        private static List<GoogleAddressResult> googleCache = new List<GoogleAddressResult>();
         private static List<GoogleAddressInfo> addressCache = new List<GoogleAddressInfo>();
         private static List<PhotoMetadata> photoMetaCache = new List<PhotoMetadata>();
         private static int apiCount = 0;
+        private static Config config;
 
         public static async Task Process()
         {
             try
             {
-                var filePaths = Directory.EnumerateFiles(FolderPath, "*.jpg", SearchOption.AllDirectories);
+                config = GetConfig();
+                var filePaths = Directory.EnumerateFiles(config.path, "*.jpg", SearchOption.AllDirectories);
 
                 foreach (var filePath in filePaths)
                 {
@@ -35,8 +36,11 @@ namespace Cluj.Photo
                         }
                         else
                         {
+
+                            Console.WriteLine(string.Format("Load address for {0}", meta.FilePath));
                             var foundAddress = false;
                             var address = await GetAddress(meta.GPS).ConfigureAwait(false);
+                            googleCache.Add(address);
                             foreach (var info in address.results)
                             {
                                 if (info.types.Length == 2 && info.types[0] == "locality" && info.types[1] == "political")
@@ -66,14 +70,16 @@ namespace Cluj.Photo
 
                     photoMetaCache.Add(meta);
                 }
+
+                CopyPhotos();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine(string.Format("Error: {0}", e.Message));
             }
         }
 
-        public static void CopyPhotos()
+        private static void CopyPhotos()
         {
             foreach (var meta in photoMetaCache)
             {
@@ -83,48 +89,71 @@ namespace Cluj.Photo
 
                 try
                 {
-                    foreach (var addr in meta.Address.address_components)
+                    if (meta.Address.address_components != null)
                     {
-                        if (addr.types[0] == "country" && addr.types[1] == "political")
+                        foreach (var addr in meta.Address.address_components)
                         {
-                            country = addr.long_name;
+                            if (addr.types[0] == "country" && addr.types[1] == "political")
+                            {
+                                country = addr.long_name;
+                            }
+                            else if (addr.types[0] == "administrative_area_level_1" && addr.types[1] == "political")
+                            {
+                                level1 = addr.long_name;
+                            }
+                            else if (addr.types[0] == "locality" && addr.types[1] == "political")
+                            {
+                                city = addr.long_name;
+                            }
                         }
-                        else if (addr.types[0] == "administrative_area_level_1" && addr.types[1] == "political")
+
+                        if (!string.IsNullOrWhiteSpace(country))
                         {
-                            level1 = addr.long_name;
-                        }
-                        else if (addr.types[0] == "locality" && addr.types[1] == "political")
-                        {
-                            city = addr.long_name;
+                            if (string.IsNullOrWhiteSpace(city))
+                            {
+                                meta.NewDirPath = string.Format(@"{0}/{1}", config.new_path, country);
+                                meta.NewFilePath = string.Format(@"{0}/{1}-{2}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country);
+                            }
+                            else
+                            {
+                                meta.NewDirPath = string.Format(@"{0}/{1}/{2}", config.new_path, country, city);
+                                meta.NewFilePath = string.Format(@"{0}/{1}-{2}-{3}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country, city);
+                            }
+
+                            if (!Directory.Exists(meta.NewDirPath))
+                            {
+                                Directory.CreateDirectory(meta.NewDirPath);
+                            }
+
+                            if (!File.Exists(meta.NewFilePath))
+                            {
+                                File.Copy(meta.FilePath, meta.NewFilePath);
+                            }
+                            else
+                            {
+                                Console.WriteLine(string.Format("File exists: {0}", meta.NewFilePath));
+                            }
                         }
                     }
-
-                    if (!string.IsNullOrWhiteSpace(country))
+                    else
                     {
-                        if (string.IsNullOrWhiteSpace(city))
-                        {
-                            meta.NewDirPath = string.Format(@"{0}\{1}", NewFolderPath, country);
-                            meta.NewFilePath = string.Format(@"{0}\{1}-{2}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country);
-                        }
-                        else
-                        {
-                            meta.NewDirPath = string.Format(@"{0}\{1}\{2}", NewFolderPath, country, city);
-                            meta.NewFilePath = string.Format(@"{0}\{1}-{2}-{3}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country, city);
-                        }
-
-                        if (!Directory.Exists(meta.NewDirPath))
-                        {
-                            Directory.CreateDirectory(meta.NewDirPath);
-                        }
-                        
-                        File.Copy(meta.FilePath, meta.NewFilePath);
+                        meta.NewDirPath = string.Format(@"{0}/{1}", config.path, meta.TakenDate.ToString("yyyy-MM-dd"));
+                        meta.NewFilePath = string.Format(@"{0}/{1}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"));
                     }
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine(string.Format("Error: {0}", e.Message));
                 }
+
+                SaveMetadata();
             }
+        }
+
+        private static void SaveMetadata()
+        {
+            File.WriteAllText("./IO/Picture/metadata.json", JsonConvert.SerializeObject(photoMetaCache));
+            File.WriteAllText("./IO/Picture/metadata_google.json", JsonConvert.SerializeObject(googleCache));
         }
 
         private static PhotoMetadata ReadMeta(string path)
@@ -174,6 +203,17 @@ namespace Cluj.Photo
             }
 
             return result;
+        }
+
+        private static Config GetConfig()
+        {
+            using (var stream = new FileStream("./config.json", FileMode.Open))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    return JsonConvert.DeserializeObject<Config>(reader.ReadToEnd());
+                }
+            }
         }
     }
 }

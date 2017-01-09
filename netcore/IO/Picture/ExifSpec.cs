@@ -129,13 +129,12 @@ namespace IO.Picture
         public async void ProcessPhotoFiles()
         {
             await PhotoProcessor.Process().ConfigureAwait(false);
-            PhotoProcessor.CopyPhotos();
         }
 
         [Fact]
         public void CheckDirectory()
         {
-            var path = @"D:\photo\Photos\test3\sub1";
+            var path = @"./IO/Picture/test3/sub1";
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);

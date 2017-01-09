@@ -2,7 +2,8 @@
   "name": "NetCoreTesting",
   "version": "1.0.0-*",
   "buildOptions": {
-    "debugType": "portable"
+    "debugType": "portable",
+    "emitEntryPoint": true
   },
   "dependencies": {
     "System.Xml.XmlDocument": "4.0.1",

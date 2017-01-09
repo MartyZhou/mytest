@@ -54,4 +54,9 @@ namespace Cluj.Photo
     {
         public GoogleAddressInfo[] results { get; set; }
     }
+
+    public struct Config{
+        public string path { get; set; }
+        public string new_path { get; set; }
+    }
 }
