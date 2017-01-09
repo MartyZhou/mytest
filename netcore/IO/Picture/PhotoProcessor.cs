@@ -115,8 +115,9 @@ namespace Cluj.Photo
                         if (!Directory.Exists(meta.NewDirPath))
                         {
                             Directory.CreateDirectory(meta.NewDirPath);
-                            File.Copy(meta.FilePath, meta.NewFilePath);
                         }
+                        
+                        File.Copy(meta.FilePath, meta.NewFilePath);
                     }
                 }
                 catch (Exception e)
