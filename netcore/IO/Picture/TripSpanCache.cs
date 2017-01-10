@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Cluj.Photo
@@ -5,6 +6,8 @@ namespace Cluj.Photo
     public static class TripSpanCache
     {
         private static Dictionary<string, TripDuration> cache = new Dictionary<string, TripDuration>();
+
+        public static bool LocateSameDay { get; set; }
 
         public static void ExpandDuration(PhotoMetadata meta)
         {
@@ -25,20 +28,46 @@ namespace Cluj.Photo
         {
             var result = false;
             address = new GoogleAddressInfo();
+            var foundAddress = false;
+            var levelLimit = 3;
+            var currentLevel = 0;
 
             foreach (var duration in cache.Values)
             {
                 foreach (var span in duration.Spans)
                 {
-                    result = meta.TakenDate >= span.StartTime && meta.TakenDate <= span.EndTime;
+                    if (LocateSameDay)
+                    {
+                        result = meta.TakenDate.Date >= span.StartTime.Date && meta.TakenDate.Date <= span.EndTime.Date;
+                    }
+                    else
+                    {
+                        result = meta.TakenDate >= span.StartTime && meta.TakenDate <= span.EndTime;
+                    }
 
                     if (result)
                     {
-                        address = duration.Location;
-                        break;
+                        foundAddress = true;
+                        currentLevel = duration.Location.address_components.Length;
+
+                        if (string.IsNullOrWhiteSpace(address.place_id))
+                        {
+                            address = duration.Location;
+                        }
+                        else if (address.address_components.Length < currentLevel)
+                        {
+                            address = duration.Location;
+                        }
+
+                        if (currentLevel >= levelLimit)
+                        {
+                            break;
+                        }
                     }
                 }
             }
+
+            result = foundAddress;
 
             return result;
         }
@@ -53,6 +82,33 @@ namespace Cluj.Photo
             span.EndTime = meta.TakenDate;
 
             duration.Spans[0] = span;
+
+            var addressComponents = meta.Address.address_components;
+            if (addressComponents != null && addressComponents.Length > 1)
+            {
+                duration.Parents = new TripDuration[addressComponents.Length - 1];
+
+                for (uint i = 1; i < addressComponents.Length; i++)
+                {
+                    var placeId = string.Format("{0}_{1}", meta.Address.place_id, addressComponents[i].types[0]);
+                    if (!cache.ContainsKey(placeId))
+                    {
+                        var address = new GoogleAddressInfo();
+                        address.place_id = placeId;
+                        address.address_components = new GoogleAddressType[addressComponents.Length - i];
+                        Array.Copy(addressComponents, 1, address.address_components, 0, address.address_components.Length);
+
+                        var higherDuration = new TripDuration();
+                        higherDuration.Location = address;
+                        higherDuration.Spans = new TripSpan[1];
+                        higherDuration.Spans[0] = span;
+
+                        cache.Add(placeId, higherDuration);
+                    }
+
+                    duration.Parents[i - 1] = cache[placeId];
+                }
+            }
 
             return duration;
         }
@@ -69,6 +125,19 @@ namespace Cluj.Photo
                 if (meta.TakenDate < duration.Spans[i].StartTime)
                 {
                     duration.Spans[i].StartTime = meta.TakenDate;
+                }
+
+                for (uint j = 0; j < duration.Parents.Length; j++)
+                {
+                    if (meta.TakenDate > duration.Parents[j].Spans[0].EndTime)
+                    {
+                        duration.Parents[j].Spans[0].EndTime = meta.TakenDate;
+                    }
+
+                    if (meta.TakenDate < duration.Parents[j].Spans[0].StartTime)
+                    {
+                        duration.Parents[j].Spans[0].StartTime = meta.TakenDate;
+                    }
                 }
             }
         }

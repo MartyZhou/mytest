@@ -25,6 +25,7 @@ namespace Cluj.Photo
             try
             {
                 config = GetConfig();
+                TripSpanCache.LocateSameDay = config.locate_same_day;
                 var filePaths = Directory.EnumerateFiles(config.path, "*.jpg", SearchOption.AllDirectories);
                 var copyPhotosTask = Task.Run(() => CopyPhotosTask());
                 var copyPhotosWithoutGPSTask = Task.Run(() => CopyPhotosWithoutGPSTask());

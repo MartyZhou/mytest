@@ -66,11 +66,13 @@ namespace Cluj.Photo
     {
         public GoogleAddressInfo Location { get; set; }
         public TripSpan[] Spans { get; set; }
+        public TripDuration[] Parents { get; set; }
     }
 
     public struct Config
     {
         public string path { get; set; }
         public string new_path { get; set; }
+        public bool locate_same_day { get; set; }
     }
 }

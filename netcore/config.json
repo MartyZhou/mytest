@@ -1,4 +1,5 @@
 {
     "path": "D:/photo/TestPhoto",
-    "new_path": "D:/photo/TestPhotoNew"
+    "new_path": "D:/photo/TestPhotoNew",
+    "locate_same_day": true
 }
