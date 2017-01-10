@@ -52,8 +52,8 @@ namespace Cluj.Photo
                 inProgress = false;
                 Task.WaitAll(copyPhotosTask);
 
-                photoWithGPSInProgress = false;
-                Task.WaitAll(copyPhotosWithoutGPSTask);
+                //photoWithGPSInProgress = false;
+                //Task.WaitAll(copyPhotosWithoutGPSTask);
                 CopyPhotosWithoutGPS();
 
                 // Save metadata as log
@@ -62,6 +62,7 @@ namespace Cluj.Photo
             catch (Exception e)
             {
                 Console.WriteLine(string.Format("Error: {0}", e.Message));
+                throw;
             }
         }
 

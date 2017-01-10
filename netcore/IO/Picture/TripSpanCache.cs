@@ -127,16 +127,19 @@ namespace Cluj.Photo
                     duration.Spans[i].StartTime = meta.TakenDate;
                 }
 
-                for (uint j = 0; j < duration.Parents.Length; j++)
+                if (duration.Parents != null)
                 {
-                    if (meta.TakenDate > duration.Parents[j].Spans[0].EndTime)
+                    for (uint j = 0; j < duration.Parents.Length; j++)
                     {
-                        duration.Parents[j].Spans[0].EndTime = meta.TakenDate;
-                    }
+                        if (meta.TakenDate > duration.Parents[j].Spans[0].EndTime)
+                        {
+                            duration.Parents[j].Spans[0].EndTime = meta.TakenDate;
+                        }
 
-                    if (meta.TakenDate < duration.Parents[j].Spans[0].StartTime)
-                    {
-                        duration.Parents[j].Spans[0].StartTime = meta.TakenDate;
+                        if (meta.TakenDate < duration.Parents[j].Spans[0].StartTime)
+                        {
+                            duration.Parents[j].Spans[0].StartTime = meta.TakenDate;
+                        }
                     }
                 }
             }
