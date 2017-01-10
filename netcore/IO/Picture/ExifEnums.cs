@@ -29,4 +29,10 @@ namespace Cluj.Exif
         EXIF,
         JFIF
     }
+
+    public enum Endian
+    {
+        Big,
+        Little
+    }
 }

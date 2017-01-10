@@ -11,6 +11,7 @@ namespace Cluj.Photo
         private readonly Stream stream;
         private short APP1_START_POSITION = 12;
         private const short APP1_HEADER_LENGTH = 8;
+        private Endian endian = Endian.Little;
 
         public PhotoMetadataReader(Stream stream)
         {
@@ -19,8 +20,8 @@ namespace Cluj.Photo
 
         public PhotoMetadata ParseMetadata()
         {
-            var meta = new PhotoMetadata();
             var format = ParseFormat();
+
             if (format == MetadataFormat.EXIF)
             {
                 APP1_START_POSITION = 12;
@@ -29,6 +30,8 @@ namespace Cluj.Photo
             {
                 APP1_START_POSITION = 30;
             }
+
+            endian = ParseEndian();
 
             return ParseExif();
         }
@@ -81,13 +84,34 @@ namespace Cluj.Photo
         {
             var format = MetadataFormat.EXIF;
             stream.Position = 2;
-            var app1Maker = Convert2BytesToUShort(ReadBytes(2));
-            if (app1Maker == 0xffe0)
+
+            // DEBUG
+            /* stream.Position = 0;
+            var testBytes = ReadBytes(1024);
+            stream.Position = 2; */
+            // DEBUG
+
+            var app1Maker = BitConverter.ToUInt16(ReadBytes(2), 0);
+            if (app1Maker == 0xe0ff)
             {
                 format = MetadataFormat.JFIF;
             }
 
             return format;
+        }
+
+        private Endian ParseEndian()
+        {
+            var endian = Endian.Little;
+
+            stream.Position = APP1_START_POSITION;
+            var endianValue = BitConverter.ToUInt16(ReadBytes(2), 0);
+            if (endianValue == 0x4D4D)
+            {
+                endian = Endian.Big;
+            }
+
+            return endian;
         }
 
         private byte[] ReadBytes(int length)
@@ -131,7 +155,7 @@ namespace Cluj.Photo
 
         private int Convert4BytesToInt(byte[] raw)
         {
-            if (BitConverter.IsLittleEndian)
+            if (endian == Endian.Big)
             {
                 Array.Reverse(raw);
             }
@@ -140,7 +164,7 @@ namespace Cluj.Photo
 
         private short Convert2BytesToShort(byte[] raw)
         {
-            if (BitConverter.IsLittleEndian)
+            if (endian == Endian.Big)
             {
                 Array.Reverse(raw);
             }
@@ -149,7 +173,7 @@ namespace Cluj.Photo
 
         private ushort Convert2BytesToUShort(byte[] raw)
         {
-            if (BitConverter.IsLittleEndian)
+            if (endian == Endian.Big)
             {
                 Array.Reverse(raw);
             }

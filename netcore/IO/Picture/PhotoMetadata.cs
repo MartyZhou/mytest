@@ -5,6 +5,7 @@ namespace Cluj.Photo
 {
     public class PhotoMetadata
     {
+        public Endian Endian { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public DateTime TakenDate { get; set; }
