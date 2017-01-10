@@ -14,9 +14,11 @@ namespace Cluj.Photo
         private const string API_KEY = "AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE";
         private static List<GoogleAddressResult> googleCache = new List<GoogleAddressResult>();
         private static List<GoogleAddressInfo> addressCache = new List<GoogleAddressInfo>();
-        private static ConcurrentQueue<PhotoMetadata> photoQueue = new ConcurrentQueue<PhotoMetadata>();
+        private static ConcurrentQueue<PhotoMetadata> photoQueueWithGPS = new ConcurrentQueue<PhotoMetadata>();
+        private static ConcurrentQueue<PhotoMetadata> photoQueueWithoutGPS = new ConcurrentQueue<PhotoMetadata>();
         private static Config config;
         private static bool inProgress = true;
+        private static bool photoWithGPSInProgress = true;
 
         public static async Task Process()
         {
@@ -25,6 +27,7 @@ namespace Cluj.Photo
                 config = GetConfig();
                 var filePaths = Directory.EnumerateFiles(config.path, "*.jpg", SearchOption.AllDirectories);
                 var copyPhotosTask = Task.Run(() => CopyPhotosTask());
+                var copyPhotosWithoutGPSTask = Task.Run(() => CopyPhotosWithoutGPSTask());
 
                 foreach (var filePath in filePaths)
                 {
@@ -32,13 +35,25 @@ namespace Cluj.Photo
                     if (meta != null)
                     {
                         await GenerateAddress(meta).ConfigureAwait(false);
-                        GenerateNewFilePath(meta);
-                        photoQueue.Enqueue(meta);
+                        if (meta.HasLocation)
+                        {
+                            GenerateNewFilePath(meta);
+                            TripSpanCache.ExpandDuration(meta);
+                            photoQueueWithGPS.Enqueue(meta);
+                        }
+                        else
+                        {
+                            photoQueueWithoutGPS.Enqueue(meta);
+                        }
                     }
                 }
 
                 inProgress = false;
                 Task.WaitAll(copyPhotosTask);
+
+                photoWithGPSInProgress = false;
+                Task.WaitAll(copyPhotosWithoutGPSTask);
+                CopyPhotosWithoutGPS();
 
                 // Save metadata as log
                 SaveMetadata();
@@ -54,12 +69,52 @@ namespace Cluj.Photo
             while (inProgress)
             {
                 PhotoMetadata meta;
-                if (photoQueue.TryDequeue(out meta))
+                if (photoQueueWithGPS.TryDequeue(out meta))
                 {
                     CopyPhoto(meta);
                 }
 
                 Task.Delay(500);
+            }
+        }
+
+        private static void CopyPhotosWithoutGPSTask()
+        {
+            while (photoWithGPSInProgress)
+            {
+                PhotoMetadata meta;
+                if (photoQueueWithoutGPS.TryPeek(out meta))
+                {
+                    GoogleAddressInfo address;
+                    if (TripSpanCache.TryGetAddress(meta, out address))
+                    {
+                        meta.Address = address;
+                        GenerateNewFilePath(meta);
+                        CopyPhoto(meta);
+                        photoQueueWithoutGPS.TryDequeue(out meta);
+                    }
+                }
+
+                Task.Delay(500);
+            }
+        }
+
+        private static void CopyPhotosWithoutGPS()
+        {
+            while (photoQueueWithoutGPS.Count > 0)
+            {
+                PhotoMetadata meta;
+                if (photoQueueWithoutGPS.TryDequeue(out meta))
+                {
+                    GoogleAddressInfo address;
+                    if (TripSpanCache.TryGetAddress(meta, out address))
+                    {
+                        meta.Address = address;
+                    }
+
+                    GenerateNewFilePath(meta);
+                    CopyPhoto(meta);
+                }
             }
         }
 
@@ -179,20 +234,36 @@ namespace Cluj.Photo
                 {
                     if (string.IsNullOrWhiteSpace(city))
                     {
-                        meta.NewDirPath = string.Format(@"{0}/{1}", config.new_path, country);
-                        meta.NewFilePath = string.Format(@"{0}/{1}-{2}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country);
+                        if (meta.HasLocation)
+                        {
+                            meta.NewDirPath = string.Format(@"{0}/{1}", config.new_path, country);
+                            meta.NewFilePath = string.Format(@"{0}/{1}-{2}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd HH-mm-ss"), country);
+                        }
+                        else
+                        {
+                            meta.NewDirPath = string.Format(@"{0}/{1}/{2}", config.new_path, country, meta.Model);
+                            meta.NewFilePath = string.Format(@"{0}/{1}-{2}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd HH-mm-ss"), country);
+                        }
                     }
                     else
                     {
-                        meta.NewDirPath = string.Format(@"{0}/{1}/{2}", config.new_path, country, city);
-                        meta.NewFilePath = string.Format(@"{0}/{1}-{2}-{3}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"), country, city);
+                        if (meta.HasLocation)
+                        {
+                            meta.NewDirPath = string.Format(@"{0}/{1}/{2}", config.new_path, country, city);
+                            meta.NewFilePath = string.Format(@"{0}/{1}-{2}-{3}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd HH-mm-ss"), country, city);
+                        }
+                        else
+                        {
+                            meta.NewDirPath = string.Format(@"{0}/{1}/{2}/{3}", config.new_path, country, city, meta.Model);
+                            meta.NewFilePath = string.Format(@"{0}/{1}-{2}-{3}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd HH-mm-ss"), country, city);
+                        }
                     }
                 }
             }
             else
             {
                 meta.NewDirPath = string.Format(@"{0}/{1}", config.new_path, meta.TakenDate.ToString("yyyy-MM-dd"));
-                meta.NewFilePath = string.Format(@"{0}/{1}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"));
+                meta.NewFilePath = string.Format(@"{0}/{1}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd HH-mm-ss"));
             }
         }
 

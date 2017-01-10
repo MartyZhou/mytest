@@ -157,6 +157,13 @@ namespace IO.Picture
             }
         }
 
+        [Fact]
+        public void FormatDateTime()
+        {
+            var date = DateTime.Now;
+            var dateString = date.ToString("yyyy-MM-dd HH-mm-ss");
+        }
+
         private PhotoMetadata ReadMeta(string path)
         {
             using (FileStream stream = new FileStream(path, FileMode.Open))

@@ -56,7 +56,20 @@ namespace Cluj.Photo
         public GoogleAddressInfo[] results { get; set; }
     }
 
-    public struct Config{
+    public struct TripSpan
+    {
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+    }
+
+    public struct TripDuration
+    {
+        public GoogleAddressInfo Location { get; set; }
+        public TripSpan[] Spans { get; set; }
+    }
+
+    public struct Config
+    {
         public string path { get; set; }
         public string new_path { get; set; }
     }

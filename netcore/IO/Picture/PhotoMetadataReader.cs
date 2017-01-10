@@ -66,8 +66,12 @@ namespace Cluj.Photo
                     }
                     else if (tagId == ExifTagId.GPSOffset)
                     {
-                        meta.HasLocation = true;
                         meta.GPS = ReadGPSInfo(Convert4BytesToInt(valueBuffer));
+                        
+                        if (meta.GPS.LatRef == 'N' || meta.GPS.LatRef == 'S')
+                        {
+                            meta.HasLocation = true;
+                        }
                     }
                 }
 
