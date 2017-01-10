@@ -29,10 +29,12 @@ namespace Cluj.Photo
                 foreach (var filePath in filePaths)
                 {
                     var meta = ReadMeta(filePath);
-                    
-                    await GenerateAddress(meta).ConfigureAwait(false);
-                    GenerateNewFilePath(meta);
-                    photoQueue.Enqueue(meta);
+                    if (meta != null)
+                    {
+                        await GenerateAddress(meta).ConfigureAwait(false);
+                        GenerateNewFilePath(meta);
+                        photoQueue.Enqueue(meta);
+                    }
                 }
 
                 inProgress = false;
@@ -82,7 +84,7 @@ namespace Cluj.Photo
             }
             catch (Exception e)
             {
-                Console.WriteLine(string.Format("Error: {0}", e.Message));
+                Console.WriteLine(string.Format("Error copying photo: {0}", e.Message));
             }
         }
 
@@ -97,7 +99,11 @@ namespace Cluj.Photo
             {
                 var reader = new PhotoMetadataReader(stream);
                 var result = reader.ParseMetadata();
-                result.FilePath = stream.Name;
+                if (result != null)
+                {
+                    result.FilePath = stream.Name;
+                }
+
                 return result;
             }
         }
@@ -185,7 +191,7 @@ namespace Cluj.Photo
             }
             else
             {
-                meta.NewDirPath = string.Format(@"{0}/{1}", config.path, meta.TakenDate.ToString("yyyy-MM-dd"));
+                meta.NewDirPath = string.Format(@"{0}/{1}", config.new_path, meta.TakenDate.ToString("yyyy-MM-dd"));
                 meta.NewFilePath = string.Format(@"{0}/{1}.jpg", meta.NewDirPath, meta.TakenDate.ToString("yyyy-MM-dd hh-mm-ss"));
             }
         }

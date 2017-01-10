@@ -35,38 +35,46 @@ namespace Cluj.Photo
 
         private PhotoMetadata ParseExif()
         {
-            var meta = new PhotoMetadata();
-            
-            stream.Position = APP1_START_POSITION + APP1_HEADER_LENGTH;
-
-            var count = Convert2BytesToShort(ReadBytes(2));
-            for (ushort i = 0; i < count; i++)
+            try
             {
-                var tagId = Convert2BytesToTag(ReadBytes(2));
-                var tagType = ParseTagType(ReadBytes(2));
-                var length = Convert4BytesToInt(ReadBytes(4));
-                var valueBuffer = ReadBytes(4);
+                var meta = new PhotoMetadata();
 
-                if (tagId == ExifTagId.Make)
+                stream.Position = APP1_START_POSITION + APP1_HEADER_LENGTH;
+
+                var count = Convert2BytesToShort(ReadBytes(2));
+                for (ushort i = 0; i < count; i++)
                 {
-                    meta.Make = GetStringRefValue(valueBuffer, length);
+                    var tagId = Convert2BytesToTag(ReadBytes(2));
+                    var tagType = ParseTagType(ReadBytes(2));
+                    var length = Convert4BytesToInt(ReadBytes(4));
+                    var valueBuffer = ReadBytes(4);
+
+                    if (tagId == ExifTagId.Make)
+                    {
+                        meta.Make = GetStringRefValue(valueBuffer, length);
+                    }
+                    else if (tagId == ExifTagId.Model)
+                    {
+                        meta.Model = GetStringRefValue(valueBuffer, length);
+                    }
+                    else if (tagId == ExifTagId.Date)
+                    {
+                        meta.TakenDate = GetDateRefValue(valueBuffer, length);
+                    }
+                    else if (tagId == ExifTagId.GPSOffset)
+                    {
+                        meta.HasLocation = true;
+                        meta.GPS = ReadGPSInfo(Convert4BytesToInt(valueBuffer));
+                    }
                 }
-                else if (tagId == ExifTagId.Model)
-                {
-                    meta.Model = GetStringRefValue(valueBuffer, length);
-                }
-                else if (tagId == ExifTagId.Date)
-                {
-                    meta.TakenDate = GetDateRefValue(valueBuffer, length);
-                }
-                else if (tagId == ExifTagId.GPSOffset)
-                {
-                    meta.HasLocation = true;
-                    meta.GPS = ReadGPSInfo(Convert4BytesToInt(valueBuffer));
-                }
+
+                return meta;
             }
-
-            return meta;
+            catch (Exception e)
+            {
+                Console.WriteLine(string.Format("Error parsing EXIF: {0}", e.Message));
+                return null;
+            }
         }
 
         private MetadataFormat ParseFormat()
@@ -180,38 +188,46 @@ namespace Cluj.Photo
 
         private GPSInfo ReadGPSInfo(long offset)
         {
-            var gps = new GPSInfo();
-            var position = stream.Position;
-            stream.Position = offset + APP1_START_POSITION;
-            var count = Convert2BytesToUShort(ReadBytes(2));
-
-            for (ushort i = 0; i < count; i++)
+            try
             {
-                var tagId = Convert2BytesToTag(ReadBytes(2));
-                var tagType = ParseTagType(ReadBytes(2));
-                var length = Convert4BytesToInt(ReadBytes(4));
-                var valueBuffer = ReadBytes(4);
+                var gps = new GPSInfo();
+                var position = stream.Position;
+                stream.Position = offset + APP1_START_POSITION;
+                var count = Convert2BytesToUShort(ReadBytes(2));
 
-                if (tagId == ExifTagId.GPSLatRef)
+                for (ushort i = 0; i < count; i++)
                 {
-                    gps.LatRef = Convert.ToChar(valueBuffer[0]);
+                    var tagId = Convert2BytesToTag(ReadBytes(2));
+                    var tagType = ParseTagType(ReadBytes(2));
+                    var length = Convert4BytesToInt(ReadBytes(4));
+                    var valueBuffer = ReadBytes(4);
+
+                    if (tagId == ExifTagId.GPSLatRef)
+                    {
+                        gps.LatRef = Convert.ToChar(valueBuffer[0]);
+                    }
+                    else if (tagId == ExifTagId.GPSLonRef)
+                    {
+                        gps.LonRef = Convert.ToChar(valueBuffer[0]);
+                    }
+                    else if (tagId == ExifTagId.GPSLat)
+                    {
+                        gps.Lat = ReadGPSValue(Convert4BytesToInt(valueBuffer));
+                    }
+                    else if (tagId == ExifTagId.GPSLon)
+                    {
+                        gps.Lon = ReadGPSValue(Convert4BytesToInt(valueBuffer));
+                    }
                 }
-                else if (tagId == ExifTagId.GPSLonRef)
-                {
-                    gps.LonRef = Convert.ToChar(valueBuffer[0]);
-                }
-                else if (tagId == ExifTagId.GPSLat)
-                {
-                    gps.Lat = ReadGPSValue(Convert4BytesToInt(valueBuffer));
-                }
-                else if (tagId == ExifTagId.GPSLon)
-                {
-                    gps.Lon = ReadGPSValue(Convert4BytesToInt(valueBuffer));
-                }
+
+                stream.Position = position;
+                return gps;
             }
-
-            stream.Position = position;
-            return gps;
+            catch (Exception e)
+            {
+                Console.WriteLine(string.Format("Error reading GPS: {0}", e.Message));
+                return new GPSInfo();
+            }
         }
 
         private float ReadGPSValue(long offset)
