@@ -11,6 +11,7 @@ using System.Net.Http;
 
 namespace IO.Picture
 {
+    // dotnet publish -f netcoreapp1.0 -c release
     public class ExifSpec
     {
         /*

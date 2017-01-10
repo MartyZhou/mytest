@@ -1,1 +1,2520 @@
-[{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-04T10:51:39","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.636669158935547,"LonRef":"E","Lon":110.94528198242188},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":6.08418665293664E-310},"southwest":{"lat":36.7360204,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0112.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 10-51-39-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-04T13:33:18","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.647502899169922,"LonRef":"E","Lon":110.78888702392578},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":3.45845952088873E-323},"southwest":{"lat":36.7360204,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0185.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 01-33-18-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-04T16:45:24","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.646114349365234,"LonRef":"E","Lon":110.80472564697266},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":6.08418665293664E-310},"southwest":{"lat":36.7360204,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0460.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 04-45-24-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-04T17:55:33","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.647224426269531,"LonRef":"E","Lon":110.788330078125},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":6.08418665293664E-310},"southwest":{"lat":36.7360204,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0487.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 05-55-33-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-05T08:50:39","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.628330230712891,"LonRef":"E","Lon":110.77361297607422},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":6.08418665293664E-310},"southwest":{"lat":36.7360204,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0534.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 08-50-39-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-05T09:24:22","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.629718780517578,"LonRef":"E","Lon":110.77139282226563},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":3.45845952088873E-323},"southwest":{"lat":36.7360204,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0603.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 09-24-22-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-05T10:21:24","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.631385803222656,"LonRef":"E","Lon":110.77222442626953},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":6.0841867059573928E-310},"southwest":{"lat":36.7360204,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0656.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 10-21-24-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-05T11:09:07","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.631111145019531,"LonRef":"E","Lon":110.77000427246094},"Address":{"address_components":[{"long_name":"Lvliang","short_name":"Lvliang","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Lvliang, Shanxi, China","place_id":"ChIJs5laoeiCdDYRsN40pYNKnn8","geometry":{"bounds":{"northeast":{"lat":38.7300724,"lng":6.08418665293664E-310},"southwest":{"lat":36.7360204,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0762.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 11-09-07-China-Lvliang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-06T10:59:05","HasLocation":true,"GPS":{"LatRef":"N","Lat":36.147502899169922,"LonRef":"E","Lon":110.44416809082031},"Address":{"address_components":[{"long_name":"Yan'an","short_name":"Yan'an","types":["locality","political"]},{"long_name":"Shaanxi","short_name":"Shaanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Yan'an, Shaanxi, China","place_id":"ChIJR7mHzQIkbjYRU64TZqYwUZI","geometry":{"bounds":{"northeast":{"lat":37.4984813,"lng":6.0841867059573928E-310},"southwest":{"lat":35.3446183,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0933.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Yan'an","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Yan'an/2016-10-06 10-59-05-China-Yan'an.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-07T20:03:44","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.203334808349609,"LonRef":"E","Lon":112.17250061035156},"Address":{"address_components":[{"long_name":"Jinzhong","short_name":"Jinzhong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Jinzhong, Shanxi, China","place_id":"ChIJo9coUjuN3zURnkwDfT1bzwc","geometry":{"bounds":{"northeast":{"lat":38.092872,"lng":6.08418665293664E-310},"southwest":{"lat":36.6501217,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1483.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong/2016-10-07 08-03-44-China-Jinzhong.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-08T13:58:41","HasLocation":true,"GPS":{"LatRef":"N","Lat":37.205001831054688,"LonRef":"E","Lon":112.17916107177734},"Address":{"address_components":[{"long_name":"Jinzhong","short_name":"Jinzhong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Jinzhong, Shanxi, China","place_id":"ChIJo9coUjuN3zURnkwDfT1bzwc","geometry":{"bounds":{"northeast":{"lat":38.092872,"lng":6.0841867059573928E-310},"southwest":{"lat":36.6501217,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1604.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong/2016-10-08 01-58-41-China-Jinzhong.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-09T12:35:09","HasLocation":true,"GPS":{"LatRef":"N","Lat":39.658889770507813,"LonRef":"E","Lon":113.70999908447266},"Address":{"address_components":[{"long_name":"Datong","short_name":"Datong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Datong, Shanxi, China","place_id":"ChIJ9RFgFYfT4jURcwIfACCIGZY","geometry":{"bounds":{"northeast":{"lat":40.7373523,"lng":6.08418665293664E-310},"southwest":{"lat":39.048278,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1926.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-09 12-35-09-China-Datong.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-09T14:26:58","HasLocation":true,"GPS":{"LatRef":"N","Lat":39.648056030273438,"LonRef":"E","Lon":113.64277648925781},"Address":{"address_components":[{"long_name":"Datong","short_name":"Datong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Datong, Shanxi, China","place_id":"ChIJ9RFgFYfT4jURcwIfACCIGZY","geometry":{"bounds":{"northeast":{"lat":40.7373523,"lng":6.0841867059573928E-310},"southwest":{"lat":39.048278,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1990.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-09 02-26-58-China-Datong.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-09-10T20:30:25","HasLocation":true,"GPS":{"LatRef":"N","Lat":36.079998016357422,"LonRef":"E","Lon":120.35444641113281},"Address":{"address_components":[{"long_name":"Qingdao","short_name":"Qingdao","types":["locality","political"]},{"long_name":"Shandong","short_name":"Shandong","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Qingdao, Shandong, China","place_id":"ChIJa_D4gtUPljUR8_JMYfqCTWE","geometry":{"bounds":{"northeast":{"lat":37.1491186,"lng":6.08418665293664E-310},"southwest":{"lat":35.5756014,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4159.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao/2016-09-10 08-30-25-China-Qingdao.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-09-16T17:13:55","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.489723205566406,"LonRef":"E","Lon":117.07888793945313},"Address":{"address_components":[{"long_name":"Chifeng","short_name":"Chifeng","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Chifeng, Inner Mongolia, China","place_id":"ChIJiUgqMhclGl4RZE-jjlqw9LU","geometry":{"bounds":{"northeast":{"lat":45.2523087,"lng":6.0841867059573928E-310},"southwest":{"lat":41.2823131,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4477.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 05-13-55-China-Chifeng.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-09-16T17:34:12","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.521389007568359,"LonRef":"E","Lon":117.04833221435547},"Address":{"address_components":[{"long_name":"Chifeng","short_name":"Chifeng","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Chifeng, Inner Mongolia, China","place_id":"ChIJiUgqMhclGl4RZE-jjlqw9LU","geometry":{"bounds":{"northeast":{"lat":45.2523087,"lng":6.08418665293664E-310},"southwest":{"lat":41.2823131,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4544.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 05-34-12-China-Chifeng.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-09-16T18:19:29","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.584720611572266,"LonRef":"E","Lon":117.26944732666016},"Address":{"address_components":[{"long_name":"Chifeng","short_name":"Chifeng","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Chifeng, Inner Mongolia, China","place_id":"ChIJiUgqMhclGl4RZE-jjlqw9LU","geometry":{"bounds":{"northeast":{"lat":45.2523087,"lng":6.08418665293664E-310},"southwest":{"lat":41.2823131,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4584.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 06-19-29-China-Chifeng.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-10-07T12:58:11","HasLocation":true,"GPS":{"LatRef":"N","Lat":36.89666748046875,"LonRef":"E","Lon":111.86638641357422},"Address":{"address_components":[{"long_name":"Jinzhong","short_name":"Jinzhong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Jinzhong, Shanxi, China","place_id":"ChIJo9coUjuN3zURnkwDfT1bzwc","geometry":{"bounds":{"northeast":{"lat":38.092872,"lng":6.0841867059573928E-310},"southwest":{"lat":36.6501217,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4867.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong/2016-10-07 12-58-11-China-Jinzhong.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-12-04T12:04:37","HasLocation":true,"GPS":{"LatRef":"N","Lat":17.3619441986084,"LonRef":"E","Lon":78.474723815917969},"Address":{"address_components":[{"long_name":"Hyderabad","short_name":"Hyderabad","types":["locality","political"]},{"long_name":"Telangana","short_name":"Telangana","types":["administrative_area_level_1","political"]},{"long_name":"India","short_name":"IN","types":["country","political"]}],"formatted_address":"Hyderabad, Telangana, India","place_id":"ChIJx9Lr6tqZyzsRwvu6koO3k64","geometry":{"bounds":{"northeast":{"lat":17.6078088,"lng":6.08418665293664E-310},"southwest":{"lat":17.2168886,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_5043 2.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad/2016-12-04 12-04-37-India-Hyderabad.jpg"},{"Make":"GoPro","Model":"HERO5 Black","TakenDate":"2016-12-04T15:24:54","HasLocation":true,"GPS":{"LatRef":"N","Lat":17.357223510742188,"LonRef":"E","Lon":78.471389770507813},"Address":{"address_components":[{"long_name":"Hyderabad","short_name":"Hyderabad","types":["locality","political"]},{"long_name":"Telangana","short_name":"Telangana","types":["administrative_area_level_1","political"]},{"long_name":"India","short_name":"IN","types":["country","political"]}],"formatted_address":"Hyderabad, Telangana, India","place_id":"ChIJx9Lr6tqZyzsRwvu6koO3k64","geometry":{"bounds":{"northeast":{"lat":17.6078088,"lng":6.0841867059573928E-310},"southwest":{"lat":17.2168886,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_5159 2.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad/2016-12-04 03-24-54-India-Hyderabad.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-07-21T18:30:23","HasLocation":true,"GPS":{"LatRef":"N","Lat":13.092499732971191,"LonRef":"E","Lon":103.20082855224609},"Address":{"address_components":[{"long_name":"Krong Battambang","short_name":"Krong Battambang","types":["locality","political"]},{"long_name":"Battambang Province","short_name":"Battambang Province","types":["administrative_area_level_1","political"]},{"long_name":"Cambodia","short_name":"KH","types":["country","political"]}],"formatted_address":"Krong Battambang, Cambodia","place_id":"ChIJ5dfd6pZJBTERk-PpXJXOVZw","geometry":{"bounds":{"northeast":{"lat":13.1586385,"lng":6.08418665293664E-310},"southwest":{"lat":13.0292272,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6186.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/Krong Battambang","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/Krong Battambang/2016-07-21 06-30-23-Cambodia-Krong Battambang.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-07-22T10:08:10","HasLocation":true,"GPS":{"LatRef":"N","Lat":13.144721984863281,"LonRef":"E","Lon":103.21333312988281},"Address":{"address_components":[{"long_name":"Cambodia","short_name":"KH","types":["country","political"]}],"formatted_address":"Cambodia","place_id":"ChIJQzfc1L-HBzERUxL0ieC_t-Q","geometry":{"bounds":{"northeast":{"lat":14.6901791,"lng":6.0841867059573928E-310},"southwest":{"lat":9.6007,"lng":6.0841867059573928E-310}},"types":null},"types":["country","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6220.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/2016-07-22 10-08-10-Cambodia.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-07-22T11:37:50","HasLocation":true,"GPS":{"LatRef":"N","Lat":13.163055419921875,"LonRef":"E","Lon":103.18805694580078},"Address":{"address_components":[{"long_name":"Cambodia","short_name":"KH","types":["country","political"]}],"formatted_address":"Cambodia","place_id":"ChIJQzfc1L-HBzERUxL0ieC_t-Q","geometry":{"bounds":{"northeast":{"lat":14.6901791,"lng":6.0841867059573928E-310},"southwest":{"lat":9.6007,"lng":6.0841867059573928E-310}},"types":null},"types":["country","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6305.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/2016-07-22 11-37-50-Cambodia.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-08-20T18:36:58","HasLocation":true,"GPS":{"LatRef":"N","Lat":39.780834197998047,"LonRef":"E","Lon":119.41333770751953},"Address":{"address_components":[{"long_name":"Qinhuangdao","short_name":"Qinhuangdao","types":["locality","political"]},{"long_name":"Hebei","short_name":"Hebei","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Qinhuangdao, Hebei, China","place_id":"ChIJa3FJqL1kizURHs3yVaAy1-c","geometry":{"bounds":{"northeast":{"lat":40.6146027,"lng":6.08418665293664E-310},"southwest":{"lat":39.4058365,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6636.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao/2016-08-20 06-36-58-China-Qinhuangdao.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-08-21T16:28:36","HasLocation":true,"GPS":{"LatRef":"N","Lat":39.967777252197266,"LonRef":"E","Lon":119.79472351074219},"Address":{"address_components":[{"long_name":"Qinhuangdao","short_name":"Qinhuangdao","types":["locality","political"]},{"long_name":"Hebei","short_name":"Hebei","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Qinhuangdao, Hebei, China","place_id":"ChIJa3FJqL1kizURHs3yVaAy1-c","geometry":{"bounds":{"northeast":{"lat":40.6146027,"lng":6.0841867059573928E-310},"southwest":{"lat":39.4058365,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6969.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao/2016-08-21 04-28-36-China-Qinhuangdao.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-09-10T15:48:14","HasLocation":true,"GPS":{"LatRef":"N","Lat":36.064720153808594,"LonRef":"E","Lon":120.32277679443359},"Address":{"address_components":[{"long_name":"Qingdao","short_name":"Qingdao","types":["locality","political"]},{"long_name":"Shandong","short_name":"Shandong","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Qingdao, Shandong, China","place_id":"ChIJa_D4gtUPljUR8_JMYfqCTWE","geometry":{"bounds":{"northeast":{"lat":37.1491186,"lng":6.0841867059573928E-310},"southwest":{"lat":35.5756014,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_7243.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao/2016-09-10 03-48-14-China-Qingdao.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-09-15T11:53:09","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.652225494384766,"LonRef":"E","Lon":117.12361145019531},"Address":{"address_components":[{"long_name":"Chifeng","short_name":"Chifeng","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Chifeng, Inner Mongolia, China","place_id":"ChIJiUgqMhclGl4RZE-jjlqw9LU","geometry":{"bounds":{"northeast":{"lat":45.2523087,"lng":6.08418665293664E-310},"southwest":{"lat":41.2823131,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_7590.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-15 11-53-09-China-Chifeng.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-09-16T14:52:39","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.522499084472656,"LonRef":"E","Lon":117.19472503662109},"Address":{"address_components":[{"long_name":"Chifeng","short_name":"Chifeng","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Chifeng, Inner Mongolia, China","place_id":"ChIJiUgqMhclGl4RZE-jjlqw9LU","geometry":{"bounds":{"northeast":{"lat":45.2523087,"lng":6.0841867059573928E-310},"southwest":{"lat":41.2823131,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8520.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 02-52-39-China-Chifeng.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-09-16T15:54:40","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.508335113525391,"LonRef":"E","Lon":117.1744384765625},"Address":{"address_components":[{"long_name":"Chifeng","short_name":"Chifeng","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Chifeng, Inner Mongolia, China","place_id":"ChIJiUgqMhclGl4RZE-jjlqw9LU","geometry":{"bounds":{"northeast":{"lat":45.2523087,"lng":6.08418665293664E-310},"southwest":{"lat":41.2823131,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8636.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 03-54-40-China-Chifeng.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-09-16T16:34:57","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.49444580078125,"LonRef":"E","Lon":117.13527679443359},"Address":{"address_components":[{"long_name":"Chifeng","short_name":"Chifeng","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Chifeng, Inner Mongolia, China","place_id":"ChIJiUgqMhclGl4RZE-jjlqw9LU","geometry":{"bounds":{"northeast":{"lat":45.2523087,"lng":6.0841867059573928E-310},"southwest":{"lat":41.2823131,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8760.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 04-34-57-China-Chifeng.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-09-17T08:30:27","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.422500610351563,"LonRef":"E","Lon":116.76667022705078},"Address":{"address_components":[{"long_name":"Xilin Gol","short_name":"Xilin Gol","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Xilin Gol, Inner Mongolia, China","place_id":"ChIJ_Uv7w4a4BV4RS_WjfJ6wFZ0","geometry":{"bounds":{"northeast":{"lat":46.7749074,"lng":6.08418665293664E-310},"southwest":{"lat":41.5713982,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8865.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol/2016-09-17 08-30-27-China-Xilin Gol.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-09-17T09:06:29","HasLocation":true,"GPS":{"LatRef":"N","Lat":42.422779083251953,"LonRef":"E","Lon":116.76944732666016},"Address":{"address_components":[{"long_name":"Xilin Gol","short_name":"Xilin Gol","types":["locality","political"]},{"long_name":"Inner Mongolia","short_name":"Inner Mongolia","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Xilin Gol, Inner Mongolia, China","place_id":"ChIJ_Uv7w4a4BV4RS_WjfJ6wFZ0","geometry":{"bounds":{"northeast":{"lat":46.7749074,"lng":6.0841867059573928E-310},"southwest":{"lat":41.5713982,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8959.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol/2016-09-17 09-06-29-China-Xilin Gol.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-02T11:06:47","HasLocation":true,"GPS":{"LatRef":"N","Lat":40.1099967956543,"LonRef":"E","Lon":113.12111663818359},"Address":{"address_components":[{"long_name":"Datong","short_name":"Datong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Datong, Shanxi, China","place_id":"ChIJ9RFgFYfT4jURcwIfACCIGZY","geometry":{"bounds":{"northeast":{"lat":40.7373523,"lng":6.08418665293664E-310},"southwest":{"lat":39.048278,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9468.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-02 11-06-47-China-Datong.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-02T17:24:11","HasLocation":true,"GPS":{"LatRef":"N","Lat":39.947223663330078,"LonRef":"E","Lon":113.47055816650391},"Address":{"address_components":[{"long_name":"Datong","short_name":"Datong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Datong, Shanxi, China","place_id":"ChIJ9RFgFYfT4jURcwIfACCIGZY","geometry":{"bounds":{"northeast":{"lat":40.7373523,"lng":6.0841867059573928E-310},"southwest":{"lat":39.048278,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9862.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-02 05-24-11-China-Datong.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-03T09:58:28","HasLocation":true,"GPS":{"LatRef":"N","Lat":40.0908317565918,"LonRef":"E","Lon":113.28916931152344},"Address":{"address_components":[{"long_name":"Datong","short_name":"Datong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Datong, Shanxi, China","place_id":"ChIJ9RFgFYfT4jURcwIfACCIGZY","geometry":{"bounds":{"northeast":{"lat":40.7373523,"lng":6.08418665293664E-310},"southwest":{"lat":39.048278,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9924.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-03 09-58-28-China-Datong.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-10-03T11:13:59","HasLocation":true,"GPS":{"LatRef":"N","Lat":40.084163665771484,"LonRef":"E","Lon":113.29555511474609},"Address":{"address_components":[{"long_name":"Datong","short_name":"Datong","types":["locality","political"]},{"long_name":"Shanxi","short_name":"Shanxi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Datong, Shanxi, China","place_id":"ChIJ9RFgFYfT4jURcwIfACCIGZY","geometry":{"bounds":{"northeast":{"lat":40.7373523,"lng":3.45845952088873E-323},"southwest":{"lat":39.048278,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9998.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-03 11-13-59-China-Datong.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-12-24T19:47:52","HasLocation":true,"GPS":{"LatRef":"N","Lat":14.568055152893066,"LonRef":"E","Lon":121.02833557128906},"Address":{"address_components":[{"long_name":"Makati","short_name":"Makati","types":["locality","political"]},{"long_name":"Metro Manila","short_name":"NCR","types":["administrative_area_level_1","political"]},{"long_name":"Philippines","short_name":"PH","types":["country","political"]}],"formatted_address":"Makati, Metro Manila, Philippines","place_id":"ChIJAe2gZALJlzMRzsoweNVuBis","geometry":{"bounds":{"northeast":{"lat":14.5800008,"lng":6.08418665293664E-310},"southwest":{"lat":14.5291846,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-24 194752.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Makati","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Makati/2016-12-24 07-47-52-Philippines-Makati.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-12-26T15:40:10","HasLocation":true,"GPS":{"LatRef":"N","Lat":9.84000015258789,"LonRef":"E","Lon":118.76805877685547},"Address":{"address_components":[{"long_name":"Puerto Princesa","short_name":"PPC","types":["locality","political"]},{"long_name":"Palawan","short_name":"Palawan","types":["administrative_area_level_2","political"]},{"long_name":"MIMAROPA","short_name":"MIMAROPA","types":["administrative_area_level_1","political"]},{"long_name":"Philippines","short_name":"PH","types":["country","political"]}],"formatted_address":"Puerto Princesa, Palawan, Philippines","place_id":"ChIJpdYJytBjtTMRjW9JV1d5yZA","geometry":{"bounds":{"northeast":{"lat":10.3378871,"lng":6.0841867059573928E-310},"southwest":{"lat":9.5596181,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-26 154010.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa/2016-12-26 03-40-10-Philippines-Puerto Princesa.jpg"},{"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-12-27T13:21:18","HasLocation":true,"GPS":{"LatRef":"N","Lat":10.199722290039063,"LonRef":"E","Lon":118.92610931396484},"Address":{"address_components":[{"long_name":"Puerto Princesa","short_name":"PPC","types":["locality","political"]},{"long_name":"Palawan","short_name":"Palawan","types":["administrative_area_level_2","political"]},{"long_name":"MIMAROPA","short_name":"MIMAROPA","types":["administrative_area_level_1","political"]},{"long_name":"Philippines","short_name":"PH","types":["country","political"]}],"formatted_address":"Puerto Princesa, Palawan, Philippines","place_id":"ChIJpdYJytBjtTMRjW9JV1d5yZA","geometry":{"bounds":{"northeast":{"lat":10.3378871,"lng":6.08418665293664E-310},"southwest":{"lat":9.5596181,"lng":6.08418665293664E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-27 132118.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa/2016-12-27 01-21-18-Philippines-Puerto Princesa.jpg"},{"Make":"Apple","Model":"iPhone SE","TakenDate":"2016-12-28T11:24:00","HasLocation":true,"GPS":{"LatRef":"N","Lat":9.7480554580688477,"LonRef":"E","Lon":118.76638793945313},"Address":{"address_components":[{"long_name":"Puerto Princesa","short_name":"PPC","types":["locality","political"]},{"long_name":"Palawan","short_name":"Palawan","types":["administrative_area_level_2","political"]},{"long_name":"MIMAROPA","short_name":"MIMAROPA","types":["administrative_area_level_1","political"]},{"long_name":"Philippines","short_name":"PH","types":["country","political"]}],"formatted_address":"Puerto Princesa, Palawan, Philippines","place_id":"ChIJpdYJytBjtTMRjW9JV1d5yZA","geometry":{"bounds":{"northeast":{"lat":10.3378871,"lng":6.0841867059573928E-310},"southwest":{"lat":9.5596181,"lng":6.0841867059573928E-310}},"types":null},"types":["locality","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-28 112400.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa/2016-12-28 11-24-00-Philippines-Puerto Princesa.jpg"},{"Make":"GoPro","Model":"HERO5 Black","TakenDate":"2016-12-29T14:58:49","HasLocation":true,"GPS":{"LatRef":"N","Lat":11.259721755981445,"LonRef":"E","Lon":119.57083129882813},"Address":{"address_components":[{"long_name":"Philippines","short_name":"PH","types":["country","political"]}],"formatted_address":"Philippines","place_id":"ChIJY96HXyFTQDIRV9opeu-QR3g","geometry":{"bounds":{"northeast":{"lat":19.932,"lng":6.08418665293664E-310},"southwest":{"lat":4.2259,"lng":6.08418665293664E-310}},"types":null},"types":["country","political"]},"FilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-29 145849.jpg","NewDirPath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines","NewFilePath":"/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/2016-12-29 02-58-49-Philippines.jpg"}]
+[
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-04T10:51:39",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.636669158935547,
+            "LonRef": "E",
+            "Lon": 110.94528198242188
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0112.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 10-51-39-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-04T13:33:18",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.647502899169922,
+            "LonRef": "E",
+            "Lon": 110.78888702392578
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 3.45845952088873E-323
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0185.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 01-33-18-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-04T16:45:24",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.646114349365234,
+            "LonRef": "E",
+            "Lon": 110.80472564697266
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0460.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 04-45-24-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-04T17:55:33",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.647224426269531,
+            "LonRef": "E",
+            "Lon": 110.788330078125
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0487.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-04 05-55-33-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-05T08:50:39",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.628330230712891,
+            "LonRef": "E",
+            "Lon": 110.77361297607422
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0534.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 08-50-39-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-05T09:24:22",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.629718780517578,
+            "LonRef": "E",
+            "Lon": 110.77139282226563
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 3.45845952088873E-323
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0603.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 09-24-22-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-05T10:21:24",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.631385803222656,
+            "LonRef": "E",
+            "Lon": 110.77222442626953
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0656.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 10-21-24-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-05T11:09:07",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.631111145019531,
+            "LonRef": "E",
+            "Lon": 110.77000427246094
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Lvliang",
+                    "short_name": "Lvliang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Lvliang, Shanxi, China",
+            "place_id": "ChIJs5laoeiCdDYRsN40pYNKnn8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.7300724,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 36.7360204,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0762.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Lvliang/2016-10-05 11-09-07-China-Lvliang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-06T10:59:05",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 36.147502899169922,
+            "LonRef": "E",
+            "Lon": 110.44416809082031
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Yan'an",
+                    "short_name": "Yan'an",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shaanxi",
+                    "short_name": "Shaanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Yan'an, Shaanxi, China",
+            "place_id": "ChIJR7mHzQIkbjYRU64TZqYwUZI",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 37.4984813,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 35.3446183,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_0933.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Yan'an",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Yan'an/2016-10-06 10-59-05-China-Yan'an.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-07T20:03:44",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.203334808349609,
+            "LonRef": "E",
+            "Lon": 112.17250061035156
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Jinzhong",
+                    "short_name": "Jinzhong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Jinzhong, Shanxi, China",
+            "place_id": "ChIJo9coUjuN3zURnkwDfT1bzwc",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.092872,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 36.6501217,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1483.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong/2016-10-07 08-03-44-China-Jinzhong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-08T13:58:41",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 37.205001831054688,
+            "LonRef": "E",
+            "Lon": 112.17916107177734
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Jinzhong",
+                    "short_name": "Jinzhong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Jinzhong, Shanxi, China",
+            "place_id": "ChIJo9coUjuN3zURnkwDfT1bzwc",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.092872,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 36.6501217,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1604.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong/2016-10-08 01-58-41-China-Jinzhong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-09T12:35:09",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 39.658889770507813,
+            "LonRef": "E",
+            "Lon": 113.70999908447266
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Datong",
+                    "short_name": "Datong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Datong, Shanxi, China",
+            "place_id": "ChIJ9RFgFYfT4jURcwIfACCIGZY",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.7373523,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 39.048278,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1926.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-09 12-35-09-China-Datong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-09T14:26:58",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 39.648056030273438,
+            "LonRef": "E",
+            "Lon": 113.64277648925781
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Datong",
+                    "short_name": "Datong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Datong, Shanxi, China",
+            "place_id": "ChIJ9RFgFYfT4jURcwIfACCIGZY",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.7373523,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 39.048278,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_1990.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-09 02-26-58-China-Datong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-09-10T20:30:25",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 36.079998016357422,
+            "LonRef": "E",
+            "Lon": 120.35444641113281
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Qingdao",
+                    "short_name": "Qingdao",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shandong",
+                    "short_name": "Shandong",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Qingdao, Shandong, China",
+            "place_id": "ChIJa_D4gtUPljUR8_JMYfqCTWE",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 37.1491186,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 35.5756014,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4159.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao/2016-09-10 08-30-25-China-Qingdao.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-09-16T17:13:55",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.489723205566406,
+            "LonRef": "E",
+            "Lon": 117.07888793945313
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Chifeng",
+                    "short_name": "Chifeng",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chifeng, Inner Mongolia, China",
+            "place_id": "ChIJiUgqMhclGl4RZE-jjlqw9LU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 45.2523087,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 41.2823131,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4477.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 05-13-55-China-Chifeng.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-09-16T17:34:12",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.521389007568359,
+            "LonRef": "E",
+            "Lon": 117.04833221435547
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Chifeng",
+                    "short_name": "Chifeng",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chifeng, Inner Mongolia, China",
+            "place_id": "ChIJiUgqMhclGl4RZE-jjlqw9LU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 45.2523087,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 41.2823131,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4544.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 05-34-12-China-Chifeng.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-09-16T18:19:29",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.584720611572266,
+            "LonRef": "E",
+            "Lon": 117.26944732666016
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Chifeng",
+                    "short_name": "Chifeng",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chifeng, Inner Mongolia, China",
+            "place_id": "ChIJiUgqMhclGl4RZE-jjlqw9LU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 45.2523087,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 41.2823131,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4584.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 06-19-29-China-Chifeng.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-10-07T12:58:11",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 36.89666748046875,
+            "LonRef": "E",
+            "Lon": 111.86638641357422
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Jinzhong",
+                    "short_name": "Jinzhong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Jinzhong, Shanxi, China",
+            "place_id": "ChIJo9coUjuN3zURnkwDfT1bzwc",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 38.092872,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 36.6501217,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_4867.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Jinzhong/2016-10-07 12-58-11-China-Jinzhong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-12-04T12:04:37",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 17.3619441986084,
+            "LonRef": "E",
+            "Lon": 78.474723815917969
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Hyderabad",
+                    "short_name": "Hyderabad",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Telangana",
+                    "short_name": "Telangana",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "India",
+                    "short_name": "IN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Hyderabad, Telangana, India",
+            "place_id": "ChIJx9Lr6tqZyzsRwvu6koO3k64",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 17.6078088,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 17.2168886,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_5043 2.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad/2016-12-04 12-04-37-India-Hyderabad.jpg"
+    },
+    {
+        "Make": "GoPro",
+        "Model": "HERO5 Black",
+        "TakenDate": "2016-12-04T15:24:54",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 17.357223510742188,
+            "LonRef": "E",
+            "Lon": 78.471389770507813
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Hyderabad",
+                    "short_name": "Hyderabad",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Telangana",
+                    "short_name": "Telangana",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "India",
+                    "short_name": "IN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Hyderabad, Telangana, India",
+            "place_id": "ChIJx9Lr6tqZyzsRwvu6koO3k64",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 17.6078088,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 17.2168886,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_5159 2.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/India/Hyderabad/2016-12-04 03-24-54-India-Hyderabad.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-07-21T18:30:23",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 13.092499732971191,
+            "LonRef": "E",
+            "Lon": 103.20082855224609
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Krong Battambang",
+                    "short_name": "Krong Battambang",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Battambang Province",
+                    "short_name": "Battambang Province",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Cambodia",
+                    "short_name": "KH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Krong Battambang, Cambodia",
+            "place_id": "ChIJ5dfd6pZJBTERk-PpXJXOVZw",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 13.1586385,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 13.0292272,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6186.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/Krong Battambang",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/Krong Battambang/2016-07-21 06-30-23-Cambodia-Krong Battambang.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-07-22T10:08:10",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 13.144721984863281,
+            "LonRef": "E",
+            "Lon": 103.21333312988281
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Cambodia",
+                    "short_name": "KH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Cambodia",
+            "place_id": "ChIJQzfc1L-HBzERUxL0ieC_t-Q",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 14.6901791,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 9.6007,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "country",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6220.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/2016-07-22 10-08-10-Cambodia.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-07-22T11:37:50",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 13.163055419921875,
+            "LonRef": "E",
+            "Lon": 103.18805694580078
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Cambodia",
+                    "short_name": "KH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Cambodia",
+            "place_id": "ChIJQzfc1L-HBzERUxL0ieC_t-Q",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 14.6901791,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 9.6007,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "country",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6305.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Cambodia/2016-07-22 11-37-50-Cambodia.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-08-20T18:36:58",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 39.780834197998047,
+            "LonRef": "E",
+            "Lon": 119.41333770751953
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Qinhuangdao",
+                    "short_name": "Qinhuangdao",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Hebei",
+                    "short_name": "Hebei",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Qinhuangdao, Hebei, China",
+            "place_id": "ChIJa3FJqL1kizURHs3yVaAy1-c",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.6146027,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 39.4058365,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6636.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao/2016-08-20 06-36-58-China-Qinhuangdao.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-08-21T16:28:36",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 39.967777252197266,
+            "LonRef": "E",
+            "Lon": 119.79472351074219
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Qinhuangdao",
+                    "short_name": "Qinhuangdao",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Hebei",
+                    "short_name": "Hebei",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Qinhuangdao, Hebei, China",
+            "place_id": "ChIJa3FJqL1kizURHs3yVaAy1-c",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.6146027,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 39.4058365,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_6969.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qinhuangdao/2016-08-21 04-28-36-China-Qinhuangdao.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-09-10T15:48:14",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 36.064720153808594,
+            "LonRef": "E",
+            "Lon": 120.32277679443359
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Qingdao",
+                    "short_name": "Qingdao",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shandong",
+                    "short_name": "Shandong",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Qingdao, Shandong, China",
+            "place_id": "ChIJa_D4gtUPljUR8_JMYfqCTWE",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 37.1491186,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 35.5756014,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_7243.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Qingdao/2016-09-10 03-48-14-China-Qingdao.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-09-15T11:53:09",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.652225494384766,
+            "LonRef": "E",
+            "Lon": 117.12361145019531
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Chifeng",
+                    "short_name": "Chifeng",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chifeng, Inner Mongolia, China",
+            "place_id": "ChIJiUgqMhclGl4RZE-jjlqw9LU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 45.2523087,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 41.2823131,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_7590.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-15 11-53-09-China-Chifeng.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-09-16T14:52:39",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.522499084472656,
+            "LonRef": "E",
+            "Lon": 117.19472503662109
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Chifeng",
+                    "short_name": "Chifeng",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chifeng, Inner Mongolia, China",
+            "place_id": "ChIJiUgqMhclGl4RZE-jjlqw9LU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 45.2523087,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 41.2823131,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8520.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 02-52-39-China-Chifeng.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-09-16T15:54:40",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.508335113525391,
+            "LonRef": "E",
+            "Lon": 117.1744384765625
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Chifeng",
+                    "short_name": "Chifeng",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chifeng, Inner Mongolia, China",
+            "place_id": "ChIJiUgqMhclGl4RZE-jjlqw9LU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 45.2523087,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 41.2823131,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8636.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 03-54-40-China-Chifeng.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-09-16T16:34:57",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.49444580078125,
+            "LonRef": "E",
+            "Lon": 117.13527679443359
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Chifeng",
+                    "short_name": "Chifeng",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Chifeng, Inner Mongolia, China",
+            "place_id": "ChIJiUgqMhclGl4RZE-jjlqw9LU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 45.2523087,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 41.2823131,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8760.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Chifeng/2016-09-16 04-34-57-China-Chifeng.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-09-17T08:30:27",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.422500610351563,
+            "LonRef": "E",
+            "Lon": 116.76667022705078
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Xilin Gol",
+                    "short_name": "Xilin Gol",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Xilin Gol, Inner Mongolia, China",
+            "place_id": "ChIJ_Uv7w4a4BV4RS_WjfJ6wFZ0",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 46.7749074,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 41.5713982,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8865.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol/2016-09-17 08-30-27-China-Xilin Gol.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-09-17T09:06:29",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 42.422779083251953,
+            "LonRef": "E",
+            "Lon": 116.76944732666016
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Xilin Gol",
+                    "short_name": "Xilin Gol",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Inner Mongolia",
+                    "short_name": "Inner Mongolia",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Xilin Gol, Inner Mongolia, China",
+            "place_id": "ChIJ_Uv7w4a4BV4RS_WjfJ6wFZ0",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 46.7749074,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 41.5713982,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_8959.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Xilin Gol/2016-09-17 09-06-29-China-Xilin Gol.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-02T11:06:47",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 40.1099967956543,
+            "LonRef": "E",
+            "Lon": 113.12111663818359
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Datong",
+                    "short_name": "Datong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Datong, Shanxi, China",
+            "place_id": "ChIJ9RFgFYfT4jURcwIfACCIGZY",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.7373523,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 39.048278,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9468.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-02 11-06-47-China-Datong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-02T17:24:11",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 39.947223663330078,
+            "LonRef": "E",
+            "Lon": 113.47055816650391
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Datong",
+                    "short_name": "Datong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Datong, Shanxi, China",
+            "place_id": "ChIJ9RFgFYfT4jURcwIfACCIGZY",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.7373523,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 39.048278,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9862.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-02 05-24-11-China-Datong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-03T09:58:28",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 40.0908317565918,
+            "LonRef": "E",
+            "Lon": 113.28916931152344
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Datong",
+                    "short_name": "Datong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Datong, Shanxi, China",
+            "place_id": "ChIJ9RFgFYfT4jURcwIfACCIGZY",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.7373523,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 39.048278,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9924.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-03 09-58-28-China-Datong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-10-03T11:13:59",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 40.084163665771484,
+            "LonRef": "E",
+            "Lon": 113.29555511474609
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Datong",
+                    "short_name": "Datong",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Shanxi",
+                    "short_name": "Shanxi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Datong, Shanxi, China",
+            "place_id": "ChIJ9RFgFYfT4jURcwIfACCIGZY",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 40.7373523,
+                        "lng": 3.45845952088873E-323
+                    },
+                    "southwest": {
+                        "lat": 39.048278,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/IMG_9998.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/China/Datong/2016-10-03 11-13-59-China-Datong.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-12-24T19:47:52",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 14.568055152893066,
+            "LonRef": "E",
+            "Lon": 121.02833557128906
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Makati",
+                    "short_name": "Makati",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Metro Manila",
+                    "short_name": "NCR",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Makati, Metro Manila, Philippines",
+            "place_id": "ChIJAe2gZALJlzMRzsoweNVuBis",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 14.5800008,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 14.5291846,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-24 194752.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Makati",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Makati/2016-12-24 07-47-52-Philippines-Makati.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-12-26T15:40:10",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 9.84000015258789,
+            "LonRef": "E",
+            "Lon": 118.76805877685547
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Puerto Princesa",
+                    "short_name": "PPC",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Palawan",
+                    "short_name": "Palawan",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "MIMAROPA",
+                    "short_name": "MIMAROPA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Puerto Princesa, Palawan, Philippines",
+            "place_id": "ChIJpdYJytBjtTMRjW9JV1d5yZA",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 10.3378871,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 9.5596181,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-26 154010.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa/2016-12-26 03-40-10-Philippines-Puerto Princesa.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone 6s",
+        "TakenDate": "2016-12-27T13:21:18",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 10.199722290039063,
+            "LonRef": "E",
+            "Lon": 118.92610931396484
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Puerto Princesa",
+                    "short_name": "PPC",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Palawan",
+                    "short_name": "Palawan",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "MIMAROPA",
+                    "short_name": "MIMAROPA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Puerto Princesa, Palawan, Philippines",
+            "place_id": "ChIJpdYJytBjtTMRjW9JV1d5yZA",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 10.3378871,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 9.5596181,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-27 132118.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa/2016-12-27 01-21-18-Philippines-Puerto Princesa.jpg"
+    },
+    {
+        "Make": "Apple",
+        "Model": "iPhone SE",
+        "TakenDate": "2016-12-28T11:24:00",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 9.7480554580688477,
+            "LonRef": "E",
+            "Lon": 118.76638793945313
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Puerto Princesa",
+                    "short_name": "PPC",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Palawan",
+                    "short_name": "Palawan",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "MIMAROPA",
+                    "short_name": "MIMAROPA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Puerto Princesa, Palawan, Philippines",
+            "place_id": "ChIJpdYJytBjtTMRjW9JV1d5yZA",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 10.3378871,
+                        "lng": 6.0841867059573928E-310
+                    },
+                    "southwest": {
+                        "lat": 9.5596181,
+                        "lng": 6.0841867059573928E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-28 112400.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/Puerto Princesa/2016-12-28 11-24-00-Philippines-Puerto Princesa.jpg"
+    },
+    {
+        "Make": "GoPro",
+        "Model": "HERO5 Black",
+        "TakenDate": "2016-12-29T14:58:49",
+        "HasLocation": true,
+        "GPS": {
+            "LatRef": "N",
+            "Lat": 11.259721755981445,
+            "LonRef": "E",
+            "Lon": 119.57083129882813
+        },
+        "Address": {
+            "address_components": [
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Philippines",
+            "place_id": "ChIJY96HXyFTQDIRV9opeu-QR3g",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 19.932,
+                        "lng": 6.08418665293664E-310
+                    },
+                    "southwest": {
+                        "lat": 4.2259,
+                        "lng": 6.08418665293664E-310
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "country",
+                "political"
+            ]
+        },
+        "FilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotos/P/2016-12-29 145849.jpg",
+        "NewDirPath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines",
+        "NewFilePath": "/Users/martyzhou/code/github/mytest/netcore/IO/TestPhotosNew/Philippines/2016-12-29 02-58-49-Philippines.jpg"
+    }
+]
