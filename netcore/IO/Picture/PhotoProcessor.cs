@@ -28,10 +28,11 @@ namespace Cluj.Photo
                 TripSpanCache.LocateSameDay = config.locate_same_day;
                 var filePaths = Directory.EnumerateFiles(config.path, "*.jpg", SearchOption.AllDirectories);
                 var copyPhotosTask = Task.Run(() => CopyPhotosTask());
-                var copyPhotosWithoutGPSTask = Task.Run(() => CopyPhotosWithoutGPSTask());
+                // var copyPhotosWithoutGPSTask = Task.Run(() => CopyPhotosWithoutGPSTask());
 
                 foreach (var filePath in filePaths)
                 {
+try{
                     var meta = ReadMeta(filePath);
                     if (meta != null)
                     {
@@ -47,6 +48,9 @@ namespace Cluj.Photo
                             photoQueueWithoutGPS.Enqueue(meta);
                         }
                     }
+}catch(Exception e){
+Console.WriteLine(string.Format("Error 2: {0}", e.Message));
+}
                 }
 
                 inProgress = false;
@@ -62,7 +66,7 @@ namespace Cluj.Photo
             catch (Exception e)
             {
                 Console.WriteLine(string.Format("Error: {0}", e.Message));
-                throw;
+                // throw;
             }
         }
 
@@ -136,6 +140,8 @@ namespace Cluj.Photo
                 }
                 else
                 {
+meta.NewFilePath = string.Format("{0}_{1}.jpg", meta.NewFilePath, DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss-ffffff"));
+File.Copy(meta.FilePath, meta.NewFilePath);
                     Console.WriteLine(string.Format("File exists: {0}", meta.NewFilePath));
                 }
             }
