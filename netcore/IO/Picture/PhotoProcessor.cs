@@ -32,25 +32,28 @@ namespace Cluj.Photo
 
                 foreach (var filePath in filePaths)
                 {
-try{
-                    var meta = ReadMeta(filePath);
-                    if (meta != null)
+                    try
                     {
-                        await GenerateAddress(meta).ConfigureAwait(false);
-                        if (meta.HasLocation)
+                        var meta = ReadMeta(filePath);
+                        if (meta != null)
                         {
-                            GenerateNewFilePath(meta);
-                            TripSpanCache.ExpandDuration(meta);
-                            photoQueueWithGPS.Enqueue(meta);
-                        }
-                        else
-                        {
-                            photoQueueWithoutGPS.Enqueue(meta);
+                            await GenerateAddress(meta).ConfigureAwait(false);
+                            if (meta.HasLocation)
+                            {
+                                GenerateNewFilePath(meta);
+                                TripSpanCache.ExpandDuration(meta);
+                                photoQueueWithGPS.Enqueue(meta);
+                            }
+                            else
+                            {
+                                photoQueueWithoutGPS.Enqueue(meta);
+                            }
                         }
                     }
-}catch(Exception e){
-Console.WriteLine(string.Format("Error 2: {0}", e.Message));
-}
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(string.Format("Error 2: {0}", e.Message));
+                    }
                 }
 
                 inProgress = false;
@@ -140,8 +143,8 @@ Console.WriteLine(string.Format("Error 2: {0}", e.Message));
                 }
                 else
                 {
-meta.NewFilePath = string.Format("{0}_{1}.jpg", meta.NewFilePath, DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss-ffffff"));
-File.Copy(meta.FilePath, meta.NewFilePath);
+                    meta.NewFilePath = string.Format("{0}_{1}.jpg", meta.NewFilePath, DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss-ffffff"));
+                    File.Copy(meta.FilePath, meta.NewFilePath);
                     Console.WriteLine(string.Format("File exists: {0}", meta.NewFilePath));
                 }
             }
