@@ -25,12 +25,25 @@ namespace IO.Picture
 10 = SRATIONAL Two SLONGs. The first SLONG is the numerator and the second SLONG is the denominator.
         */
 
-// 0x4949 LittleEndian 73 73
-// 0x4D4D BigEndian 77 77
+        // 0x4949 LittleEndian 73 73
+        // 0x4D4D BigEndian 77 77
         [Fact]
         public void UseExifMetadataReader4()
         {
             using (FileStream stream = new FileStream("./IO/Picture/p4.jpg", FileMode.Open))
+            {
+                var reader = new PhotoMetadataReader(stream);
+                var meta = reader.ParseMetadata();
+
+                Assert.Equal<string>("NIKON CORPORATION", meta.Make);
+                Assert.Equal<string>("NIKON D3300", meta.Model);
+            }
+        }
+
+        [Fact]
+        public void UseExifMetadataReader4_metadata()
+        {
+            using (FileStream stream = new FileStream("./IO/Picture/p4_exif_header.jpg", FileMode.Open))
             {
                 var reader = new PhotoMetadataReader(stream);
                 var meta = reader.ParseMetadata();
