@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My First Angular 2 App</title>
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('main.js').catch(function (err) { console.error(err); });
+    </script>
 </head>
+
 <body>
-    <p>Loading...</p>
+    <my-app>Loading AppComponent content here ...</my-app>
 </body>
+
 </html>
