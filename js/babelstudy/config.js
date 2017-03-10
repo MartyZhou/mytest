@@ -17,12 +17,14 @@ System.config({
   map: {
     "@angular/common": "npm:@angular/common@2.4.9",
     "@angular/core": "npm:@angular/core@2.4.9",
+    "@angular/forms": "npm:@angular/forms@2.4.9",
     "@angular/platform-browser": "npm:@angular/platform-browser@2.4.9",
     "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.4.9",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
     "reflect-metadata": "npm:reflect-metadata@0.1.10",
+    "rxjs": "npm:rxjs@5.2.0",
     "zone.js": "npm:zone.js@0.7.8",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -71,6 +73,11 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "rxjs": "npm:rxjs@5.2.0",
       "zone.js": "npm:zone.js@0.7.8"
+    },
+    "npm:@angular/forms@2.4.9": {
+      "@angular/common": "npm:@angular/common@2.4.9",
+      "@angular/core": "npm:@angular/core@2.4.9",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:@angular/platform-browser-dynamic@2.4.9": {
       "@angular/common": "npm:@angular/common@2.4.9",
