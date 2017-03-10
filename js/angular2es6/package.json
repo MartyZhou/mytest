@@ -18,8 +18,8 @@
     "zone.js": "^0.7.7"
   },
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-runtime": "^6.23.0",
-    "browser-sync": "^2.18.8"
+    "browser-sync": "^2.18.8",
+    "systemjs": "^0.20.9",
+    "systemjs-plugin-babel": "0.0.21"
   }
 }

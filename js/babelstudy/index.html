@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Babel & SystemJS</title>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import("main.js").catch(function(err){ console.error(err); });
+    </script>
+</head>
+
+<body>
+    <my-app>Loading AppComponent content here ...</my-app>
+</body>
+
+</html>

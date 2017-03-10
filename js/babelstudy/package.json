@@ -1,0 +1,30 @@
+{
+  "name": "babelstudy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "jspm": "^0.16.52"
+  },
+  "jspm": {
+    "dependencies": {
+      "@angular/common": "npm:@angular/common@^2.4.9",
+      "@angular/core": "npm:@angular/core@^2.4.9",
+      "@angular/platform-browser": "npm:@angular/platform-browser@^2.4.9",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@^2.4.9",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.10",
+      "zone.js": "npm:zone.js@^0.7.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
