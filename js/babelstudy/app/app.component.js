@@ -5,6 +5,7 @@ import { HeroService } from './hero.service';
 @Component({
     selector: 'my-app',
     template: `<h1>{{title}}</h1>
+    <input [(ngModel)]="title" placeholder="name"/>
     <h2>My Heroes</h2>
     <ul class="heroes">
     <li *ngFor="let hero of heroes"
@@ -71,6 +72,9 @@ export class AppComponent implements OnInit {
     constructor(heroService) {
         this.heroService = heroService;
         this.title = 'Tour of Heroes';
+        this.heroes = [
+            //{ id: 20, name: 'Tornado' }
+        ];
     }
 
     static get parameters() {
