@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./app/app.component.css'],
     template: `
   <h1>{{title}}</h1>
+  <input [ngModel]="title">
   <nav>
     <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
     <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
