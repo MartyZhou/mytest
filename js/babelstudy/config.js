@@ -20,6 +20,7 @@ System.config({
     "@angular/forms": "npm:@angular/forms@2.4.9",
     "@angular/platform-browser": "npm:@angular/platform-browser@2.4.9",
     "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.4.9",
+    "@angular/router": "npm:@angular/router@3.4.9",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
@@ -90,6 +91,13 @@ System.config({
       "@angular/core": "npm:@angular/core@2.4.9",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:@angular/router@3.4.9": {
+      "@angular/common": "npm:@angular/common@2.4.9",
+      "@angular/core": "npm:@angular/core@2.4.9",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.4.9",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "rxjs": "npm:rxjs@5.2.0"
+    },
     "npm:asn1.js@4.9.1": {
       "bn.js": "npm:bn.js@4.11.6",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -150,7 +158,7 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "elliptic": "npm:elliptic@6.4.0",
       "inherits": "npm:inherits@2.0.1",
-      "parse-asn1": "npm:parse-asn1@5.0.0",
+      "parse-asn1": "npm:parse-asn1@5.1.0",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
     "npm:buffer-xor@1.0.3": {
@@ -261,7 +269,7 @@ System.config({
       "bn.js": "npm:bn.js@4.11.6",
       "brorand": "npm:brorand@1.1.0"
     },
-    "npm:parse-asn1@5.0.0": {
+    "npm:parse-asn1@5.1.0": {
       "asn1.js": "npm:asn1.js@4.9.1",
       "browserify-aes": "npm:browserify-aes@1.0.6",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -290,7 +298,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "parse-asn1": "npm:parse-asn1@5.0.0",
+      "parse-asn1": "npm:parse-asn1@5.1.0",
       "randombytes": "npm:randombytes@2.0.3"
     },
     "npm:randombytes@2.0.3": {
