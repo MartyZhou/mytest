@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "jspm install",
     "start": "browser-sync start --server"
   },
   "author": "",

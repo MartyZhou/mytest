@@ -1,0 +1,41 @@
+<!--<div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+
+  <hero-form></hero-form>
+
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>-->
+
+<div class="container" *ngIf="hero">
+  <h1>Hero Form</h1>
+  <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="hero.name" name="name">
+      <!--<input type="text" class="form-control" id="name" required [(ngModel)]="hero.name" name="name" #spy>
+            <br>TODO: remove this: {{spy.className}}-->
+    </div>
+
+    <div class="form-group">
+      <label for="alterEgo">Alter Ego</label>
+      <input type="text" class="form-control" id="alterEgo" [(ngModel)]="hero.alterEgo" name="alterEgo">
+    </div>
+
+    <div class="form-group">
+      <label for="power">Hero Power</label>
+      <select class="form-control" id="power" required [(ngModel)]="hero.power" name="power">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+    <button class="btn btn-success" (click)="goBack()">Back</button>
+  </form>
+</div>
