@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
+
+import HeroForm from './app/hero-form.component';
+import Dashboard from './app/dashboard.component';
+import {FilterableProductTable} from './app/product.component';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     const numbers = [1,2,3,4,5,7];
+    var PRODUCTS = [
+  {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+  {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+  {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+  {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+  {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+  {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+];
+
     return (
       <div className="App">
         <div className="App-header">
@@ -17,6 +30,9 @@ class App extends Component {
         <Welcome name="Marty"/>
         <Clock />
         <NumberList numbers={numbers}/>
+        <Dashboard />
+        <HeroForm />
+        <FilterableProductTable products={PRODUCTS} />
       </div>
     );
   }
