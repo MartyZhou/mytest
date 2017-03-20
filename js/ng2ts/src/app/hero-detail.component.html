@@ -38,4 +38,20 @@
     <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
     <button class="btn btn-success" (click)="goBack()">Back</button>
   </form>
+  <hr />
+  <h1>Hero Form with Material</h1>
+  <form>
+    <md-input-container>
+      <input mdInput placeholder="Name" [(ngModel)]="hero.name" name="name">
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput placeholder="Alter Ego" [(ngModel)]="hero.alterEgo" name="alterEgo">
+    </md-input-container>
+
+    <md-select placeholder="Hero Power" [(ngModel)]="hero.power" name="power">
+      <md-option *ngFor="let pow of powers" [value]="pow">{{pow}}</md-option>
+    </md-select>
+  </form>
+
 </div>

@@ -17,7 +17,6 @@
     "pretest:once": "npm run build",
     "test:once": "karma start karma.conf.js --single-run",
     "lint": "tslint ./src/**/*.ts -t verbose",
-
     "build:upgrade": "tsc",
     "serve:upgrade": "http-server",
     "build:cli": "ng build --no-progress",
@@ -41,6 +40,7 @@
     "@angular/core": "2.4.5",
     "@angular/forms": "2.4.5",
     "@angular/http": "2.4.5",
+    "@angular/material": "^2.0.0-beta.2",
     "@angular/platform-browser": "2.4.5",
     "@angular/platform-browser-dynamic": "2.4.5",
     "@angular/platform-server": "2.4.5",
