@@ -1,9 +1,54 @@
 <h3>Top Heroes</h3>
 <div class="grid grid-pad">
-  <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
+  <a *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-1-4">
     <div class="module hero">
       <h4>{{hero.name}}</h4>
     </div>
   </a>
 </div>
+<label *ngFor="let bar of items" y="bar.y" x="bar.x" height="bar.h" width="bar.w" style="fill:lightgrey;stroke-width:1;stroke:lightgrey">{{bar.w}}</label>
+<hr />
+
+<svg width="600" height="300">
+
+ <rect *ngFor="let bar of items" y="bar.y" x="bar.x" height="bar.h" width="bar.w" style="fill:lightgrey;stroke-width:1;stroke:lightgrey"></rect>
+ <!--<rect y="162.27272727272725" x="51.6" height="24.545454545454547" width="64.8" style="fill:lightgrey;stroke-width:1;stroke:lightgrey"></rect>
+  ,
+  <rect y="186.8181818181818" x="159.6" height="73.63636363636364" width="64.8" style="fill:lightgrey;stroke-width:1;stroke:lightgrey"></rect>
+  ,
+  <rect y="64.09090909090908" x="267.6" height="122.72727272727273" width="64.8" style="fill:lightgrey;stroke-width:1;stroke:lightgrey"></rect>
+  ,
+  <rect y="15" x="375.6" height="171.8181818181818" width="64.8" style="fill:lightgrey;stroke-width:1;stroke:lightgrey"></rect>
+  ,
+  <rect y="186.8181818181818" x="483.6" height="98.18181818181819" width="64.8" style="fill:lightgrey;stroke-width:1;stroke:lightgrey"></rect>-->
+
+
+  <line y1="186.8181818181818" x1="30" y2="186.8181818181818" x2="570" style="stroke:black;stroke-width:1"></line>
+
+
+  <line y1="15" x1="30" y2="285" x2="30" style="stroke:black;stroke-width:1"></line>
+
+
+  <text y="206.8181818181818" x="62.4" style="fill:blue">
+    Food
+  </text>
+  ,
+  <text y="184.8181818181818" x="170.4" style="fill:blue">
+    Cloth
+  </text>
+  ,
+  <text y="206.8181818181818" x="278.4" style="fill:blue">
+    Electronic
+  </text>
+  ,
+  <text y="206.8181818181818" x="386.4" style="fill:blue">
+    Office
+  </text>
+  ,
+  <text y="184.8181818181818" x="494.4" style="fill:blue">
+    Others
+  </text>
+
+</svg>
+
 <hero-search></hero-search>
