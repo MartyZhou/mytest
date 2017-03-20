@@ -5,10 +5,8 @@
 </ion-header>
 
 <ion-content padding>
-  <a *ngFor="let hero of heroes" (click)="onSelect(hero)">
-    <div>
-      <h4>{{hero.name}}</h4>
-    </div>
-  </a>
-  <!--<router-outlet></router-outlet>-->
+  <ion-card *ngFor="let hero of heroes" (click)="onSelect(hero)">
+    <ion-card-header>{{hero.name}}</ion-card-header>
+    <ion-card-content>{{hero.name}} has a super power of <b>{{hero.power}}</b></ion-card-content>
+  </ion-card>
 </ion-content>
