@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Hero Details</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content *ngIf="hero">
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <ion-item>
+            <ion-label for="name">Name</ion-label>
+            <ion-input type="text" required [(ngModel)]="hero.name" name="name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label for="alterEgo">Alter Ego</ion-label>
+            <ion-input type="text" [(ngModel)]="hero.alterEgo" name="alterEgo"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label for="power">Hero Power</ion-label>
+            <ion-select [(ngModel)]="hero.power" required name="power">
+                <ion-option *ngFor="let pow of powers" [value]="pow">{{pow}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <button type="submit" ion-button [disabled]="!heroForm.form.valid">Submit</button>
+    </form>
+    <!--<div *ngIf="hero">
+        <h1>Hero Form</h1>
+        <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" required [(ngModel)]="hero.name" name="name">
+            </div>
+
+            <div>
+                <label for="alterEgo">Alter Ego</label>
+                <input type="text" id="alterEgo" [(ngModel)]="hero.alterEgo" name="alterEgo">
+            </div>
+
+            <div>
+                <label for="power">Hero Power</label>
+                <select id="power" required [(ngModel)]="hero.power" name="power">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+      </select>
+            </div>
+
+            <button type="submit" [disabled]="!heroForm.form.valid">Submit</button>
+        </form>
+
+    </div>-->
+</ion-content>
