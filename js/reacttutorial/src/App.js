@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Welcome from './welcome.component';
 import HeroForm from './app/hero-form.component';
 import Dashboard from './app/dashboard.component';
 import {FilterableProductTable} from './app/product.component';
@@ -36,12 +37,6 @@ class App extends Component {
       </div>
     );
   }
-}
-
-function Welcome(props){
-  return (
-    <h1>Hello, {props.name}!</h1>
-  );
 }
 
 class Clock extends Component {
