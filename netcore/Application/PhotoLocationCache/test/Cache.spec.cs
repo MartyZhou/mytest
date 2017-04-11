@@ -12,15 +12,15 @@ namespace Cluj.PhotoLocation.Test
         {
             Assert.NotNull(Cache.TestCityLevelCache());
             Assert.NotEmpty(Cache.TestCityLevelCache());
-            Assert.Equal<int>(45, Cache.TestCityLevelCache().Count);
+            Assert.Equal<int>(42, Cache.TestCityLevelCache().Count);
 
             Assert.NotNull(Cache.TestAreaLevel1Cache());
             Assert.NotEmpty(Cache.TestAreaLevel1Cache());
-            Assert.Equal<int>(18, Cache.TestAreaLevel1Cache().Count);
+            Assert.Equal<int>(19, Cache.TestAreaLevel1Cache().Count);
 
             Assert.NotNull(Cache.TestAreaLevel2Cache());
             Assert.NotEmpty(Cache.TestAreaLevel2Cache());
-            Assert.Equal<int>(18, Cache.TestAreaLevel2Cache().Count);
+            Assert.Equal<int>(16, Cache.TestAreaLevel2Cache().Count);
 
             Assert.NotNull(Cache.TestCountryLevelCache());
             Assert.NotEmpty(Cache.TestCountryLevelCache());
@@ -31,10 +31,6 @@ namespace Cluj.PhotoLocation.Test
         [Fact]
         public async void ParseCityNameSuccessfully()
         {
-            var result = await Cache.GetCityName('N', 0, 'E', 0).ConfigureAwait(false);
-
-            Assert.Equal<string>("Hyderabad", result);
-
             var beijing = await Cache.GetCityName('N', 40.0608159, 'E', 116.514625).ConfigureAwait(false);
 
             Assert.Equal<string>("Beijing", beijing);
@@ -45,7 +41,7 @@ namespace Cluj.PhotoLocation.Test
 
             var capetown = await Cache.GetCityName('S', 30, 'E', 22).ConfigureAwait(false);
 
-            Assert.Equal<string>("South Africa", capetown);
+            Assert.Equal<string>("Benede Oranje", capetown);
 
             var buenos = await Cache.GetCityName('S', 34.6, 'W', 58.4).ConfigureAwait(false);
 
