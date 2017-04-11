@@ -1,0 +1,250 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "បាណន់",
+               "short_name" : "បាណន់",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Banan",
+               "short_name" : "Banan",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, បាណន់, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 12.9512854,
+                  "lng" : 103.1419283
+               },
+               "southwest" : {
+                  "lat" : 12.9510815,
+                  "lng" : 103.139981
+               }
+            },
+            "location" : {
+               "lat" : 12.9511911,
+               "lng" : 103.140954
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 12.9525324302915,
+                  "lng" : 103.1423036302915
+               },
+               "southwest" : {
+                  "lat" : 12.9498344697085,
+                  "lng" : 103.1396056697085
+               }
+            }
+         },
+         "place_id" : "ChIJ8baU58I4BTERai4atj3xfsE",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "បាណន់",
+               "short_name" : "បាណន់",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "បាណន់",
+               "short_name" : "បាណន់",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "ខេត្ត​បាត់ដំបង",
+               "short_name" : "ខេត្ត​បាត់ដំបង",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "បាណន់, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 12.9593102,
+                  "lng" : 103.1554841
+               },
+               "southwest" : {
+                  "lat" : 12.9247627,
+                  "lng" : 103.1332542
+               }
+            },
+            "location" : {
+               "lat" : 12.9445034,
+               "lng" : 103.1480841
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 12.9593102,
+                  "lng" : 103.1554841
+               },
+               "southwest" : {
+                  "lat" : 12.9247627,
+                  "lng" : 103.1332542
+               }
+            }
+         },
+         "place_id" : "ChIJc-kX_MU4BTER8vDunT9P2GM",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Banan",
+               "short_name" : "Banan",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Banan, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.1635695,
+                  "lng" : 103.2259941
+               },
+               "southwest" : {
+                  "lat" : 12.7717087,
+                  "lng" : 102.8351212
+               }
+            },
+            "location" : {
+               "lat" : 13.0715062,
+               "lng" : 103.035694
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.1635695,
+                  "lng" : 103.2259941
+               },
+               "southwest" : {
+                  "lat" : 12.7717087,
+                  "lng" : 102.8351212
+               }
+            }
+         },
+         "place_id" : "ChIJYd0U1wg7BTER1F-ZfGDllYE",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Battambang Province, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.4669679,
+                  "lng" : 103.8692401
+               },
+               "southwest" : {
+                  "lat" : 12.4044009,
+                  "lng" : 102.350647
+               }
+            },
+            "location" : {
+               "lat" : 13.0286971,
+               "lng" : 102.989615
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.4669679,
+                  "lng" : 103.7692076
+               },
+               "southwest" : {
+                  "lat" : 12.4044009,
+                  "lng" : 102.350647
+               }
+            }
+         },
+         "place_id" : "ChIJDTYr8bY5BTERZOM1bitTUsI",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.6901791,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.6007,
+                  "lng" : 102.333542
+               }
+            },
+            "location" : {
+               "lat" : 12.565679,
+               "lng" : 104.990963
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.690179,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.9136446,
+                  "lng" : 102.333542
+               }
+            }
+         },
+         "place_id" : "ChIJQzfc1L-HBzERUxL0ieC_t-Q",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,206 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Talisay - Tanauan Road",
+               "short_name" : "421",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Talisay",
+               "short_name" : "Talisay",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Batangas",
+               "short_name" : "Batangas",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Calabarzon",
+               "short_name" : "Calabarzon",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Talisay - Tanauan Rd, Talisay, Batangas, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.0842236,
+                  "lng" : 120.9994416
+               },
+               "southwest" : {
+                  "lat" : 14.0821663,
+                  "lng" : 120.995993
+               }
+            },
+            "location" : {
+               "lat" : 14.0830296,
+               "lng" : 120.9977754
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.0845439302915,
+                  "lng" : 120.9994416
+               },
+               "southwest" : {
+                  "lat" : 14.0818459697085,
+                  "lng" : 120.995993
+               }
+            }
+         },
+         "place_id" : "ChIJaw8wls9wvTMRUv-8VVaSU3I",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Talisay",
+               "short_name" : "Talisay",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Batangas",
+               "short_name" : "Batangas",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Calabarzon",
+               "short_name" : "Calabarzon",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Talisay, Batangas, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.1445657,
+                  "lng" : 121.0607529
+               },
+               "southwest" : {
+                  "lat" : 14.009529,
+                  "lng" : 120.9577559
+               }
+            },
+            "location" : {
+               "lat" : 14.1130394,
+               "lng" : 121.0092544
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.1445657,
+                  "lng" : 121.0607529
+               },
+               "southwest" : {
+                  "lat" : 14.0815132,
+                  "lng" : 120.9577559
+               }
+            }
+         },
+         "place_id" : "ChIJnSiN-I1wvTMRPsxkidDX1ms",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Batangas",
+               "short_name" : "Batangas",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Calabarzon",
+               "short_name" : "Calabarzon",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Batangas, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.22979,
+                  "lng" : 121.4706881
+               },
+               "southwest" : {
+                  "lat" : 13.526222,
+                  "lng" : 120.5691601
+               }
+            },
+            "location" : {
+               "lat" : 13.9450336,
+               "lng" : 121.1312012
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.2292093,
+                  "lng" : 121.4704769
+               },
+               "southwest" : {
+                  "lat" : 13.5266374,
+                  "lng" : 120.5691661
+               }
+            }
+         },
+         "place_id" : "ChIJEZspM4ISvTMRo_3ntNgZqaE",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 19.932,
+                  "lng" : 127.6444784
+               },
+               "southwest" : {
+                  "lat" : 4.2259,
+                  "lng" : 116.1474999
+               }
+            },
+            "location" : {
+               "lat" : 12.879721,
+               "lng" : 121.774017
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 19.7610407,
+                  "lng" : 130.6600275
+               },
+               "southwest" : {
+                  "lat" : 3.6346296,
+                  "lng" : 114.583481
+               }
+            }
+         },
+         "place_id" : "ChIJY96HXyFTQDIRV9opeu-QR3g",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

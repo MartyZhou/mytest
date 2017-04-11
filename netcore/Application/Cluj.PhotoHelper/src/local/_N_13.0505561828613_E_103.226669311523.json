@@ -1,0 +1,191 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Sangkae",
+               "short_name" : "Sangkae",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.0489964,
+                  "lng" : 103.2216479
+               },
+               "southwest" : {
+                  "lat" : 13.0472829,
+                  "lng" : 103.2180592
+               }
+            },
+            "location" : {
+               "lat" : 13.04811,
+               "lng" : 103.2198684
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.0494886302915,
+                  "lng" : 103.2216479
+               },
+               "southwest" : {
+                  "lat" : 13.0467906697085,
+                  "lng" : 103.2180592
+               }
+            }
+         },
+         "place_id" : "ChIJOVv2flhIBTERjGffDOzBx-s",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Sangkae",
+               "short_name" : "Sangkae",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Sangkae, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.2621686,
+                  "lng" : 103.6963463
+               },
+               "southwest" : {
+                  "lat" : 12.9185719,
+                  "lng" : 103.162651
+               }
+            },
+            "location" : {
+               "lat" : 13.0524086,
+               "lng" : 103.4049445
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.2621686,
+                  "lng" : 103.6963463
+               },
+               "southwest" : {
+                  "lat" : 12.9185719,
+                  "lng" : 103.162651
+               }
+            }
+         },
+         "place_id" : "ChIJx2y8Z59WBTERHP2DXWAv3n4",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Battambang Province, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.4669679,
+                  "lng" : 103.8692401
+               },
+               "southwest" : {
+                  "lat" : 12.4044009,
+                  "lng" : 102.350647
+               }
+            },
+            "location" : {
+               "lat" : 13.0286971,
+               "lng" : 102.989615
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.4669679,
+                  "lng" : 103.7692076
+               },
+               "southwest" : {
+                  "lat" : 12.4044009,
+                  "lng" : 102.350647
+               }
+            }
+         },
+         "place_id" : "ChIJDTYr8bY5BTERZOM1bitTUsI",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.6901791,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.6007,
+                  "lng" : 102.333542
+               }
+            },
+            "location" : {
+               "lat" : 12.565679,
+               "lng" : 104.990963
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.690179,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.9136446,
+                  "lng" : 102.333542
+               }
+            }
+         },
+         "place_id" : "ChIJQzfc1L-HBzERUxL0ieC_t-Q",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

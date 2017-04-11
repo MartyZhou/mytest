@@ -1,0 +1,93 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "El Nido",
+               "short_name" : "El Nido",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, El Nido, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 11.263459,
+                  "lng" : 119.5636494
+               },
+               "southwest" : {
+                  "lat" : 11.2627831,
+                  "lng" : 119.5622055
+               }
+            },
+            "location" : {
+               "lat" : 11.262823,
+               "lng" : 119.5631962
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 11.2644700302915,
+                  "lng" : 119.5642764302915
+               },
+               "southwest" : {
+                  "lat" : 11.2617720697085,
+                  "lng" : 119.5615784697085
+               }
+            }
+         },
+         "place_id" : "ChIJ5zSL530DtzMRyAtxs_Zv4EQ",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 19.932,
+                  "lng" : 127.6444784
+               },
+               "southwest" : {
+                  "lat" : 4.2259,
+                  "lng" : 116.1474999
+               }
+            },
+            "location" : {
+               "lat" : 12.879721,
+               "lng" : 121.774017
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 19.7610407,
+                  "lng" : 130.6600275
+               },
+               "southwest" : {
+                  "lat" : 3.6346296,
+                  "lng" : 114.583481
+               }
+            }
+         },
+         "place_id" : "ChIJY96HXyFTQDIRV9opeu-QR3g",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

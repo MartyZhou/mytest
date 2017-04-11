@@ -1,0 +1,250 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "203 Sheng Dao",
+               "short_name" : "S203",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Hunyuan Xian",
+               "short_name" : "Hunyuan Xian",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Datong Shi",
+               "short_name" : "Datong Shi",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Shanxi Sheng",
+               "short_name" : "Shanxi Sheng",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "203 Sheng Dao, Hunyuan Xian, Datong Shi, Shanxi Sheng, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 39.66409549999999,
+                  "lng" : 113.7177143
+               },
+               "southwest" : {
+                  "lat" : 39.66242039999999,
+                  "lng" : 113.7146875
+               }
+            },
+            "location" : {
+               "lat" : 39.6632363,
+               "lng" : 113.7161882
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 39.6646069302915,
+                  "lng" : 113.7177143
+               },
+               "southwest" : {
+                  "lat" : 39.6619089697085,
+                  "lng" : 113.7146875
+               }
+            }
+         },
+         "place_id" : "ChIJLZ16eYcU4zUR4HXuD6I9_QE",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Hunyuan",
+               "short_name" : "Hunyuan",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Datong",
+               "short_name" : "Datong",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Shanxi",
+               "short_name" : "Shanxi",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Hunyuan, Datong, Shanxi, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 39.8746687,
+                  "lng" : 113.9764772
+               },
+               "southwest" : {
+                  "lat" : 39.3699763,
+                  "lng" : 113.3829894
+               }
+            },
+            "location" : {
+               "lat" : 39.69340700000001,
+               "lng" : 113.699475
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 39.8746687,
+                  "lng" : 113.9764772
+               },
+               "southwest" : {
+                  "lat" : 39.3699763,
+                  "lng" : 113.3829894
+               }
+            }
+         },
+         "place_id" : "ChIJhUfEBrQT4zURDe6UChRre-o",
+         "types" : [ "political", "sublocality", "sublocality_level_1" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Datong",
+               "short_name" : "Datong",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Shanxi",
+               "short_name" : "Shanxi",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Datong, Shanxi, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.7373523,
+                  "lng" : 114.5689224
+               },
+               "southwest" : {
+                  "lat" : 39.048278,
+                  "lng" : 112.5783793
+               }
+            },
+            "location" : {
+               "lat" : 40.076763,
+               "lng" : 113.300129
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.18452569999999,
+                  "lng" : 113.431778
+               },
+               "southwest" : {
+                  "lat" : 39.9959438,
+                  "lng" : 113.1777191
+               }
+            }
+         },
+         "place_id" : "ChIJ9RFgFYfT4jURcwIfACCIGZY",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Shanxi",
+               "short_name" : "Shanxi",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Shanxi, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.7373523,
+                  "lng" : 114.5689224
+               },
+               "southwest" : {
+                  "lat" : 34.5819351,
+                  "lng" : 110.2302481
+               }
+            },
+            "location" : {
+               "lat" : 37.873499,
+               "lng" : 112.562678
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.7373523,
+                  "lng" : 114.5689224
+               },
+               "southwest" : {
+                  "lat" : 34.5819351,
+                  "lng" : 110.2302481
+               }
+            }
+         },
+         "place_id" : "ChIJAZbireuoCjYRL-LvlMM8zpw",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 53.56097399999999,
+                  "lng" : 134.7728099
+               },
+               "southwest" : {
+                  "lat" : 17.9996,
+                  "lng" : 73.4994136
+               }
+            },
+            "location" : {
+               "lat" : 35.86166,
+               "lng" : 104.195397
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.56097399999999,
+                  "lng" : 134.7726951
+               },
+               "southwest" : {
+                  "lat" : 18.1618061,
+                  "lng" : 73.5034261
+               }
+            }
+         },
+         "place_id" : "ChIJwULG5WSOUDERbzafNHyqHZU",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

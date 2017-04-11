@@ -1,0 +1,157 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Honda Bay Wharf Service Road",
+               "short_name" : "Honda Bay Wharf Service Rd",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Puerto Princesa",
+               "short_name" : "PPC",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Palawan",
+               "short_name" : "Palawan",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "MIMAROPA",
+               "short_name" : "MIMAROPA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Honda Bay Wharf Service Rd, Puerto Princesa, Palawan, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 9.8439464,
+                  "lng" : 118.7460371
+               },
+               "southwest" : {
+                  "lat" : 9.842463,
+                  "lng" : 118.7410429
+               }
+            },
+            "location" : {
+               "lat" : 9.8431829,
+               "lng" : 118.7435379
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 9.844553680291503,
+                  "lng" : 118.7460371
+               },
+               "southwest" : {
+                  "lat" : 9.841855719708498,
+                  "lng" : 118.7410429
+               }
+            }
+         },
+         "place_id" : "ChIJgTttzpJ8tTMRLiKBughZXLk",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Puerto Princesa",
+               "short_name" : "PPC",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Palawan",
+               "short_name" : "Palawan",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "MIMAROPA",
+               "short_name" : "MIMAROPA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Puerto Princesa, Palawan, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 10.3378871,
+                  "lng" : 119.2080976
+               },
+               "southwest" : {
+                  "lat" : 9.5596181,
+                  "lng" : 118.3460999
+               }
+            },
+            "location" : {
+               "lat" : 9.967216299999999,
+               "lng" : 118.78551
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 10.3335041,
+                  "lng" : 119.2066883
+               },
+               "southwest" : {
+                  "lat" : 9.5602564,
+                  "lng" : 118.382513
+               }
+            }
+         },
+         "place_id" : "ChIJpdYJytBjtTMRjW9JV1d5yZA",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 19.932,
+                  "lng" : 127.6444784
+               },
+               "southwest" : {
+                  "lat" : 4.2259,
+                  "lng" : 116.1474999
+               }
+            },
+            "location" : {
+               "lat" : 12.879721,
+               "lng" : 121.774017
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 19.7610407,
+                  "lng" : 130.6600275
+               },
+               "southwest" : {
+                  "lat" : 3.6346296,
+                  "lng" : 114.583481
+               }
+            }
+         },
+         "place_id" : "ChIJY96HXyFTQDIRV9opeu-QR3g",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

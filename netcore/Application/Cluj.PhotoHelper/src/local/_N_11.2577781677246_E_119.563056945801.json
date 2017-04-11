@@ -1,0 +1,157 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "El Nido",
+               "short_name" : "El Nido",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Palawan",
+               "short_name" : "Palawan",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "MIMAROPA",
+               "short_name" : "MIMAROPA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, El Nido, Palawan, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 11.2629936,
+                  "lng" : 119.5616973
+               },
+               "southwest" : {
+                  "lat" : 11.237106,
+                  "lng" : 119.548328
+               }
+            },
+            "location" : {
+               "lat" : 11.2471529,
+               "lng" : 119.5567369
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 11.2629936,
+                  "lng" : 119.5616973
+               },
+               "southwest" : {
+                  "lat" : 11.237106,
+                  "lng" : 119.548328
+               }
+            }
+         },
+         "place_id" : "ChIJDYQo-H4DtzMRftpM2rB8iFg",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "El Nido",
+               "short_name" : "El Nido",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Palawan",
+               "short_name" : "Palawan",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "MIMAROPA",
+               "short_name" : "MIMAROPA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "El Nido, Palawan, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 11.4541165,
+                  "lng" : 119.5697021
+               },
+               "southwest" : {
+                  "lat" : 10.9650394,
+                  "lng" : 119.2380524
+               }
+            },
+            "location" : {
+               "lat" : 11.2097089,
+               "lng" : 119.4622539
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 11.4451996,
+                  "lng" : 119.5689324
+               },
+               "southwest" : {
+                  "lat" : 10.9650394,
+                  "lng" : 119.2432337
+               }
+            }
+         },
+         "place_id" : "ChIJD55c7xVVtjMRVQSbWVtmTvw",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 19.932,
+                  "lng" : 127.6444784
+               },
+               "southwest" : {
+                  "lat" : 4.2259,
+                  "lng" : 116.1474999
+               }
+            },
+            "location" : {
+               "lat" : 12.879721,
+               "lng" : 121.774017
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 19.7610407,
+                  "lng" : 130.6600275
+               },
+               "southwest" : {
+                  "lat" : 3.6346296,
+                  "lng" : 114.583481
+               }
+            }
+         },
+         "place_id" : "ChIJY96HXyFTQDIRV9opeu-QR3g",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

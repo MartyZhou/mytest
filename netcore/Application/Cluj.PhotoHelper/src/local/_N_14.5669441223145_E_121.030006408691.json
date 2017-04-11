@@ -1,0 +1,250 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "4474",
+               "short_name" : "4474",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Q Singian",
+               "short_name" : "Q Singian",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Makati",
+               "short_name" : "Makati",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Metro Manila",
+               "short_name" : "Metro Manila",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Metro Manila",
+               "short_name" : "NCR",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "1210",
+               "short_name" : "1210",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "4474 Q Singian, Makati, 1210 Metro Manila, Philippines",
+         "geometry" : {
+            "location" : {
+               "lat" : 14.566976,
+               "lng" : 121.029946
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.5683249802915,
+                  "lng" : 121.0312949802915
+               },
+               "southwest" : {
+                  "lat" : 14.5656270197085,
+                  "lng" : 121.0285970197085
+               }
+            }
+         },
+         "place_id" : "ChIJCToBhqvJlzMR6tza3HV_bko",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Poblacion",
+               "short_name" : "Poblacion",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Makati",
+               "short_name" : "Makati",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Metro Manila",
+               "short_name" : "NCR",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Poblacion, Makati, Metro Manila, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.5740827,
+                  "lng" : 121.0389845
+               },
+               "southwest" : {
+                  "lat" : 14.561622,
+                  "lng" : 121.0235505
+               }
+            },
+            "location" : {
+               "lat" : 14.5656805,
+               "lng" : 121.0320766
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.5740827,
+                  "lng" : 121.0389845
+               },
+               "southwest" : {
+                  "lat" : 14.561622,
+                  "lng" : 121.0235505
+               }
+            }
+         },
+         "place_id" : "ChIJc3FwfavJlzMRAGVumll4O80",
+         "types" : [ "neighborhood", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Makati",
+               "short_name" : "Makati",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Metro Manila",
+               "short_name" : "NCR",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Makati, Metro Manila, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.5800008,
+                  "lng" : 121.0675067
+               },
+               "southwest" : {
+                  "lat" : 14.5291846,
+                  "lng" : 120.998873
+               }
+            },
+            "location" : {
+               "lat" : 14.554729,
+               "lng" : 121.0244452
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.5796937,
+                  "lng" : 121.0674002
+               },
+               "southwest" : {
+                  "lat" : 14.5291846,
+                  "lng" : 120.998873
+               }
+            }
+         },
+         "place_id" : "ChIJAe2gZALJlzMRzsoweNVuBis",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Metro Manila",
+               "short_name" : "NCR",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Metro Manila, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.7874961,
+                  "lng" : 121.1350759
+               },
+               "southwest" : {
+                  "lat" : 14.3480961,
+                  "lng" : 120.9062111
+               }
+            },
+            "location" : {
+               "lat" : 14.6090537,
+               "lng" : 121.0222565
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.7874961,
+                  "lng" : 121.1350759
+               },
+               "southwest" : {
+                  "lat" : 14.3480961,
+                  "lng" : 120.9063656
+               }
+            }
+         },
+         "place_id" : "ChIJbTgmYNLIlzMR0HiSrNoj7V8",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 19.932,
+                  "lng" : 127.6444784
+               },
+               "southwest" : {
+                  "lat" : 4.2259,
+                  "lng" : 116.1474999
+               }
+            },
+            "location" : {
+               "lat" : 12.879721,
+               "lng" : 121.774017
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 19.7610407,
+                  "lng" : 130.6600275
+               },
+               "southwest" : {
+                  "lat" : 3.6346296,
+                  "lng" : 114.583481
+               }
+            }
+         },
+         "place_id" : "ChIJY96HXyFTQDIRV9opeu-QR3g",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

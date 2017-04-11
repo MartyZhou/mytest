@@ -1,0 +1,191 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Svay Leu",
+               "short_name" : "Svay Leu",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Siem Reap Province",
+               "short_name" : "Siem Reap Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.4763214,
+                  "lng" : 104.230208
+               },
+               "southwest" : {
+                  "lat" : 13.475638,
+                  "lng" : 104.2291027
+               }
+            },
+            "location" : {
+               "lat" : 13.4763171,
+               "lng" : 104.2299807
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.4773286802915,
+                  "lng" : 104.2310043302915
+               },
+               "southwest" : {
+                  "lat" : 13.4746307197085,
+                  "lng" : 104.2283063697085
+               }
+            }
+         },
+         "place_id" : "ChIJnymnbqM1EDER3AaNWY9Kty4",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Svay Leu",
+               "short_name" : "Svay Leu",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Siem Reap Province",
+               "short_name" : "Siem Reap Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Svay Leu, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.2215389,
+                  "lng" : 104.5087337
+               },
+               "southwest" : {
+                  "lat" : 13.44372,
+                  "lng" : 104.0800953
+               }
+            },
+            "location" : {
+               "lat" : 13.819111,
+               "lng" : 104.2395942
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.2215389,
+                  "lng" : 104.5087337
+               },
+               "southwest" : {
+                  "lat" : 13.44372,
+                  "lng" : 104.0800953
+               }
+            }
+         },
+         "place_id" : "ChIJ71ia086qETERWArWU4zpBnM",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Siem Reap Province",
+               "short_name" : "Siem Reap Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Siem Reap Province, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.221998,
+                  "lng" : 104.689093
+               },
+               "southwest" : {
+                  "lat" : 12.716109,
+                  "lng" : 103.3926538
+               }
+            },
+            "location" : {
+               "lat" : 13.6915377,
+               "lng" : 104.1001326
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.221998,
+                  "lng" : 104.689093
+               },
+               "southwest" : {
+                  "lat" : 12.7426169,
+                  "lng" : 103.3926538
+               }
+            }
+         },
+         "place_id" : "ChIJ9aDUBwsXEDERuaxzznDT210",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.6901791,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.6007,
+                  "lng" : 102.333542
+               }
+            },
+            "location" : {
+               "lat" : 12.565679,
+               "lng" : 104.990963
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.690179,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.9136446,
+                  "lng" : 102.333542
+               }
+            }
+         },
+         "place_id" : "ChIJQzfc1L-HBzERUxL0ieC_t-Q",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,250 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Wenan Xian",
+               "short_name" : "Wenan Xian",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Langfang Shi",
+               "short_name" : "Langfang Shi",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Hebei Sheng",
+               "short_name" : "Hebei Sheng",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, Wenan Xian, Langfang Shi, Hebei Sheng, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 38.9825383,
+                  "lng" : 116.4558665
+               },
+               "southwest" : {
+                  "lat" : 38.9578891,
+                  "lng" : 116.4546436
+               }
+            },
+            "location" : {
+               "lat" : 38.9702114,
+               "lng" : 116.4553398
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9825383,
+                  "lng" : 116.4566040302915
+               },
+               "southwest" : {
+                  "lat" : 38.9578891,
+                  "lng" : 116.4539060697085
+               }
+            }
+         },
+         "place_id" : "ChIJVS7IXQ1N7jUReCl4QBnX6Pg",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Wen'an",
+               "short_name" : "Wen'an",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Langfang",
+               "short_name" : "Langfang",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Hebei",
+               "short_name" : "Hebei",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Wen'an, Langfang, Hebei, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 39.05909640000001,
+                  "lng" : 116.7593537
+               },
+               "southwest" : {
+                  "lat" : 38.7400538,
+                  "lng" : 116.1987603
+               }
+            },
+            "location" : {
+               "lat" : 38.87328100000001,
+               "lng" : 116.457858
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 39.05909640000001,
+                  "lng" : 116.7593537
+               },
+               "southwest" : {
+                  "lat" : 38.7400538,
+                  "lng" : 116.1987603
+               }
+            }
+         },
+         "place_id" : "ChIJveLQMbBT7jURtqYly8E46-A",
+         "types" : [ "political", "sublocality", "sublocality_level_1" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Langfang",
+               "short_name" : "Langfang",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Hebei",
+               "short_name" : "Hebei",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Langfang, Hebei, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.0850111,
+                  "lng" : 117.2599866
+               },
+               "southwest" : {
+                  "lat" : 38.470317,
+                  "lng" : 116.1166769
+               }
+            },
+            "location" : {
+               "lat" : 39.53804700000001,
+               "lng" : 116.683752
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 39.6029123,
+                  "lng" : 116.8444061
+               },
+               "southwest" : {
+                  "lat" : 39.4355307,
+                  "lng" : 116.5841675
+               }
+            }
+         },
+         "place_id" : "ChIJQc3AP6gm7jURKFI_nBcTheA",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Hebei",
+               "short_name" : "Hebei",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Hebei, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.6197178,
+                  "lng" : 119.8725773
+               },
+               "southwest" : {
+                  "lat" : 36.0482067,
+                  "lng" : 113.4653687
+               }
+            },
+            "location" : {
+               "lat" : 38.037057,
+               "lng" : 114.468665
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.6197178,
+                  "lng" : 119.8710119
+               },
+               "southwest" : {
+                  "lat" : 36.0482067,
+                  "lng" : 113.4653687
+               }
+            }
+         },
+         "place_id" : "ChIJ1YZMyjCpjDURIfse5yIKRWA",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 53.56097399999999,
+                  "lng" : 134.7728099
+               },
+               "southwest" : {
+                  "lat" : 17.9996,
+                  "lng" : 73.4994136
+               }
+            },
+            "location" : {
+               "lat" : 35.86166,
+               "lng" : 104.195397
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.56097399999999,
+                  "lng" : 134.7726951
+               },
+               "southwest" : {
+                  "lat" : 18.1618061,
+                  "lng" : 73.5034261
+               }
+            }
+         },
+         "place_id" : "ChIJwULG5WSOUDERbzafNHyqHZU",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

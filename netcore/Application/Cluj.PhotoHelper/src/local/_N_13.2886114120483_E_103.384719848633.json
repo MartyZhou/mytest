@@ -1,0 +1,196 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "156",
+               "short_name" : "156",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Phum Bak Prea",
+               "short_name" : "Phum Bak Prea",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Ek Phnom",
+               "short_name" : "Ek Phnom",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "156, Phum Bak Prea, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.310738,
+                  "lng" : 103.4002948
+               },
+               "southwest" : {
+                  "lat" : 13.2844001,
+                  "lng" : 103.3679795
+               }
+            },
+            "location" : {
+               "lat" : 13.2973935,
+               "lng" : 103.3843031
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.310738,
+                  "lng" : 103.4002948
+               },
+               "southwest" : {
+                  "lat" : 13.2844001,
+                  "lng" : 103.3679795
+               }
+            }
+         },
+         "place_id" : "ChIJe-i5dGuuGjERBMHWd-XT2kw",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Ek Phnom",
+               "short_name" : "Ek Phnom",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Ek Phnom, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.42365,
+                  "lng" : 103.7047578
+               },
+               "southwest" : {
+                  "lat" : 13.1374926,
+                  "lng" : 103.1458282
+               }
+            },
+            "location" : {
+               "lat" : 13.3232845,
+               "lng" : 103.4049445
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.42365,
+                  "lng" : 103.7047578
+               },
+               "southwest" : {
+                  "lat" : 13.1374926,
+                  "lng" : 103.1458282
+               }
+            }
+         },
+         "place_id" : "ChIJxTA8bp6uGjERZlQj3ys-ZgE",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Battambang Province",
+               "short_name" : "Battambang Province",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Battambang Province, Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 13.4669679,
+                  "lng" : 103.8692401
+               },
+               "southwest" : {
+                  "lat" : 12.4044009,
+                  "lng" : 102.350647
+               }
+            },
+            "location" : {
+               "lat" : 13.0286971,
+               "lng" : 102.989615
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.4669679,
+                  "lng" : 103.7692076
+               },
+               "southwest" : {
+                  "lat" : 12.4044009,
+                  "lng" : 102.350647
+               }
+            }
+         },
+         "place_id" : "ChIJDTYr8bY5BTERZOM1bitTUsI",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cambodia",
+               "short_name" : "KH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cambodia",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.6901791,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.6007,
+                  "lng" : 102.333542
+               }
+            },
+            "location" : {
+               "lat" : 12.565679,
+               "lng" : 104.990963
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.690179,
+                  "lng" : 107.627687
+               },
+               "southwest" : {
+                  "lat" : 9.9136446,
+                  "lng" : 102.333542
+               }
+            }
+         },
+         "place_id" : "ChIJQzfc1L-HBzERUxL0ieC_t-Q",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}
