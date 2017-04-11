@@ -66,6 +66,8 @@ namespace Cluj.PhotoLocation
         public AddressDetails[] Results { get; set; }
 
         public string City { get; set; }
+
+        public bool IsValid { get; set; }
     }
 
     public struct TripSpan
@@ -83,7 +85,11 @@ namespace Cluj.PhotoLocation
 
     public struct Config
     {
-        public string Source { get; set; }
-        public string Destination { get; set; }
+        [JsonProperty("path")]
+        public string Path { get; set; }
+
+        [JsonProperty("api_key")]
+
+        public string API_KEY { get; set; }
     }
 }

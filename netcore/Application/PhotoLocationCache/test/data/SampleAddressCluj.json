@@ -1,0 +1,324 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Splaiul Independenţei",
+               "short_name" : "Splaiul Independenţei",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Old Town",
+               "short_name" : "Old Town",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "City Center",
+               "short_name" : "City Center",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Cluj-Napoca",
+               "short_name" : "Cluj-Napoca",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Municipiul Cluj - Napoca",
+               "short_name" : "Municipiul Cluj - Napoca",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Județul Cluj",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "400000",
+               "short_name" : "400000",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Splaiul Independenţei, Cluj-Napoca 400000, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.7708062,
+                  "lng" : 23.5781528
+               },
+               "southwest" : {
+                  "lat" : 46.7707852,
+                  "lng" : 23.578041
+               }
+            },
+            "location" : {
+               "lat" : 46.7707957,
+               "lng" : 23.5780969
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.7721446802915,
+                  "lng" : 23.5794458802915
+               },
+               "southwest" : {
+                  "lat" : 46.7694467197085,
+                  "lng" : 23.5767479197085
+               }
+            }
+         },
+         "place_id" : "ChIJPbQFNYUOSUcRy4K2DLr1MDA",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Old Town",
+               "short_name" : "Old Town",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Cluj-Napoca",
+               "short_name" : "Cluj-Napoca",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Cluj - Napoca",
+               "short_name" : "Cluj - Napoca",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Cluj County",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Old Town, Cluj-Napoca, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.7784479,
+                  "lng" : 23.6048761
+               },
+               "southwest" : {
+                  "lat" : 46.7629502,
+                  "lng" : 23.5688709
+               }
+            },
+            "location" : {
+               "lat" : 46.7698428,
+               "lng" : 23.5888673
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.7784479,
+                  "lng" : 23.6048761
+               },
+               "southwest" : {
+                  "lat" : 46.7629502,
+                  "lng" : 23.5688709
+               }
+            }
+         },
+         "place_id" : "ChIJ42C3C50OSUcRqK80tsoJoAE",
+         "types" : [ "neighborhood", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cluj-Napoca",
+               "short_name" : "Cluj-Napoca",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Cluj - Napoca",
+               "short_name" : "Cluj - Napoca",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Cluj County",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cluj-Napoca, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.8612951,
+                  "lng" : 23.7104809
+               },
+               "southwest" : {
+                  "lat" : 46.7054762,
+                  "lng" : 23.522544
+               }
+            },
+            "location" : {
+               "lat" : 46.7712101,
+               "lng" : 23.6236353
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.8612951,
+                  "lng" : 23.7104809
+               },
+               "southwest" : {
+                  "lat" : 46.7054762,
+                  "lng" : 23.522544
+               }
+            }
+         },
+         "place_id" : "ChIJiwtskR8MSUcRixQfMxxgvAs",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cluj - Napoca",
+               "short_name" : "Cluj - Napoca",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Cluj County",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cluj - Napoca, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.86398399999999,
+                  "lng" : 23.713744
+               },
+               "southwest" : {
+                  "lat" : 46.691367,
+                  "lng" : 23.493204
+               }
+            },
+            "location" : {
+               "lat" : 46.7712101,
+               "lng" : 23.6236353
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.86398399999999,
+                  "lng" : 23.713744
+               },
+               "southwest" : {
+                  "lat" : 46.691367,
+                  "lng" : 23.493204
+               }
+            }
+         },
+         "place_id" : "ChIJY95eGB8MSUcRL11BldQ5-XI",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cluj County",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cluj County, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 47.370062,
+                  "lng" : 24.2579299
+               },
+               "southwest" : {
+                  "lat" : 46.396713,
+                  "lng" : 22.5999269
+               }
+            },
+            "location" : {
+               "lat" : 46.79417970000001,
+               "lng" : 23.6121492
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 47.370062,
+                  "lng" : 24.2579299
+               },
+               "southwest" : {
+                  "lat" : 46.396713,
+                  "lng" : 22.5999269
+               }
+            }
+         },
+         "place_id" : "ChIJiwtskR8MSUcR6Nk3QsedRkI",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 48.265274,
+                  "lng" : 29.77839999999999
+               },
+               "southwest" : {
+                  "lat" : 43.6186193,
+                  "lng" : 20.2617593
+               }
+            },
+            "location" : {
+               "lat" : 45.943161,
+               "lng" : 24.96676
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.265274,
+                  "lng" : 29.7570806
+               },
+               "southwest" : {
+                  "lat" : 43.62329769999999,
+                  "lng" : 20.2617593
+               }
+            }
+         },
+         "place_id" : "ChIJw3aJlSb_sUARlLEEqJJP74Q",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

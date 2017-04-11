@@ -1,0 +1,108 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "83",
+               "short_name" : "83",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "South Perimeter Road",
+               "short_name" : "S Perimeter Rd",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Robben Island",
+               "short_name" : "Robben Island",
+               "types" : [ "political", "sublocality", "sublocality_level_2" ]
+            },
+            {
+               "long_name" : "Robben Island",
+               "short_name" : "Robben Island",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Cape Town",
+               "short_name" : "Cape Town",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Western Cape",
+               "short_name" : "WC",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "South Africa",
+               "short_name" : "ZA",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "7400",
+               "short_name" : "7400",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "83 S Perimeter Rd, Robben Island, 7400, South Africa",
+         "geometry" : {
+            "location" : {
+               "lat" : -33.8151139,
+               "lng" : 18.3798995
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -33.8137649197085,
+                  "lng" : 18.3812484802915
+               },
+               "southwest" : {
+                  "lat" : -33.8164628802915,
+                  "lng" : 18.3785505197085
+               }
+            }
+         },
+         "place_id" : "ChIJB4CXTdVhzB0RI8X6FPKfvXM",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "South Africa",
+               "short_name" : "ZA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "South Africa",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -22.1254241,
+                  "lng" : 38.2216904
+               },
+               "southwest" : {
+                  "lat" : -47.1313489,
+                  "lng" : 16.2816999
+               }
+            },
+            "location" : {
+               "lat" : -30.559482,
+               "lng" : 22.937506
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -22.1254241,
+                  "lng" : 32.8909911
+               },
+               "southwest" : {
+                  "lat" : -34.83323230000001,
+                  "lng" : 16.4535919
+               }
+            }
+         },
+         "place_id" : "ChIJURLu2YmmNBwRoOikHwxjXeg",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

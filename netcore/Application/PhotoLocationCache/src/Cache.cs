@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Concurrent;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -8,48 +9,269 @@ namespace Cluj.PhotoLocation
 {
     public static class Cache
     {
-        private const string API_KEY = "AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE";
+        private const string CITY_LEVEL = "locality";
+        private const string COUNTRY_LEVEL = "country";
+        private const string AREA_LEVEL1 = "administrative_area_level_1";
+        private const string AREA_LEVEL2 = "administrative_area_level_2";
+
+        private static readonly string API_KEY;
+
+        private static ConcurrentDictionary<string, AddressDetails> cityLevelAddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
+        private static ConcurrentDictionary<string, AddressDetails> areaLevel1AddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
+        private static ConcurrentDictionary<string, AddressDetails> areaLevel2AddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
+        private static ConcurrentDictionary<string, AddressDetails> countryLevelAddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
+
+        static Cache()
+        {
+            var config = GetConfig();
+            API_KEY = config.API_KEY;
+            InitLocalRawAddresses(config.Path);
+        }
+
+        public static ConcurrentDictionary<string, AddressDetails> TestCityLevelCache()
+        {
+            return cityLevelAddressComponentCache;
+        }
+
+        public static ConcurrentDictionary<string, AddressDetails> TestCountryLevelCache()
+        {
+            return countryLevelAddressComponentCache;
+        }
+
+        public static ConcurrentDictionary<string, AddressDetails> TestAreaLevel1Cache()
+        {
+            return areaLevel1AddressComponentCache;
+        }
+
+        public static ConcurrentDictionary<string, AddressDetails> TestAreaLevel2Cache()
+        {
+            return areaLevel2AddressComponentCache;
+        }
 
         public static async Task<string> GetCityName(char latRef, double lat, char lonRef, double lon)
         {
             var city = string.Empty;
 
-            var address = await LoadAddressAsync(latRef, lat, lonRef, lon).ConfigureAwait(false);
-
-            foreach (var addr in address.Results)
+            AddressDetails addressDetailsInCache;
+            if (TryGetAddressComponentFromCache(latRef, lat, lonRef, lon, out addressDetailsInCache))
             {
-                foreach (var addressType in addr.Types)
-                {
-                    if (addressType == "locality")
-                    {
-                        foreach (var component in addr.AddressComponents)
-                        {
-                            if ((component.Types[0] == "country" && component.Types[1] == "political")
-                            || (component.Types[0] == "administrative_area_level_1" && component.Types[1] == "political"))
-                            {
-                                city = component.LongName;
-                            }
-                            else if (component.Types[0] == "locality" && component.Types[1] == "political")
-                            {
-                                city = component.LongName;
-                                break;
-                            }
-                        }
-                    }
-                }
+                city = addressDetailsInCache.AddressComponents[0].LongName;
+            }
+            else
+            {
+                var address = await LoadRawAddressAsync(latRef, lat, lonRef, lon).ConfigureAwait(false);
 
+                if (address.IsValid)
+                {
+                    city = ParseCityNameAndInsertCache(address);
+                }
             }
 
             return city;
         }
 
-        private static async Task<AddressResult> LoadAddressAsync(char latRef, double lat, char lonRef, double lon)
+        private static void InitLocalRawAddresses(string path)
         {
-            return await LoadAddressFromCacheAsync(latRef, lat, lonRef, lon).ConfigureAwait(false);
+            try
+            {
+                var rawAddressFiles = Directory.EnumerateFiles(path, "*.json");
+
+                Console.WriteLine("test ################ path " + path);
+
+                foreach (var fileName in rawAddressFiles)
+                {
+                    using (var stream = new FileStream(fileName, FileMode.Open))
+                    {
+                        using (var reader = new StreamReader(stream))
+                        {
+                            var cityName = ParseCityNameAndInsertCache(JsonConvert.DeserializeObject<AddressResult>(reader.ReadToEnd()));
+                            // Console.WriteLine("test ################ cityName " + cityName);
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
-        private static async Task<AddressResult> LoadAddressFromServerAsync(char latRef, double lat, char lonRef, double lon)
+        private static string ParseCityNameAndInsertCache(AddressResult address)
         {
+            var city = string.Empty;
+            var areaLevel = string.Empty;
+
+            for (var i = address.Results[0].AddressComponents.Length - 1; i > -1; i--)
+            {
+                var addressComponent = address.Results[0].AddressComponents[i];
+
+                city = addressComponent.LongName;
+
+                var cityFound = false;
+
+                foreach (var addressType in addressComponent.Types)
+                {
+                    areaLevel = addressType;
+                    if (addressType == CITY_LEVEL)
+                    {
+                        cityFound = true;
+                        break;
+                    }
+                }
+
+                if (cityFound)
+                {
+                    break;
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(areaLevel))
+            {
+                // Console.WriteLine("test ################ IsValid " + areaLevel);
+                InsertAddressComponentToCache(address, areaLevel);
+            }
+
+            return city;
+        }
+
+        private static void InsertAddressComponentToCache(AddressResult addressResult, string areaLevel)
+        {
+            AddressDetails countryArea = new AddressDetails();
+            AddressDetails areaLevel1 = new AddressDetails();
+            AddressDetails areaLevel2 = new AddressDetails();
+            AddressDetails cityArea = new AddressDetails();
+            foreach (var addressComponent in addressResult.Results)
+            {
+                foreach (var addressType in addressComponent.Types)
+                {
+                    if (addressType == areaLevel)
+                    {
+                        if (!cityLevelAddressComponentCache.ContainsKey(addressComponent.PlaceId))
+                        {
+                            cityLevelAddressComponentCache.TryAdd(addressComponent.PlaceId, addressComponent);
+                        }
+
+                        break;
+                    }
+                    else if (addressType == CITY_LEVEL)
+                    {
+                        cityArea = addressComponent;
+                    }
+                    else if (addressType == COUNTRY_LEVEL)
+                    {
+                        countryArea = addressComponent;
+                    }
+                    else if (addressType == AREA_LEVEL1)
+                    {
+                        areaLevel1 = addressComponent;
+                    }
+                    else if (addressType == AREA_LEVEL2)
+                    {
+                        areaLevel2 = addressComponent;
+                    }
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(countryArea.PlaceId))
+            {
+                if (!countryLevelAddressComponentCache.ContainsKey(countryArea.PlaceId))
+                {
+                    countryLevelAddressComponentCache.TryAdd(countryArea.PlaceId, countryArea);
+                    //Console.WriteLine("test ################ country place Id " + countryArea.PlaceId);
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(areaLevel1.PlaceId))
+            {
+                if (!areaLevel1AddressComponentCache.ContainsKey(areaLevel1.PlaceId))
+                {
+                    areaLevel1AddressComponentCache.TryAdd(areaLevel1.PlaceId, areaLevel1);
+                    //Console.WriteLine("test ################ areaLevel1 place Id " + areaLevel1.PlaceId);
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(areaLevel2.PlaceId))
+            {
+                if (!areaLevel2AddressComponentCache.ContainsKey(areaLevel2.PlaceId))
+                {
+                    areaLevel2AddressComponentCache.TryAdd(areaLevel2.PlaceId, areaLevel2);
+                    //Console.WriteLine("test ################ areaLevel2 place Id " + areaLevel2.PlaceId);
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(cityArea.PlaceId))
+            {
+                if (!cityLevelAddressComponentCache.ContainsKey(cityArea.PlaceId))
+                {
+                    cityLevelAddressComponentCache.TryAdd(cityArea.PlaceId, cityArea);
+                    //Console.WriteLine("test ################ cityArea place Id " + cityArea.PlaceId);
+                }
+            }
+        }
+
+        private static bool TryGetAddressComponentFromCache(char latRef, double absLat, char lonRef, double absLon, out AddressDetails match)
+        {
+            var result = false;
+            match = new AddressDetails();
+
+            var lat = latRef == 'N' ? absLat : -absLat;
+            var lon = lonRef == 'E' ? absLon : -absLon;
+
+            Console.WriteLine("test ################ TryGetAddressComponentFromCache");
+
+            result = TryGetAddressComponentFromCache(latRef, lat, lonRef, lon, cityLevelAddressComponentCache, out match);
+
+            if (!result)
+            {
+                result = TryGetAddressComponentFromCache(latRef, lat, lonRef, lon, areaLevel2AddressComponentCache, out match);
+            }
+
+            if (!result)
+            {
+                result = TryGetAddressComponentFromCache(latRef, lat, lonRef, lon, areaLevel1AddressComponentCache, out match);
+            }
+
+            if (!result)
+            {
+                result = TryGetAddressComponentFromCache(latRef, lat, lonRef, lon, countryLevelAddressComponentCache, out match);
+            }
+
+            Console.WriteLine("test ################ TryGetAddressComponentFromCache end " + result);
+
+            return result;
+        }
+
+        private static bool TryGetAddressComponentFromCache(char latRef, double lat, char lonRef, double lon, ConcurrentDictionary<string, AddressDetails> cache, out AddressDetails match)
+        {
+            var result = false;
+            match = new AddressDetails();
+
+            foreach (var addressComponent in cache)
+            {
+                var bounds = addressComponent.Value.Geometry.Bounds;
+                var latTest = lat <= bounds.Norteast.Lat && lat >= bounds.Southwest.Lat;
+                var lonTest = lon <= bounds.Norteast.Lng && lon >= bounds.Southwest.Lng;
+
+                if (latTest && lonTest)
+                {
+                    Console.WriteLine(string.Format("test ################ found match KEY: {0}, address: {1}", addressComponent.Key, JsonConvert.SerializeObject(addressComponent)));
+
+                    match = addressComponent.Value;
+                    result = true;
+                }
+            }
+
+            return result;
+        }
+
+        private static async Task<AddressResult> LoadRawAddressAsync(char latRef, double lat, char lonRef, double lon)
+        {
+            return await LoadRawAddressFromCacheAsync(latRef, lat, lonRef, lon).ConfigureAwait(false);
+        }
+
+        private static async Task<AddressResult> LoadRawAddressFromServerAsync(char latRef, double lat, char lonRef, double lon)
+        {
+            var result = new AddressResult();
             try
             {
                 using (var httpClient = new HttpClient())
@@ -66,15 +288,17 @@ namespace Cluj.PhotoLocation
                     using (var reader = new StreamReader(await response.Content.ReadAsStreamAsync().ConfigureAwait(false)))
                     {
                         var addressString = reader.ReadToEnd();
-                        return JsonConvert.DeserializeObject<AddressResult>(addressString);
+                        result = JsonConvert.DeserializeObject<AddressResult>(addressString);
+                        result.IsValid = true;
                     }
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine(string.Format("Failed to call google map API: {0}", e.Message));
-                return new AddressResult();
             }
+
+            return result;
         }
 
         private static string GenerateFileName(char latRef, double lat, char lonRef, double lon)
@@ -82,7 +306,7 @@ namespace Cluj.PhotoLocation
             return string.Format("{0}_{1}_{2}_{3}.json", latRef, lat, lonRef, lon);
         }
 
-        private static async Task<AddressResult> LoadAddressFromCacheAsync(char latRef, double lat, char lonRef, double lon)
+        private static async Task<AddressResult> LoadRawAddressFromCacheAsync(char latRef, double lat, char lonRef, double lon)
         {
             using (var stream = new FileStream("./test/data/SampleAddressHyderabad.json", FileMode.Open))
             {
@@ -90,8 +314,23 @@ namespace Cluj.PhotoLocation
                 {
                     var addressString = reader.ReadToEnd();
                     var address = JsonConvert.DeserializeObject<AddressResult>(addressString);
+                    Console.WriteLine("test ################ LoadRawAddressFromCacheAsync");
 
-                    return await Task.FromResult(address);
+                    var result = await Task.FromResult(address);
+                    result.IsValid = true;
+
+                    return result;
+                }
+            }
+        }
+
+        private static Config GetConfig()
+        {
+            using (var stream = new FileStream("./config.json", FileMode.Open))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    return JsonConvert.DeserializeObject<Config>(reader.ReadToEnd());
                 }
             }
         }

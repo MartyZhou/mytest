@@ -1,0 +1,265 @@
+Build started, please wait...
+test\Cache.spec.cs(12,27): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [D:\github\mytest\netcore\Application\PhotoLocationCache\PhotoLocationCache.csproj]
+Build completed.
+
+Test run for D:\github\mytest\netcore\Application\PhotoLocationCache\bin\Debug\netcoreapp1.1\PhotoLocationCache.dll(.NETCoreApp,Version=v1.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.0.0.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+[xUnit.net 00:00:00.3172058]   Discovering: PhotoLocationCache
+[xUnit.net 00:00:00.3786145]   Discovered:  PhotoLocationCache
+[xUnit.net 00:00:00.4044988]   Starting:    PhotoLocationCache
+test ################ constructor
+test ################ path D:/github/mytest/netcore/Application/PhotoLocationCache/src/local
+test ################ country place Id ChIJsU1CR_eNTTARAuhXB4gs154
+test ################ areaLevel1 place Id ChIJQXiZwsjM0DAR1AMlknbhaWo
+test ################ areaLevel2 place Id ChIJzzapQXc62jAR8G2K-sVGAwM
+test ################ cityName Chiang Mai
+test ################ areaLevel2 place Id ChIJAR6q_BQN2jARQG6K-sVGAwM
+test ################ cityName Tambon Kuet Chang
+test ################ country place Id ChIJCzYy5IS16lQRQrfeQ5K5Oxw
+test ################ areaLevel1 place Id ChIJ_b9z6W1l44kRHA2DVTbQxkU
+test ################ areaLevel2 place Id ChIJ6TarW9Sc44kR4nUWuotzEyI
+test ################ cityName Boston
+test ################ country place Id ChIJwULG5WSOUDERbzafNHyqHZU
+test ################ areaLevel1 place Id ChIJuSwU55ZS8DURp8_dOLuVd8A
+test ################ cityName Beijing
+test ################ areaLevel2 place Id ChIJw6Frnsk_2jARUG6K-sVGAwM
+test ################ cityName Tambon Don Kaeo
+test ################ areaLevel1 place Id ChIJTTiHaRi6IDQR5Syu5AuRIcw
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Boston
+test ################ cityName Tambon Mae Raem
+test ################ cityName Chiang Mai
+test ################ cityName Tambon San Phi Suea
+test ################ cityName Boston
+test ################ cityName Changsha Shi
+test ################ areaLevel2 place Id ChIJNznEmus2-4kR1XIbb_9HhCY
+test ################ cityName Provincetown
+test ################ country place Id ChIJiUWCsFeQFDERgc2ZH0iSxQ4
+test ################ areaLevel1 place Id ChIJ-1Vy5szvLjERek7q3fgwKxo
+test ################ cityName 1C
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Boston
+test ################ country place Id ChIJw3aJlSb_sUARlLEEqJJP74Q
+test ################ areaLevel1 place Id ChIJy4t2WktHSEcRk1kYidZ35lY
+test ################ areaLevel2 place Id ChIJrYCFFIFFSEcRk-_wdZHJHoc
+test ################ cityName Bălan
+test ################ cityName Beijing
+test ################ cityName Beijing
+test ################ cityName Beijing
+test ################ areaLevel2 place Id ChIJtTxVCm8B5IkRdQoXNfYjl6Q
+test ################ cityName Rockport
+test ################ cityName Tambon San Phi Suea
+test ################ cityName Boston
+test ################ cityName Tambon Mae Raem
+test ################ cityName Tambon Ki Lek
+test ################ cityName Tambon Ki Lek
+test ################ cityName Beijing
+test ################ areaLevel2 place Id ChIJmQwtQe4L5IkRCLDyk1MVcOI
+test ################ cityName Cambridge
+test ################ cityName Beijing
+test ################ cityName Unnamed Road
+test ################ cityName Boston
+test ################ cityName Beijing
+test ################ cityName Tambon Mae Raem
+test ################ cityName Yueyang Shi
+test ################ cityName Beijing
+test ################ cityName Boston
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Pak Xeng - Sam Soun Road
+test ################ cityName Tambon San Phi Suea
+test ################ areaLevel1 place Id ChIJpdA4dTgDTzER9tAWQRQTSbg
+test ################ cityName Sanya Shi
+test ################ cityName Tambon Kuet Chang
+test ################ cityName Chiang Mai
+test ################ areaLevel2 place Id ChIJtdQ68M2i0DARIG6K-sVGAwM
+test ################ cityName Tambon Thung Khao Phuang
+test ################ cityName Boston
+test ################ areaLevel1 place Id ChIJ2e8DBvVs2TARwEqK-sVGAwE
+test ################ areaLevel2 place Id ChIJQ9LGILek2TARQHCK-sVGAwM
+test ################ cityName Tambon Pong Don
+test ################ cityName Tambon Mueang Ngai
+test ################ areaLevel1 place Id ChIJSZbe4MCQMTER6CXp-13dJtg
+test ################ cityName PR 3201
+test ################ cityName Boston
+test ################ cityName Beijing
+test ################ cityName Tambon Mae Raem
+test ################ cityName Tambon San Phi Suea
+test ################ cityName Gloucester
+test ################ cityName Beijing
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Boston
+test ################ cityName Boston
+test ################ cityName Tambon Mae Raem
+test ################ cityName Provincetown
+test ################ cityName Beijing
+test ################ cityName Boston
+test ################ cityName Tambon Mae Suk
+test ################ cityName Boston
+test ################ cityName Tambon Kuet Chang
+test ################ cityName Chiang Mai
+test ################ cityName Beijing
+test ################ cityName Rockport
+test ################ areaLevel1 place Id ChIJd5E-VUq2S0cR0LbfbkS1jms
+test ################ areaLevel2 place Id ChIJH-SbcpN1S0cRnuqF9bXVB94
+test ################ cityName Sighisoara
+test ################ cityName Boston
+test ################ areaLevel1 place Id ChIJ-bDD5__lhVQRuvNfbGh4QpQ
+test ################ areaLevel2 place Id ChIJN3gtg4xckFQRPuBki2urgOI
+test ################ cityName SeaTac
+test ################ cityName Beijing
+test ################ cityName Sanya Shi
+test ################ cityName Boston
+test ################ cityName Tambon Mae Raem
+test ################ cityName Chiang Mai
+test ################ cityName Chiang Mai
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Boston
+test ################ cityName Chiang Mai
+test ################ cityName Tambon Mae Raem
+test ################ cityName Chiang Mai
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Boston
+test ################ cityName Tambon Mueang Ngai
+test ################ cityName Boston
+test ################ cityName Changde Shi
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Chiang Mai
+test ################ cityName Tambon Kuet Chang
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Boston
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Tambon Chiang Dao
+test ################ cityName Tambon Chiang Dao
+test ################ cityName Boston
+test ################ cityName Tambon Mae Suk
+test ################ cityName Chiang Mai
+test ################ cityName Boston
+test ################ cityName Tambon Pong Don
+test ################ cityName Boston
+test ################ cityName Chiang Mai
+test ################ cityName Boston
+test ################ cityName Tambon Mae Raem
+test ################ cityName Chiang Mai
+test ################ cityName Boston
+test ################ cityName Beijing
+test ################ cityName Beijing
+test ################ cityName Chiang Mai
+test ################ cityName Beijing
+test ################ cityName Beijing
+test ################ areaLevel1 place Id ChIJiwtskR8MSUcR6Nk3QsedRkI
+test ################ areaLevel2 place Id ChIJY95eGB8MSUcRL11BldQ5-XI
+test ################ cityName Cluj-Napoca
+test ################ cityName Sanya Shi
+test ################ cityName Bălan
+test ################ areaLevel1 place Id ChIJGzA39CAh2DARjGrJ9iFLWhk
+test ################ areaLevel2 place Id ChIJf1YSh_nS2TARwHKK-sVGAwM
+test ################ cityName Tambon Mae Ka
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Beijing
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Tambon Mae Raem
+test ################ cityName Boston
+test ################ cityName Boston
+test ################ cityName Chiang Mai
+test ################ cityName Chiang Mai
+test ################ cityName Provincetown
+test ################ cityName Boston
+test ################ cityName Chiang Mai
+test ################ cityName Boston
+test ################ areaLevel1 place Id ChIJ1YZMyjCpjDURIfse5yIKRWA
+test ################ cityName Chengde Shi
+test ################ cityName Chiang Mai
+test ################ cityName Cambridge
+test ################ cityName Beijing
+test ################ cityName Waltham
+test ################ cityName Beijing
+test ################ cityName Boston
+test ################ country place Id ChIJkbeSa_BfYzARphNChaFPjNc
+test ################ areaLevel1 place Id ChIJQ-0plNtQMzoRWUBZQad772M
+test ################ areaLevel2 place Id ChIJx9Lr6tqZyzsRMyOXJZHL34s
+test ################ cityName Hyderabad
+test ################ cityName Boston
+test ################ cityName Beijing
+test ################ areaLevel1 place Id ChIJf5YvzrYfW14RAK9gg8wDQ_0
+test ################ cityName Haerbin Shi
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Chiang Mai
+test ################ cityName Cluj-Napoca
+test ################ cityName Boston
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Chechiș
+test ################ cityName Beijing
+test ################ cityName Beijing
+test ################ cityName Beijing
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Tambon Kuet Chang
+test ################ areaLevel2 place Id ChIJpxW4rwJWSkcR2-Ehna18Yi4
+test ################ cityName Sovata
+test ################ cityName Zhangjiakou Shi
+test ################ cityName Tambon Thung Khao Phuang
+test ################ cityName Beijing
+test ################ cityName Boston
+test ################ cityName Chiang Mai
+test ################ cityName Cambridge
+test ################ cityName At Xam
+test ################ cityName Beijing
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Changde Shi
+test ################ cityName Beijing
+test ################ country place Id ChIJrzBnX5fTNDAR2BwhKJOWRQc
+test ################ areaLevel1 place Id ChIJV9P7V3XdtjER_qPy7a_lj2o
+test ################ cityName Kuala Besut
+test ################ cityName 13
+test ################ cityName Muang Kout
+test ################ cityName Tambon Mae Raem
+test ################ cityName Tambon San Phi Suea
+test ################ cityName Changde Shi
+test ################ cityName Nahant
+test ################ cityName Zhangjiajie Shi
+test ################ cityName Beijing
+test ################ cityName Boston
+test ################ cityName Tambon Mae Raem
+test ################ cityName Boston
+test ################ cityName Chiang Mai
+test ################ cityName Sanya Shi
+test ################ cityName Boston
+test ################ cityName Xiangxi Tujiazumiaozuzizhizhou
+test ################ cityName Newton
+test ################ cityName Boston
+test ################ cityName Weston
+test ################ cityName Boston
+test ################ cityName Cambridge
+test ################ cityName Boston
+test ################ cityName Boston
+test ################ cityName Boston
+test ################ cityName Boston
+test ################ cityName Beijing
+test ################ cityName Beijing
+test ################ cityName Beijing
+[xUnit.net 00:00:00.5607702]     Cluj.PhotoLocation.Test.CacheTest.ParseCityNameSuccessfully [FAIL]
+[xUnit.net 00:00:00.5613529]       Assert.Equal() Failure
+[xUnit.net 00:00:00.5613936]       Expected: 2
+[xUnit.net 00:00:00.5614109]       Actual:   7
+[xUnit.net 00:00:00.5619039]       Stack Trace:
+[xUnit.net 00:00:00.5624998]         D:\github\mytest\netcore\Application\PhotoLocationCache\test\Cache.spec.cs(24,0): at Cluj.PhotoLocation.Test.CacheTest.<ParseCityNameSuccessfully>d__0.MoveNext()
+[xUnit.net 00:00:00.5626395]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:00.5626704]            at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+[xUnit.net 00:00:00.5644505]   Finished:    PhotoLocationCache
+Failed   Cluj.PhotoLocation.Test.CacheTest.ParseCityNameSuccessfully
+Error Message:
+ Assert.Equal() Failure
+Expected: 2
+Actual:   7
+Stack Trace:
+   at Cluj.PhotoLocation.Test.CacheTest.<ParseCityNameSuccessfully>d__0.MoveNext() in D:\github\mytest\netcore\Application\PhotoLocationCache\test\Cache.spec.cs:line 24
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+
+Total tests: 2. Passed: 1. Failed: 1. Skipped: 0.
+Test Run Failed.
+Test execution time: 1.0423 Seconds
+
+

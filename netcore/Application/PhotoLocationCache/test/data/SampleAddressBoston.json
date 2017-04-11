@@ -1,0 +1,565 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "6-10",
+               "short_name" : "6-10",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Rockwood Terrace",
+               "short_name" : "Rockwood Terrace",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Jamaica Hills / Pond",
+               "short_name" : "Jamaica Hills / Pond",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Boston",
+               "short_name" : "Boston",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Suffolk County",
+               "short_name" : "Suffolk County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "02130",
+               "short_name" : "02130",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2426",
+               "short_name" : "2426",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "6-10 Rockwood Terrace, Boston, MA 02130, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.31316349999999,
+                  "lng" : -71.1267101
+               },
+               "southwest" : {
+                  "lat" : 42.3126888,
+                  "lng" : -71.1278741
+               }
+            },
+            "location" : {
+               "lat" : 42.3131507,
+               "lng" : -71.1270856
+            },
+            "location_type" : "RANGE_INTERPOLATED",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.3142751302915,
+                  "lng" : -71.1259431197085
+               },
+               "southwest" : {
+                  "lat" : 42.3115771697085,
+                  "lng" : -71.12864108029152
+               }
+            }
+         },
+         "place_id" : "Eiw2LTEwIFJvY2t3b29kIFRlcnJhY2UsIEJvc3RvbiwgTUEgMDIxMzAsIFVTQQ",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Jamaica Hills / Pond",
+               "short_name" : "Jamaica Hills / Pond",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Dorchester Center",
+               "short_name" : "Dorchester Center",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Boston",
+               "short_name" : "Boston",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Suffolk County",
+               "short_name" : "Suffolk County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Jamaica Hills / Pond, Boston, MA, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.331997,
+                  "lng" : -71.11005299999999
+               },
+               "southwest" : {
+                  "lat" : 42.29569790000001,
+                  "lng" : -71.14009729999999
+               }
+            },
+            "location" : {
+               "lat" : 42.3088756,
+               "lng" : -71.1240559
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.331997,
+                  "lng" : -71.11005299999999
+               },
+               "southwest" : {
+                  "lat" : 42.29569790000001,
+                  "lng" : -71.14009729999999
+               }
+            }
+         },
+         "place_id" : "ChIJP7vPghR544kRG1KefrQPOxY",
+         "types" : [ "neighborhood", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Jamaica Plain",
+               "short_name" : "Jamaica Plain",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Dorchester Center",
+               "short_name" : "Dorchester Center",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Boston",
+               "short_name" : "Boston",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Suffolk County",
+               "short_name" : "Suffolk County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Jamaica Plain, Boston, MA, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.331997,
+                  "lng" : -71.0975505
+               },
+               "southwest" : {
+                  "lat" : 42.29569790000001,
+                  "lng" : -71.14009729999999
+               }
+            },
+            "location" : {
+               "lat" : 42.3097365,
+               "lng" : -71.1151431
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.331997,
+                  "lng" : -71.0975505
+               },
+               "southwest" : {
+                  "lat" : 42.29569790000001,
+                  "lng" : -71.14009729999999
+               }
+            }
+         },
+         "place_id" : "ChIJ0RnkK3J544kREhgmsmdsEjM",
+         "types" : [ "neighborhood", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Boston",
+               "short_name" : "Boston",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Suffolk County",
+               "short_name" : "Suffolk County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Boston, MA, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.40081989999999,
+                  "lng" : -70.749455
+               },
+               "southwest" : {
+                  "lat" : 42.22788,
+                  "lng" : -71.191113
+               }
+            },
+            "location" : {
+               "lat" : 42.3600825,
+               "lng" : -71.0588801
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.3988669,
+                  "lng" : -70.9232011
+               },
+               "southwest" : {
+                  "lat" : 42.22788,
+                  "lng" : -71.191113
+               }
+            }
+         },
+         "place_id" : "ChIJGzE9DS1l44kRoOhiASS_fHg",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "02130",
+               "short_name" : "02130",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "Jamaica Plain",
+               "short_name" : "Jamaica Plain",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Boston",
+               "short_name" : "Boston",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Suffolk County",
+               "short_name" : "Suffolk County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Jamaica Plain, MA 02130, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.33193989999999,
+                  "lng" : -71.0936799
+               },
+               "southwest" : {
+                  "lat" : 42.28736689999999,
+                  "lng" : -71.13714879999999
+               }
+            },
+            "location" : {
+               "lat" : 42.3097365,
+               "lng" : -71.1151431
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.33193989999999,
+                  "lng" : -71.0936799
+               },
+               "southwest" : {
+                  "lat" : 42.28736689999999,
+                  "lng" : -71.13714879999999
+               }
+            }
+         },
+         "place_id" : "ChIJU-wQg2l544kR0Aqrq285GNg",
+         "types" : [ "postal_code" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Suffolk County",
+               "short_name" : "Suffolk County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Suffolk County, MA, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.4500959,
+                  "lng" : -70.648072
+               },
+               "southwest" : {
+                  "lat" : 42.22788,
+                  "lng" : -71.191113
+               }
+            },
+            "location" : {
+               "lat" : 42.3522866,
+               "lng" : -71.0504229
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.4500959,
+                  "lng" : -70.9232011
+               },
+               "southwest" : {
+                  "lat" : 42.22788,
+                  "lng" : -71.191113
+               }
+            }
+         },
+         "place_id" : "ChIJ6TarW9Sc44kR4nUWuotzEyI",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Boston-Cambridge-Quincy, MA-NH",
+               "short_name" : "Boston-Cambridge-Quincy, MA-NH",
+               "types" : [ "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Boston-Cambridge-Quincy, MA-NH, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.082038,
+                  "lng" : -70.5255671
+               },
+               "southwest" : {
+                  "lat" : 41.7628401,
+                  "lng" : -71.94766300000001
+               }
+            },
+            "location" : {
+               "lat" : 42.7104806,
+               "lng" : -71.3824374
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.082038,
+                  "lng" : -70.5255671
+               },
+               "southwest" : {
+                  "lat" : 41.7628401,
+                  "lng" : -71.94766300000001
+               }
+            }
+         },
+         "place_id" : "ChIJA9NWegR244kRF6B2phYlXis",
+         "types" : [ "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Boston-Cambridge-Quincy, MA-NH",
+               "short_name" : "Boston-Cambridge-Quincy, MA-NH",
+               "types" : [ "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Boston-Cambridge-Quincy, MA-NH, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.573012,
+                  "lng" : -70.5255671
+               },
+               "southwest" : {
+                  "lat" : 41.6245321,
+                  "lng" : -71.8987166
+               }
+            },
+            "location" : {
+               "lat" : 42.5865746,
+               "lng" : -71.097317
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.573012,
+                  "lng" : -70.5255671
+               },
+               "southwest" : {
+                  "lat" : 41.6245321,
+                  "lng" : -71.8987166
+               }
+            }
+         },
+         "place_id" : "ChIJZ11RHIcL44kRFgTm6pE69b8",
+         "types" : [ "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Boston Metropolitan Area",
+               "short_name" : "Boston Metropolitan Area",
+               "types" : [ "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Boston Metropolitan Area, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.573012,
+                  "lng" : -70.3225219
+               },
+               "southwest" : {
+                  "lat" : 41.5658509,
+                  "lng" : -71.8987159
+               }
+            },
+            "location" : {
+               "lat" : 42.3600709,
+               "lng" : -71.0588305
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.573012,
+                  "lng" : -70.3225219
+               },
+               "southwest" : {
+                  "lat" : 41.5658509,
+                  "lng" : -71.8987159
+               }
+            }
+         },
+         "place_id" : "ChIJQ-TFt5IL44kR1kcVhdMVrXg",
+         "types" : [ "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [
+                  "administrative_area_level_1",
+                  "establishment",
+                  "point_of_interest",
+                  "political"
+               ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Massachusetts, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.88679,
+                  "lng" : -69.85886099999999
+               },
+               "southwest" : {
+                  "lat" : 41.18705300000001,
+                  "lng" : -73.5081419
+               }
+            },
+            "location" : {
+               "lat" : 42.4072107,
+               "lng" : -71.3824374
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.886691,
+                  "lng" : -69.9287422
+               },
+               "southwest" : {
+                  "lat" : 41.2390737,
+                  "lng" : -73.5081419
+               }
+            }
+         },
+         "place_id" : "ChIJ_b9z6W1l44kRHA2DVTbQxkU",
+         "types" : [
+            "administrative_area_level_1",
+            "establishment",
+            "point_of_interest",
+            "political"
+         ]
+      }
+   ],
+   "status" : "OK"
+}

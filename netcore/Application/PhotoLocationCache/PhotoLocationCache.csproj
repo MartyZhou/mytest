@@ -9,6 +9,8 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src/local/*" CopyToOutputDirectory="Always" />
     <None Include="test/data/*" CopyToOutputDirectory="Always" />
+    <None Include="config.json" CopyToOutputDirectory="Always" />
   </ItemGroup>
 </Project>
