@@ -1,4 +1,4 @@
-using System.IO;
+/*using System.IO;
 using Newtonsoft.Json;
 using Xunit;
 
@@ -24,3 +24,4 @@ namespace Cluj.PhotoLocation.Test
         }
     }
 }
+*/

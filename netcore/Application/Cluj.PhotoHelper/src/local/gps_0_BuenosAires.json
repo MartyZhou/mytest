@@ -1,0 +1,314 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "2291",
+               "short_name" : "2291",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Pasaje Eduardo Wilde",
+               "short_name" : "Pje. Eduardo Wilde",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Monte Castro",
+               "short_name" : "Monte Castro",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Comuna 10",
+               "short_name" : "Comuna 10",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Ciudad Autónoma de Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Argentina",
+               "short_name" : "AR",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "C1417",
+               "short_name" : "C1417",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "BAA",
+               "short_name" : "BAA",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "Pje. Eduardo Wilde 2291, C1417BAA CABA, Argentina",
+         "geometry" : {
+            "location" : {
+               "lat" : -34.6156875,
+               "lng" : -58.5033508
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -34.6143385197085,
+                  "lng" : -58.50200181970849
+               },
+               "southwest" : {
+                  "lat" : -34.6170364802915,
+                  "lng" : -58.5046997802915
+               }
+            }
+         },
+         "place_id" : "ChIJX9fdJdTJvJUREXJhhmw1k1U",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Monte Castro",
+               "short_name" : "Monte Castro",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Comuna 10",
+               "short_name" : "Comuna 10",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Autonomous City of Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Argentina",
+               "short_name" : "AR",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Monte Castro, Autonomous City of Buenos Aires, Argentina",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -34.6091257,
+                  "lng" : -58.49262839999999
+               },
+               "southwest" : {
+                  "lat" : -34.6284503,
+                  "lng" : -58.5216367
+               }
+            },
+            "location" : {
+               "lat" : -34.620674,
+               "lng" : -58.50582619999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -34.6091257,
+                  "lng" : -58.49262839999999
+               },
+               "southwest" : {
+                  "lat" : -34.6284503,
+                  "lng" : -58.5216367
+               }
+            }
+         },
+         "place_id" : "ChIJVR1bbM3JvJURnEpyvRGKJZc",
+         "types" : [ "political", "sublocality", "sublocality_level_1" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Autonomous City of Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Argentina",
+               "short_name" : "AR",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Buenos Aires, Autonomous City of Buenos Aires, Argentina",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -34.5265464,
+                  "lng" : -58.33514470000001
+               },
+               "southwest" : {
+                  "lat" : -34.7051011,
+                  "lng" : -58.5314522
+               }
+            },
+            "location" : {
+               "lat" : -34.6036844,
+               "lng" : -58.3815591
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -34.5265464,
+                  "lng" : -58.33518840000001
+               },
+               "southwest" : {
+                  "lat" : -34.704922,
+                  "lng" : -58.5314522
+               }
+            }
+         },
+         "place_id" : "ChIJvQz5TjvKvJURh47oiC6Bs6A",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Comuna 10",
+               "short_name" : "Comuna 10",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Ciudad Autónoma de Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Argentina",
+               "short_name" : "AR",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Comuna 10, Cdad. Autónoma de Buenos Aires, Argentina",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -34.6091257,
+                  "lng" : -58.4713029
+               },
+               "southwest" : {
+                  "lat" : -34.6458181,
+                  "lng" : -58.5314522
+               }
+            },
+            "location" : {
+               "lat" : -34.6273345,
+               "lng" : -58.5029706
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -34.6091257,
+                  "lng" : -58.4713029
+               },
+               "southwest" : {
+                  "lat" : -34.6458181,
+                  "lng" : -58.5314522
+               }
+            }
+         },
+         "place_id" : "ChIJif2PN8nJvJURdmM8-GjGdMs",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Autonomous City of Buenos Aires",
+               "short_name" : "CABA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Argentina",
+               "short_name" : "AR",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Autonomous City of Buenos Aires, Argentina",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -34.5265464,
+                  "lng" : -58.33514470000001
+               },
+               "southwest" : {
+                  "lat" : -34.7055085,
+                  "lng" : -58.5314522
+               }
+            },
+            "location" : {
+               "lat" : -34.6037618,
+               "lng" : -58.38171499999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -34.5265464,
+                  "lng" : -58.33518840000001
+               },
+               "southwest" : {
+                  "lat" : -34.7052744,
+                  "lng" : -58.5314522
+               }
+            }
+         },
+         "place_id" : "ChIJu39FBT3KvJURF8D35_z0YOE",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Argentina",
+               "short_name" : "AR",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Argentina",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -21.7810459,
+                  "lng" : -53.637481
+               },
+               "southwest" : {
+                  "lat" : -55.1250224,
+                  "lng" : -73.5603601
+               }
+            },
+            "location" : {
+               "lat" : -38.416097,
+               "lng" : -63.61667199999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -21.78168,
+                  "lng" : -53.637481
+               },
+               "southwest" : {
+                  "lat" : -55.05727899999999,
+                  "lng" : -73.56016989999999
+               }
+            }
+         },
+         "place_id" : "ChIJZ8b99fXKvJURqA_wKpl3Lz0",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

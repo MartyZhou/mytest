@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Xunit;
@@ -48,7 +48,7 @@ namespace Cluj.PhotoLocation.Test
             Assert.Equal<string>("Buenos Aires", buenos);
         }
 
-        /*[Fact]
+        [Fact]
         public void ParseRawAddress()
         {
             using (var stream = new FileStream("./test/data/metadata_google.json", FileMode.Open))
@@ -65,6 +65,7 @@ namespace Cluj.PhotoLocation.Test
                     }
                 }
             }
-        }*/
+        }
     }
 }
+*/

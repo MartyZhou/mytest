@@ -1,0 +1,245 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Bo-Karoo",
+               "short_name" : "Bo-Karoo",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Northern Cape",
+               "short_name" : "NC",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "South Africa",
+               "short_name" : "ZA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, South Africa",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -30.0391959,
+                  "lng" : 22.092983
+               },
+               "southwest" : {
+                  "lat" : -30.059509,
+                  "lng" : 21.9991959
+               }
+            },
+            "location" : {
+               "lat" : -30.0412874,
+               "lng" : 22.049327
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -30.0391959,
+                  "lng" : 22.092983
+               },
+               "southwest" : {
+                  "lat" : -30.059509,
+                  "lng" : 21.9991959
+               }
+            }
+         },
+         "place_id" : "ChIJQVQI3t9nKBwRbO573UrZf2Q",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Benede",
+               "short_name" : "Benede",
+               "types" : [ "administrative_area_level_3", "political" ]
+            },
+            {
+               "long_name" : "Benede Oranje",
+               "short_name" : "Benede Oranje",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Northern Cape",
+               "short_name" : "NC",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "South Africa",
+               "short_name" : "ZA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Benede, South Africa",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -24.7658598,
+                  "lng" : 22.81932
+               },
+               "southwest" : {
+                  "lat" : -30.04441,
+                  "lng" : 19.5092891
+               }
+            },
+            "location" : {
+               "lat" : -27.3300752,
+               "lng" : 21.4752851
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -24.7658598,
+                  "lng" : 22.81932
+               },
+               "southwest" : {
+                  "lat" : -30.0444099,
+                  "lng" : 19.5092891
+               }
+            }
+         },
+         "place_id" : "ChIJN3fCEACLIRwRzEmUHEtKBMc",
+         "types" : [ "administrative_area_level_3", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Benede Oranje",
+               "short_name" : "Benede Oranje",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Northern Cape",
+               "short_name" : "NC",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "South Africa",
+               "short_name" : "ZA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Benede Oranje, South Africa",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -24.76586,
+                  "lng" : 23.8914199
+               },
+               "southwest" : {
+                  "lat" : -30.04441,
+                  "lng" : 19.5092889
+               }
+            },
+            "location" : {
+               "lat" : -28.0445319,
+               "lng" : 21.4752851
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -24.76586,
+                  "lng" : 23.8914199
+               },
+               "southwest" : {
+                  "lat" : -30.04441,
+                  "lng" : 19.5092889
+               }
+            }
+         },
+         "place_id" : "ChIJ-wIspvWwIRwRGgN7IMsA-KE",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Northern Cape",
+               "short_name" : "NC",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "South Africa",
+               "short_name" : "ZA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Northern Cape, South Africa",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -24.76586,
+                  "lng" : 25.54933
+               },
+               "southwest" : {
+                  "lat" : -32.9449877,
+                  "lng" : 16.4518911
+               }
+            },
+            "location" : {
+               "lat" : -29.0466808,
+               "lng" : 21.8568586
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -24.76586,
+                  "lng" : 25.54933
+               },
+               "southwest" : {
+                  "lat" : -32.9449877,
+                  "lng" : 16.4518911
+               }
+            }
+         },
+         "place_id" : "ChIJbUtwf_UhJBwRkEyPkNb4AAM",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "South Africa",
+               "short_name" : "ZA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "South Africa",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -22.1254241,
+                  "lng" : 38.2216904
+               },
+               "southwest" : {
+                  "lat" : -47.1313489,
+                  "lng" : 16.2816999
+               }
+            },
+            "location" : {
+               "lat" : -30.559482,
+               "lng" : 22.937506
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -22.1254241,
+                  "lng" : 32.8909911
+               },
+               "southwest" : {
+                  "lat" : -34.83323230000001,
+                  "lng" : 16.4535919
+               }
+            }
+         },
+         "place_id" : "ChIJURLu2YmmNBwRoOikHwxjXeg",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}
