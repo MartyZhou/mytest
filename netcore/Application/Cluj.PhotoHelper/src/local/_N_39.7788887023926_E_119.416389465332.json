@@ -1,0 +1,250 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Unnamed Road",
+               "short_name" : "Unnamed Road",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Funing Xian",
+               "short_name" : "Funing Xian",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Qinhuangdao Shi",
+               "short_name" : "Qinhuangdao Shi",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Hebei Sheng",
+               "short_name" : "Hebei Sheng",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Unnamed Road, Funing Xian, Qinhuangdao Shi, Hebei Sheng, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 39.7790477,
+                  "lng" : 119.4183991
+               },
+               "southwest" : {
+                  "lat" : 39.7780065,
+                  "lng" : 119.4159091
+               }
+            },
+            "location" : {
+               "lat" : 39.7787059,
+               "lng" : 119.4171031
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 39.7798760802915,
+                  "lng" : 119.4185030802915
+               },
+               "southwest" : {
+                  "lat" : 39.7771781197085,
+                  "lng" : 119.4158051197085
+               }
+            }
+         },
+         "place_id" : "ChIJ6ZE5G1iHjDUR4P05tAV6t9Q",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Funing",
+               "short_name" : "Funing",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Qinhuangdao",
+               "short_name" : "Qinhuangdao",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Hebei",
+               "short_name" : "Hebei",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Funing, Qinhuangdao, Hebei, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.3209875,
+                  "lng" : 119.7626501
+               },
+               "southwest" : {
+                  "lat" : 39.7217421,
+                  "lng" : 119.0751127
+               }
+            },
+            "location" : {
+               "lat" : 39.876254,
+               "lng" : 119.244848
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.3209875,
+                  "lng" : 119.7626501
+               },
+               "southwest" : {
+                  "lat" : 39.7217421,
+                  "lng" : 119.0751127
+               }
+            }
+         },
+         "place_id" : "ChIJs8gp4f13izURSKwRB3YUErc",
+         "types" : [ "political", "sublocality", "sublocality_level_1" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Qinhuangdao",
+               "short_name" : "Qinhuangdao",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Hebei",
+               "short_name" : "Hebei",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Qinhuangdao, Hebei, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.6146027,
+                  "lng" : 119.8725773
+               },
+               "southwest" : {
+                  "lat" : 39.4058365,
+                  "lng" : 118.5683761
+               }
+            },
+            "location" : {
+               "lat" : 39.935385,
+               "lng" : 119.600493
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 39.9881398,
+                  "lng" : 119.6912384
+               },
+               "southwest" : {
+                  "lat" : 39.8970628,
+                  "lng" : 119.5120239
+               }
+            }
+         },
+         "place_id" : "ChIJa3FJqL1kizURHs3yVaAy1-c",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Hebei",
+               "short_name" : "Hebei",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Hebei, China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.6197178,
+                  "lng" : 119.8725773
+               },
+               "southwest" : {
+                  "lat" : 36.0482067,
+                  "lng" : 113.4653687
+               }
+            },
+            "location" : {
+               "lat" : 38.037057,
+               "lng" : 114.468665
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.6197178,
+                  "lng" : 119.8710119
+               },
+               "southwest" : {
+                  "lat" : 36.0482067,
+                  "lng" : 113.4653687
+               }
+            }
+         },
+         "place_id" : "ChIJ1YZMyjCpjDURIfse5yIKRWA",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "China",
+               "short_name" : "CN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "China",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 53.56097399999999,
+                  "lng" : 134.7728099
+               },
+               "southwest" : {
+                  "lat" : 17.9996,
+                  "lng" : 73.4994136
+               }
+            },
+            "location" : {
+               "lat" : 35.86166,
+               "lng" : 104.195397
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 53.56097399999999,
+                  "lng" : 134.7726951
+               },
+               "southwest" : {
+                  "lat" : 18.1618061,
+                  "lng" : 73.5034261
+               }
+            }
+         },
+         "place_id" : "ChIJwULG5WSOUDERbzafNHyqHZU",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}
