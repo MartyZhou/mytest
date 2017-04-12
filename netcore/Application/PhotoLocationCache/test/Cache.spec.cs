@@ -7,7 +7,7 @@ namespace Cluj.PhotoLocation.Test
 {
     public class CacheTest
     {
-        [Fact]
+        //[Fact]
         public void InitCacheSuccessfully()
         {
             Assert.NotNull(Cache.TestCityLevelCache());
@@ -41,14 +41,18 @@ namespace Cluj.PhotoLocation.Test
 
             var capetown = await Cache.GetCityName('S', 30, 'E', 22).ConfigureAwait(false);
 
-            Assert.Equal<string>("Benede Oranje", capetown.City);
+            Assert.Equal<string>("Benede Oranje", capetown.AreaLevel2);
 
             var buenos = await Cache.GetCityName('S', 34.6, 'W', 58.4).ConfigureAwait(false);
 
             Assert.Equal<string>("Buenos Aires", buenos.City);
+
+            var puertoPrincesa = await Cache.GetCityName('N', 11.2597217559814, 'E', 119.570831298828).ConfigureAwait(false);
+
+            Assert.Equal<string>("El Nido", puertoPrincesa.City);
         }
 
-        [Fact]
+        //[Fact]
         public void ParseRawAddress()
         {
             using (var stream = new FileStream("./test/data/metadata_google.json", FileMode.Open))
@@ -67,5 +71,4 @@ namespace Cluj.PhotoLocation.Test
             }
         }
     }
-}
-*/
+}*/

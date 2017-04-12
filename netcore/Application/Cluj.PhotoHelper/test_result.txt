@@ -1,0 +1,414 @@
+*********** PhotoHelper Started ***********
+{"photo_src_path":"D:/users/MartyZhou/Pictures/PhotoHelperTestSource/TestLocationAppend","photo_dest_path":"D:/users/MartyZhou/Pictures/PhotoHelperTestDestination/AppendTest","new_path_format":"{location}/{device}/{location}_{device}_{date}","excluded_cities":["beijing","zhangjiakou","langfang","chengde"],"excluded_area":[{"northeast":{"lat":40.129694,"lng":116.585743},"southwest":{"lat":39.770382,"lng":116.193793}}],"time_tolerance":30,"span_limit_days":30}
+[PhotoHelper]###################### ReadMeta for file D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\DSC_0001.JPG. meta: {"Endian":0,"Make":"NIKON CORPORATION","Model":"NIKON D3300","TakenDate":"2016-12-24T11:46:29","HasLocation":false,"GPS":{"LatRef":"\u0000","Lat":0.0,"LonRef":"\u0000","Lon":0.0},"FilePath":"D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\TestLocationAppend\\DSC_0001.JPG"}
+[PhotoHelper]###################### ReadMeta for file D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\DSC_0002.JPG. meta: {"Endian":0,"Make":"NIKON CORPORATION","Model":"NIKON D3300","TakenDate":"2016-12-24T11:46:34","HasLocation":false,"GPS":{"LatRef":"\u0000","Lat":0.0,"LonRef":"\u0000","Lon":0.0},"FilePath":"D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\TestLocationAppend\\DSC_0002.JPG"}
+[PhotoHelper]###################### ReadMeta for file D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\IMG_3496.JPG. meta: {"Endian":0,"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-12-24T09:20:16","HasLocation":true,"GPS":{"LatRef":"N","Lat":14.139444351196289,"LonRef":"E","Lon":120.98888397216797},"FilePath":"D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\TestLocationAppend\\IMG_3496.JPG"}
+[LocationCache]################ InitLocalRawAddresses path: D:/github/mytest/netcore/Application/Cluj.PhotoHelper/src/local
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJGzE9DS1l44kRoOhiASS_fHg, Address: Boston, MA, USA
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ_b9z6W1l44kRHA2DVTbQxkU, Address: 6-10 Rockwood Terrace, Boston, MA 02130, USA
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJ6TarW9Sc44kR4nUWuotzEyI, Address: 6-10 Rockwood Terrace, Boston, MA 02130, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJvQz5TjvKvJURh47oiC6Bs6A, Address: Buenos Aires, Autonomous City of Buenos Aires, Argentina
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJZ8b99fXKvJURqA_wKpl3Lz0, Address: Pje. Eduardo Wilde 2291, C1417BAA CABA, Argentina
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJu39FBT3KvJURF8D35_z0YOE, Address: Pje. Eduardo Wilde 2291, C1417BAA CABA, Argentina
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJif2PN8nJvJURdmM8-GjGdMs, Address: Pje. Eduardo Wilde 2291, C1417BAA CABA, Argentina
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJURLu2YmmNBwRoOikHwxjXeg, Address: 83 S Perimeter Rd, Robben Island, 7400, South Africa
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJXW-7kH462jARZ0ObpXBi1Jg, Address: Chiang Mai, Mueang Chiang Mai District, Chiang Mai, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJsU1CR_eNTTARAuhXB4gs154, Address: 164-166 Tha Phae Rd, Tambon Chang Moi, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50300, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJQXiZwsjM0DAR1AMlknbhaWo, Address: 164-166 Tha Phae Rd, Tambon Chang Moi, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50300, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJzzapQXc62jAR8G2K-sVGAwM, Address: 164-166 Tha Phae Rd, Tambon Chang Moi, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50300, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJYy_IzQB02jAR4I2L-sVGAwQ, Address: Kuet Chang, Mae Taeng District, Chiang Mai 50150, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJAR6q_BQN2jARQG6K-sVGAwM, Address: Unnamed Road, Tambon Kuet Chang, Amphoe Mae Taeng, Chang Wat Chiang Mai 50150, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJCzYy5IS16lQRQrfeQ5K5Oxw, Address: John F Fitzgerald Expy & US-1 & Essex St, Boston, MA, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJuSwU55ZS8DURiqkPryBWYrk, Address: Beijing, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJwULG5WSOUDERbzafNHyqHZU, Address: Dong San Huan Bei Lu Fu Lu, TuanJieHu, Chaoyang Qu, Beijing Shi, China, 100026
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJuSwU55ZS8DURp8_dOLuVd8A, Address: Dong San Huan Bei Lu Fu Lu, TuanJieHu, Chaoyang Qu, Beijing Shi, China, 100026
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJHcW7U-872jARkI6L-sVGAwQ, Address: Don Kaeo, Mae Rim District, Chiang Mai, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJw6Frnsk_2jARUG6K-sVGAwM, Address: Unnamed Road, Tambon Don Kaeo, Amphoe Mae Rim, Chang Wat Chiang Mai 50300, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJmVW2gyEGmzYRVpDCIF2LkGE, Address: Zhangjiajie, Hunan, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJTTiHaRi6IDQR5Syu5AuRIcw, Address: Unnamed Road, Wulingyuan Qu, Zhangjiajie Shi, Hunan Sheng, China, 427400
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJgeSnr2o_2jARYI6L-sVGAwQ, Address: Mae Raem, Mae Rim District, Chiang Mai 50180, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJGanopj872jAR0IqL-sVGAwQ, Address: San Phi Suea, Mueang Chiang Mai District, Chiang Mai, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJxWQcnvM1JzQRgKbxoZy75bE, Address: Changsha, Hunan, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJIciDz4Cn_IkR2l7w4DqG0tg, Address: Provincetown, MA, USA
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJNznEmus2-4kR1XIbb_9HhCY, Address: MacMillan Pier, Provincetown, MA 02657, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_1
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ-1Vy5szvLjERek7q3fgwKxo, Address: Luang Prabang Province, Laos
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJiUWCsFeQFDERgc2ZH0iSxQ4, Address: 1C, Laos
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJR8UbEmtPSEcRClTnBn_Cqcc, Address: Bălan 457025, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJw3aJlSb_sUARlLEEqJJP74Q, Address: DN1G, Bălan 457025, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJy4t2WktHSEcRk1kYidZ35lY, Address: DN1G, Bălan 457025, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJrYCFFIFFSEcRk-_wdZHJHoc, Address: DN1G, Bălan 457025, Romania
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJtxmxn4wj44kRxEM_SbyxGWw, Address: Rockport, MA, USA
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJtTxVCm8B5IkRdQoXNfYjl6Q, Address: Bayview Ave, Rockport, MA 01966, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJO15R__AT2jARUI2L-sVGAwQ, Address: Ki Lek, Mae Taeng District, Chiang Mai, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJX8wwy6Vw44kRh2xoiWSOOsU, Address: Cambridge, MA, USA
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJmQwtQe4L5IkRCLDyk1MVcOI, Address: 383 Windsor St, Cambridge, MA 02141, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJzzapQXc62jAR8G2K-sVGAwM, Address: Mueang Chiang Mai District, Chiang Mai, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJL8PpA8q3JzQRCpNdwE-lcvU, Address: Yueyang, Hunan, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJKYttIu4qmDYRG46JTIZSG-c, Address: Xiangxi, Hunan, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_1
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJ_ae1SZdLRTERFyEkKNKYXCs, Address: Sanya, Hainan, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJpdA4dTgDTzER9tAWQRQTSbg, Address: 195 San Ya Wan Lu, Tianya Qu, Sanya Shi, Hainan Sheng, China, 572000
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJTeivrbq80DARQIyL-sVGAwQ, Address: Thung Khao Phuang, Chiang Dao District, Chiang Mai 50170, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJtdQ68M2i0DARIG6K-sVGAwM, Address: ชม.3002 Tambon Thung Khao Phuang, Amphoe Chiang Dao, Chang Wat Chiang Mai 50170, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJTR0iQvS62TAR4JyL-sVGAwQ, Address: Pong Don, Chae Hom District, Lampang 52120, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ2e8DBvVs2TARwEqK-sVGAwE, Address: Unnamed Road, Tambon Pong Don, Amphoe Chae Hom, Chang Wat Lampang 52120, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJQ9LGILek2TARQHCK-sVGAwM, Address: Unnamed Road, Tambon Pong Don, Amphoe Chae Hom, Chang Wat Lampang 52120, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJiVFz9iKk0DARAIyL-sVGAwQ, Address: Mueang Ngai, Chiang Dao District, Chiang Mai 50170, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_1
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJSZbe4MCQMTER6CXp-13dJtg, Address: Houaphanh Province, Laos
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJMQBzhoIk44kR7cJvMKu31eo, Address: Gloucester, MA, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJWTYLxnG-2TAR8JyL-sVGAwQ, Address: Mae Suk, Chae Hom District, Lampang, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJH-SbcpN1S0cRnuqF9bXVB94, Address: Sighisoara, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJd5E-VUq2S0cR0LbfbkS1jms, Address: Sighisoara, Romania
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJ02RZx2xbkFQRRrZSrR2yIng, Address: SeaTac, WA, USA
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ-bDD5__lhVQRuvNfbGh4QpQ, Address: SEA Main Terminal, SeaTac, WA 98158, USA
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJN3gtg4xckFQRPuBki2urgOI, Address: SEA Main Terminal, SeaTac, WA 98158, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJL9wOEXZXnDYR5A8DlE6kNTE, Address: Changde, Hunan, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJ_UdMtg2n0DAR4IuL-sVGAwQ, Address: Chiang Dao, Chiang Dao District, Chiang Mai 50170, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJiwtskR8MSUcRixQfMxxgvAs, Address: Cluj-Napoca, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJiwtskR8MSUcR6Nk3QsedRkI, Address: Strada Năsăud 4, Cluj-Napoca 400000, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJY95eGB8MSUcRL11BldQ5-XI, Address: Strada Năsăud 4, Cluj-Napoca 400000, Romania
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJfUeDMqc02DARwK-L-sVGAwQ, Address: Mae Ka, Mueang Phayao District, Phayao 56000, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJGzA39CAh2DARjGrJ9iFLWhk, Address: Unnamed Road, Tambon Mae Ka, Amphoe Mueang Phayao, Chang Wat Phayao 56000, Thailand
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJf1YSh_nS2TARwHKK-sVGAwM, Address: Unnamed Road, Tambon Mae Ka, Amphoe Mueang Phayao, Chang Wat Phayao 56000, Thailand
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJ46cMeWEH9TUR8e2mNR_Bg78, Address: Chengde, Hebei, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ1YZMyjCpjDURIfse5yIKRWA, Address: 244 Sheng Dao, Fengning Manzuzizhixian, Chengde Shi, Hebei Sheng, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJ3eQad-F344kRxFr-GmKH2t4, Address: Waltham, MA, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJx9Lr6tqZyzsRwvu6koO3k64, Address: Hyderabad, Telangana, India
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJkbeSa_BfYzARphNChaFPjNc, Address: 22-5-918/15/A, Rathkhana St, Chow Mohalla, Pathar Gatti, Hyderabad, Telangana 500002, India
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJQ-0plNtQMzoRWUBZQad772M, Address: 22-5-918/15/A, Rathkhana St, Chow Mohalla, Pathar Gatti, Hyderabad, Telangana 500002, India
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJx9Lr6tqZyzsRMyOXJZHL34s, Address: 22-5-918/15/A, Rathkhana St, Chow Mohalla, Pathar Gatti, Hyderabad, Telangana 500002, India
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJYRRkpvhkQ14R1SygWnOSfF4, Address: Harbin, Heilongjiang, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJf5YvzrYfW14RAK9gg8wDQ_0, Address: Zhao Shang Yin Hang （ Ha Er Bin Fen Hang ）, ZhongYang DaJie, Daoli Qu, Haerbin Shi, Heilongjiang Sheng, China, 150001
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJM0sCs_dFSEcRyyxs47ijh84, Address: Chechiș 457026, Romania
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJF0C77n3_SkcRaQiNxkih2c4, Address: Sovata 545500, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJpxW4rwJWSkcR2-Ehna18Yi4, Address: Strada Bradului, Sovata 545500, Romania
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJexsbMjMk-jURtn1f1rfCNcE, Address: Zhangjiakou, Hebei, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ-1Vy5szvLjERek7q3fgwKxo, Address: Pak Xeuang - Pak Xeng Rd, At Xam, Laos
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJrzBnX5fTNDAR2BwhKJOWRQc, Address: Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJV9P7V3XdtjER_qPy7a_lj2o, Address: Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_1
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJSZbe4MCQMTER6CXp-13dJtg, Address: Unnamed Road, Muang Kout, Laos
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJ-36JWfVr44kRVV0XTM-Qot8, Address: Nahant, MA, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJpSUHhAmC44kRfq9wm3sIklU, Address: Newton, MA, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJ-wIspvWwIRwRGgN7IMsA-KE, Address: Benede Oranje, South Africa
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJbUtwf_UhJBwRkEyPkNb4AAM, Address: Unnamed Road, South Africa
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJQVQI3t9nKBwRbO573UrZf2Q, Address: Unnamed Road, South Africa
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJ-wIspvWwIRwRGgN7IMsA-KE, Address: Unnamed Road, South Africa
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJU4FBzgzMtTMRf_D5dy982vw, Address: Roxas, Palawan, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJY96HXyFTQDIRV9opeu-QR3g, Address: Puerto Princesa North Road, Roxas, Palawan, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ15tKmiSnvDMRgqZLXnp65v0, Address: Puerto Princesa North Road, Roxas, Palawan, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJRZ65UOe8tTMR6zuNDGxfxt8, Address: Puerto Princesa North Road, Roxas, Palawan, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJkQmBWEbJtTMR4Hs2u_YA5y0, Address: Puerto Princesa North Road, Roxas, Palawan, Philippines
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJD55c7xVVtjMRVQSbWVtmTvw, Address: El Nido, Palawan, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJDYQo-H4DtzMRftpM2rB8iFg, Address: Unnamed Road, El Nido, Palawan, Philippines
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJ5zSL530DtzMRyAtxs_Zv4EQ, Address: Unnamed Road, El Nido, Philippines
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJc-kX_MU4BTER8vDunT9P2GM, Address: បាណន់, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: country, PlaceId: ChIJQzfc1L-HBzERUxL0ieC_t-Q, Address: Unnamed Road, បាណន់, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJDTYr8bY5BTERZOM1bitTUsI, Address: Unnamed Road, បាណន់, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJYd0U1wg7BTER1F-ZfGDllYE, Address: Unnamed Road, បាណន់, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJ8baU58I4BTERai4atj3xfsE, Address: Unnamed Road, បាណន់, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJYd0U1wg7BTER1F-ZfGDllYE, Address: Banan, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJCzdpFOA5BTERfmNu92Dwg4I, Address: ផ្លូវ សំពៅ-បាណន់, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJx2y8Z59WBTERHP2DXWAv3n4, Address: Sangkae, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJOVv2flhIBTERjGffDOzBx-s, Address: Unnamed Road, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJx2y8Z59WBTERHP2DXWAv3n4, Address: Unnamed Road, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJxTA8bp6uGjERZlQj3ys-ZgE, Address: Ek Phnom, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJz1E3UwyyGjERPuJFHm25PaE, Address: Unnamed Road, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJxTA8bp6uGjERZlQj3ys-ZgE, Address: Unnamed Road, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJe-i5dGuuGjERBMHWd-XT2kw, Address: 156, Phum Bak Prea, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJeaiRjJoWEDER-rvlPvmqQKk, Address: Krong Siem Reap, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ9aDUBwsXEDERuaxzznDT210, Address: Sandstone Cause Way, Krong Siem Reap, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJ_zqKjUkXEDER9vY0UbcT7CY, Address: Sandstone Cause Way, Krong Siem Reap, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJ3QwiwYwWEDERhTH6iUP0xPM, Address: Sandstone Cause Way, Krong Siem Reap, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJaW2sLJQoEDER_ktMAJMW2LY, Address: Sot Nikum, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJYyABuBI3EDERkDHrzMYChuE, Address: Unnamed Road, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJaW2sLJQoEDER_ktMAJMW2LY, Address: Unnamed Road, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJ71ia086qETERWArWU4zpBnM, Address: Svay Leu, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJnymnbqM1EDER3AaNWY9Kty4, Address: Unnamed Road, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJ71ia086qETERWArWU4zpBnM, Address: Unnamed Road, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJE2B7y3JEEDERGzqkccF06ig, Address: Banteay Srei, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJe3iGr4JIEDERGtpi2T0afXY, Address: Unnamed Road, Cambodia
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJE2B7y3JEEDERGzqkccF06ig, Address: Unnamed Road, Cambodia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJnSiN-I1wvTMRPsxkidDX1ms, Address: Talisay, Batangas, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJEZspM4ISvTMRo_3ntNgZqaE, Address: Talisay - Tanauan Rd, Talisay, Batangas, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJaw8wls9wvTMRUv-8VVaSU3I, Address: Talisay - Tanauan Rd, Talisay, Batangas, Philippines
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJj0y1Gnt3vTMR6CvOUURRzG4, Address: Tagaytay, Cavite, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJfTlj-wQCmDMRzJLM6XtvvTU, Address: Santa Rosa - Tagaytay Rd, Tagaytay, Cavite, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJcTwW6OrUlzMRJ-fdO4TQxPA, Address: Santa Rosa - Tagaytay Rd, Tagaytay, Cavite, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJn6ivtCB6vTMRaWjeP5MDCSw, Address: Santa Rosa - Tagaytay Rd, Tagaytay, Cavite, Philippines
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJAe2gZALJlzMRzsoweNVuBis, Address: Makati, Metro Manila, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJbTgmYNLIlzMR0HiSrNoj7V8, Address: 4474 Q Singian, Makati, 1210 Metro Manila, Philippines
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJa_D4gtUPljUR8_JMYfqCTWE, Address: Qingdao, Shandong, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJf0-rNUfNjzURZLPhcCMuOtk, Address: 2 Ming Shui Lu, Shinan Qu, Qingdao Shi, Shandong Sheng, China, 266003
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJR7mHzQIkbjYRU64TZqYwUZI, Address: Yan'an, Shaanxi, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJn6frE2B6YzYRFldhy29uyUE, Address: Yan Hu Lu, Yichuan Xian, Yanan Shi, Shaanxi Sheng, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJZ0o2Lsr9cDYRz-HJQ_9uS2o, Address: Yan Hu Lu, Yichuan Xian, Yanan Shi, Shaanxi Sheng, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJs5laoeiCdDYRsN40pYNKnn8, Address: Lvliang, Shanxi, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJAZbireuoCjYRL-LvlMM8zpw, Address: 449 Xian Dao, Linxian, Lvliang Shi, Shanxi Sheng, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJ24NsFrNlczYRXGGnWrsqHeI, Address: 449 Xian Dao, Linxian, Lvliang Shi, Shanxi Sheng, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJQc3AP6gm7jURKFI_nBcTheA, Address: Langfang, Hebei, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJVS7IXQ1N7jUReCl4QBnX6Pg, Address: Unnamed Road, Wenan Xian, Langfang Shi, Hebei Sheng, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJ9RFgFYfT4jURcwIfACCIGZY, Address: Datong, Shanxi, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJLZ16eYcU4zUR4HXuD6I9_QE, Address: 203 Sheng Dao, Hunyuan Xian, Datong Shi, Shanxi Sheng, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJa3FJqL1kizURHs3yVaAy1-c, Address: Qinhuangdao, Hebei, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJ6ZE5G1iHjDUR4P05tAV6t9Q, Address: Unnamed Road, Funing Xian, Qinhuangdao Shi, Hebei Sheng, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJgZI3cb8O5IkRWOr57wXcX00, Address: 47 Harborview Rd, Hull, MA 02045, USA
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJiUgqMhclGl4RZE-jjlqw9LU, Address: Chifeng, Inner Mongolia, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ3xRp0kvMBTYRUOnCbYFGl9U, Address: Unnamed Road, Keshiketeng Qi, Chifeng Shi, Neimenggu Zizhiqu, China
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJkZmTcPuLHF4RwKzTfrK_ZxU, Address: Unnamed Road, Keshiketeng Qi, Chifeng Shi, Neimenggu Zizhiqu, China
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJbRr5lLDsTEcRgrD4nSBkKjU, Address: Cartisoara, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_1, PlaceId: ChIJ1Rws_YhnTEcRYHxhnkL6sqE, Address: Transfăgărășan, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJ7eQfc9LrTEcRpAznP8i6C_U, Address: Transfăgărășan, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJbRr5lLDsTEcRgrD4nSBkKjU, Address: Transfăgărășan, Romania
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: administrative_area_level_2
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJW3SrdpQASUcRlX27Vn9zvWg, Address: Sanpaul, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJ08hKmdsASUcRsg2FHZ4PryM, Address: DN1F, Romania
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: administrative_area_level_2, PlaceId: ChIJW3SrdpQASUcRlX27Vn9zvWg, Address: DN1F, Romania
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJWUa248bgtjER3HD5mAfvesg, Address: Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: locality
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: locality, PlaceId: ChIJpdYJytBjtTMRjW9JV1d5yZA, Address: Puerto Princesa, Palawan, Philippines
+[LocationCache]################ InsertAddressComponentToCache. AddressLevel: route, PlaceId: ChIJgTttzpJ8tTMRLiKBughZXLk, Address: Honda Bay Wharf Service Rd, Puerto Princesa, Palawan, Philippines
+[LocationCache]################ found match by GEOMETRIC_CENTER KEY: ChIJn6ivtCB6vTMRaWjeP5MDCSw, address: "Santa Rosa - Tagaytay Rd, Tagaytay, Cavite, Philippines"
+[LocationCache]################ found match KEY: ChIJnSiN-I1wvTMRPsxkidDX1ms, address: "Talisay, Batangas, Philippines"
+[LocationCache]################ found match KEY: ChIJj0y1Gnt3vTMR6CvOUURRzG4, address: "Tagaytay, Cavite, Philippines"
+[PhotoHelper]###################### CreateNewPhotoPathWithLocation for city Tagaytay. Info: {"PhotoMetadata":{"Endian":0,"Make":"Apple","Model":"iPhone 6s","TakenDate":"2016-12-24T09:20:16","HasLocation":true,"GPS":{"LatRef":"N","Lat":14.139444351196289,"LonRef":"E","Lon":120.98888397216797},"FilePath":"D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\TestLocationAppend\\IMG_3496.JPG"},"City":"Tagaytay","Country":"Philippines","NewPath":null}
+[PhotoHelper] Copying file: D:/users/MartyZhou/Pictures/PhotoHelperTestDestination/AppendTest/Philippines/Tagaytay/iPhone 6s/Philippines_Tagaytay_2016-12-24 09-20-16.jpg
+[PhotoHelper]###################### ReadMeta for file D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\IMG_3626.JPG. meta: {"Endian":0,"Make":"Apple","Model":"iPhone 6s","TakenDate":"2017-04-10T13:02:57","HasLocation":true,"GPS":{"LatRef":"N","Lat":14.018333435058594,"LonRef":"E","Lon":120.99944305419922},"FilePath":"D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\TestLocationAppend\\IMG_3626.JPG"}
+[LocationCache]################ found match KEY: ChIJnSiN-I1wvTMRPsxkidDX1ms, address: "Talisay, Batangas, Philippines"
+[PhotoHelper]###################### CreateNewPhotoPathWithLocation for city Talisay. Info: {"PhotoMetadata":{"Endian":0,"Make":"Apple","Model":"iPhone 6s","TakenDate":"2017-04-10T13:02:57","HasLocation":true,"GPS":{"LatRef":"N","Lat":14.018333435058594,"LonRef":"E","Lon":120.99944305419922},"FilePath":"D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\TestLocationAppend\\IMG_3626.JPG"},"City":"Talisay","Country":"Philippines","NewPath":null}
+[PhotoHelper] Copying file: D:/users/MartyZhou/Pictures/PhotoHelperTestDestination/AppendTest/Philippines/Talisay/iPhone 6s/Philippines_Talisay_2017-04-10 13-02-57.jpg
+[PhotoHelper]###################### ReadMeta for file D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\IMG_5904.JPG. meta: {"Endian":0,"Make":"GoPro","Model":"HERO5 Black","TakenDate":"2016-12-26T11:25:23","HasLocation":false,"GPS":{"LatRef":"\u0000","Lat":0.0,"LonRef":"\u0000","Lon":0.0},"FilePath":"D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\TestLocationAppend\\IMG_5904.JPG"}
+[PhotoHelper]###################### try to append location  to D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\DSC_0001.JPG. Photo Date 2016-12-24 11-46-29, left time: 2016-12-24 09-20-16, right time: 2016-12-24 09-20-16
+[PhotoHelper]###################### try to append location  to D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\DSC_0001.JPG. Photo Date 2016-12-24 11-46-29, left time: 2017-04-10 13-02-57, right time: 2017-04-10 13-02-57
+[PhotoHelper] Copying file: D:/users/MartyZhou/Pictures/PhotoHelperTestDestination/AppendTest/!NoGPS/2016-12/NIKON D3300/NIKON D3300_2016-12-24 11-46-29.jpg
+[PhotoHelper]###################### try to append location  to D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\DSC_0002.JPG. Photo Date 2016-12-24 11-46-34, left time: 2016-12-24 09-20-16, right time: 2016-12-24 09-20-16
+[PhotoHelper]###################### try to append location  to D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\DSC_0002.JPG. Photo Date 2016-12-24 11-46-34, left time: 2017-04-10 13-02-57, right time: 2017-04-10 13-02-57
+[PhotoHelper] Copying file: D:/users/MartyZhou/Pictures/PhotoHelperTestDestination/AppendTest/!NoGPS/2016-12/NIKON D3300/NIKON D3300_2016-12-24 11-46-34.jpg
+[PhotoHelper]###################### try to append location  to D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\IMG_5904.JPG. Photo Date 2016-12-26 11-25-23, left time: 2016-12-24 09-20-16, right time: 2016-12-24 09-20-16
+[PhotoHelper]###################### try to append location  to D:\users\MartyZhou\Pictures\PhotoHelperTestSource\TestLocationAppend\IMG_5904.JPG. Photo Date 2016-12-26 11-25-23, left time: 2017-04-10 13-02-57, right time: 2017-04-10 13-02-57
+[PhotoHelper] Copying file: D:/users/MartyZhou/Pictures/PhotoHelperTestDestination/AppendTest/!NoGPS/2016-12/HERO5 Black/HERO5 Black_2016-12-26 11-25-23.jpg
+*********** PhotoHelper Finished ***********

@@ -1,0 +1,191 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "DN1F",
+               "short_name" : "DN1F",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Comuna Sânpaul",
+               "short_name" : "Comuna Sânpaul",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Județul Cluj",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "DN1F, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.8864123,
+                  "lng" : 23.4176655
+               },
+               "southwest" : {
+                  "lat" : 46.8839192,
+                  "lng" : 23.4151684
+               }
+            },
+            "location" : {
+               "lat" : 46.8850799,
+               "lng" : 23.4162424
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.88651473029149,
+                  "lng" : 23.4177659302915
+               },
+               "southwest" : {
+                  "lat" : 46.8838167697085,
+                  "lng" : 23.4150679697085
+               }
+            }
+         },
+         "place_id" : "ChIJ08hKmdsASUcRsg2FHZ4PryM",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Sanpaul",
+               "short_name" : "Sanpaul",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Cluj County",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Sanpaul, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.960168,
+                  "lng" : 23.4912949
+               },
+               "southwest" : {
+                  "lat" : 46.843959,
+                  "lng" : 23.3374082
+               }
+            },
+            "location" : {
+               "lat" : 46.9092636,
+               "lng" : 23.4122226
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.960168,
+                  "lng" : 23.4912949
+               },
+               "southwest" : {
+                  "lat" : 46.843959,
+                  "lng" : 23.3374082
+               }
+            }
+         },
+         "place_id" : "ChIJW3SrdpQASUcRlX27Vn9zvWg",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cluj County",
+               "short_name" : "CJ",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cluj County, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 47.370062,
+                  "lng" : 24.2579299
+               },
+               "southwest" : {
+                  "lat" : 46.396713,
+                  "lng" : 22.5999269
+               }
+            },
+            "location" : {
+               "lat" : 46.79417970000001,
+               "lng" : 23.6121492
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 47.370062,
+                  "lng" : 24.2579299
+               },
+               "southwest" : {
+                  "lat" : 46.396713,
+                  "lng" : 22.5999269
+               }
+            }
+         },
+         "place_id" : "ChIJiwtskR8MSUcR6Nk3QsedRkI",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 48.265274,
+                  "lng" : 29.77839999999999
+               },
+               "southwest" : {
+                  "lat" : 43.6186193,
+                  "lng" : 20.2617593
+               }
+            },
+            "location" : {
+               "lat" : 45.943161,
+               "lng" : 24.96676
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.265274,
+                  "lng" : 29.7570806
+               },
+               "southwest" : {
+                  "lat" : 43.62329769999999,
+                  "lng" : 20.2617593
+               }
+            }
+         },
+         "place_id" : "ChIJw3aJlSb_sUARlLEEqJJP74Q",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

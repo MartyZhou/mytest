@@ -15,10 +15,15 @@ namespace Cluj.PhotoHelper
         [JsonProperty("new_path_format")]
         public string NewPhotoPathFormat { get; set; }
 
+        [JsonProperty("excluded_cities")]
+        public List<string> ExcludedCities { get; set; }
+
         [JsonProperty("excluded_area")]
         public List<Bounds> ExcludedArea { get; set; }
 
         [JsonProperty("time_tolerance")]
         public int TimeTolerance { get; set; }
+        [JsonProperty("span_limit_days")]
+        public int SpanLimitDays { get; set; }
     }
 }

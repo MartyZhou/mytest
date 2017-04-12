@@ -4,6 +4,9 @@
     "photo_src_path": "D:/users/MartyZhou/Pictures/Photos",
     "photo_dest_path": "D:/users/MartyZhou/Pictures/PhotoHelperDestination",
     "new_path_format": "{location}/{device}/{location}_{device}_{date}",
+    "excluded_cities": [
+        "beijing", "zhangjiakou", "langfang", "chengde"
+    ],
     "excluded_area": [
         {
             "northeast": {
@@ -16,5 +19,5 @@
             }
         }
     ],
-    "time_tolerance": 30
+    "time_tolerance": 60
 }

@@ -13,6 +13,7 @@ namespace Cluj.PhotoLocation
         private const string COUNTRY_LEVEL = "country";
         private const string AREA_LEVEL1 = "administrative_area_level_1";
         private const string AREA_LEVEL2 = "administrative_area_level_2";
+        private const string LOCATION_TYPE_GEOMETRIC_CENTER = "GEOMETRIC_CENTER";
 
         private static readonly string API_KEY;
         private static readonly string LOCAL_PATH;
@@ -83,7 +84,7 @@ namespace Cluj.PhotoLocation
             {
                 var rawAddressFiles = Directory.EnumerateFiles(LOCAL_PATH, "*.json");
 
-                Console.WriteLine("test ################ path " + LOCAL_PATH);
+                Console.WriteLine("[LocationCache]################ InitLocalRawAddresses path: " + LOCAL_PATH);
 
                 foreach (var fileName in rawAddressFiles)
                 {
@@ -133,6 +134,8 @@ namespace Cluj.PhotoLocation
                         cityLocation.Country = addressComponent.LongName;
                     }
                 }
+
+
             }
 
             if (addressResult.IsValid)
@@ -165,7 +168,17 @@ namespace Cluj.PhotoLocation
 
                 if (!string.IsNullOrWhiteSpace(areaLevel))
                 {
-                    // Console.WriteLine("test ################ IsValid " + areaLevel);
+                    Console.WriteLine(string.Format("[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: {0}", areaLevel));
+                    InsertAddressComponentToCache(addressResult, areaLevel);
+                }
+                else
+                {
+                    Console.WriteLine("[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel is empty");
+                }
+
+                if (addressDetails.Geometry.LocationType == LOCATION_TYPE_GEOMETRIC_CENTER)
+                {
+                    areaLevel = addressDetails.Types[0];
                     InsertAddressComponentToCache(addressResult, areaLevel);
                 }
             }
@@ -188,6 +201,7 @@ namespace Cluj.PhotoLocation
                         if (!cityLevelAddressComponentCache.ContainsKey(addressComponent.PlaceId))
                         {
                             cityLevelAddressComponentCache.TryAdd(addressComponent.PlaceId, addressComponent);
+                            Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", areaLevel, addressComponent.PlaceId, addressComponent.FormattedAddress));
                         }
 
                         break;
@@ -216,7 +230,7 @@ namespace Cluj.PhotoLocation
                 if (!countryLevelAddressComponentCache.ContainsKey(countryArea.PlaceId))
                 {
                     countryLevelAddressComponentCache.TryAdd(countryArea.PlaceId, countryArea);
-                    //Console.WriteLine("test ################ country place Id " + countryArea.PlaceId);
+                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", COUNTRY_LEVEL, countryArea.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
 
@@ -225,7 +239,7 @@ namespace Cluj.PhotoLocation
                 if (!areaLevel1AddressComponentCache.ContainsKey(areaLevel1.PlaceId))
                 {
                     areaLevel1AddressComponentCache.TryAdd(areaLevel1.PlaceId, areaLevel1);
-                    //Console.WriteLine("test ################ areaLevel1 place Id " + areaLevel1.PlaceId);
+                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", AREA_LEVEL1, areaLevel1.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
 
@@ -234,7 +248,7 @@ namespace Cluj.PhotoLocation
                 if (!areaLevel2AddressComponentCache.ContainsKey(areaLevel2.PlaceId))
                 {
                     areaLevel2AddressComponentCache.TryAdd(areaLevel2.PlaceId, areaLevel2);
-                    //Console.WriteLine("test ################ areaLevel2 place Id " + areaLevel2.PlaceId);
+                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", AREA_LEVEL2, areaLevel2.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
 
@@ -243,7 +257,7 @@ namespace Cluj.PhotoLocation
                 if (!cityLevelAddressComponentCache.ContainsKey(cityArea.PlaceId))
                 {
                     cityLevelAddressComponentCache.TryAdd(cityArea.PlaceId, cityArea);
-                    //Console.WriteLine("test ################ cityArea place Id " + cityArea.PlaceId);
+                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", CITY_LEVEL, cityArea.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
         }
@@ -257,8 +271,6 @@ namespace Cluj.PhotoLocation
 
             var lat = latRef == 'N' ? absLat : -absLat;
             var lon = lonRef == 'E' ? absLon : -absLon;
-
-            Console.WriteLine("test ################ TryGetAddressComponentFromCache");
 
             result = TryGetAddressComponentFromCache(latRef, lat, lonRef, lon, cityLevelAddressComponentCache, out match);
 
@@ -277,7 +289,7 @@ namespace Cluj.PhotoLocation
                 }
             }
 
-            Console.WriteLine("test ################ TryGetAddressComponentFromCache end " + result);
+            //Console.WriteLine("test ################ TryGetAddressComponentFromCache end " + result);
 
             return result;
         }
@@ -289,16 +301,33 @@ namespace Cluj.PhotoLocation
 
             foreach (var addressComponent in cache)
             {
-                var bounds = addressComponent.Value.Geometry.Bounds;
-                var latTest = lat <= bounds.Norteast.Lat && lat >= bounds.Southwest.Lat;
-                var lonTest = lon <= bounds.Norteast.Lng && lon >= bounds.Southwest.Lng;
-
-                if (latTest && lonTest)
+                if (addressComponent.Value.Geometry.LocationType == LOCATION_TYPE_GEOMETRIC_CENTER)
                 {
-                    Console.WriteLine(string.Format("test ################ found match KEY: {0}, address: {1}", addressComponent.Key, JsonConvert.SerializeObject(addressComponent)));
+                    var location = addressComponent.Value.Geometry.Location;
+                    var latTest = lat <= location.Lat + 0.01 && lat >= location.Lat - 0.01;
+                    var lonTest = lon <= location.Lng + 0.01 && lon >= location.Lng - 0.01;
 
-                    match = addressComponent.Value;
-                    result = true;
+                    if (latTest && lonTest)
+                    {
+                        Console.WriteLine(string.Format("[LocationCache]################ found match by GEOMETRIC_CENTER KEY: {0}, address: {1}", addressComponent.Key, JsonConvert.SerializeObject(addressComponent.Value.FormattedAddress)));
+
+                        match = addressComponent.Value;
+                        result = true;
+                    }
+                }
+                else
+                {
+                    var bounds = addressComponent.Value.Geometry.Bounds;
+                    var latTest = lat <= bounds.Norteast.Lat && lat >= bounds.Southwest.Lat;
+                    var lonTest = lon <= bounds.Norteast.Lng && lon >= bounds.Southwest.Lng;
+
+                    if (latTest && lonTest)
+                    {
+                        Console.WriteLine(string.Format("[LocationCache]################ found match KEY: {0}, address: {1}", addressComponent.Key, JsonConvert.SerializeObject(addressComponent.Value.FormattedAddress)));
+
+                        match = addressComponent.Value;
+                        result = true;
+                    }
                 }
             }
 
@@ -310,29 +339,32 @@ namespace Cluj.PhotoLocation
             return await LoadRawAddressFromCacheAsync(latRef, lat, lonRef, lon).ConfigureAwait(false);
         }
 
-        private static async Task<AddressResult> LoadRawAddressFromServerAsync(char latRef, double lat, char lonRef, double lon)
+        private static async Task<AddressResult> LoadRawAddressFromServerAsync(char latRef, double absLat, char lonRef, double absLon)
         {
             var result = new AddressResult();
             try
             {
                 using (var httpClient = new HttpClient())
                 {
-                    Console.WriteLine("test ################ LoadRawAddressFromServerAsync");
+                    var lat = latRef == 'N' ? absLat : -absLat;
+                    var lon = lonRef == 'E' ? absLon : -absLon;
+                    var url = string.Format("https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key={2}", lat, lon, API_KEY);
 
-                    var url = string.Format("https://maps.googleapis.com/maps/api/geocode/json?latlng={0},{1}&key={2}", latRef == 'N' ? lat : -lat, lonRef == 'E' ? lon : -lon, API_KEY);
+                    var response = await httpClient.GetStringAsync(url).ConfigureAwait(false);
 
-                    var response = await httpClient.GetAsync(url).ConfigureAwait(false);
-
-                    using (FileStream fileStream = new FileStream(GenerateFileName(latRef, lat, lonRef, lon), FileMode.Create))
+                    if (!string.IsNullOrWhiteSpace(response))
                     {
-                        await response.Content.CopyToAsync(fileStream).ConfigureAwait(false);
-                    }
+                        Console.WriteLine(string.Format("[LocationCache]################ LoadRawAddressFromServerAsync successfully and save to {0}", GenerateFileName(latRef, absLat, lonRef, absLon)));
 
-                    using (var reader = new StreamReader(await response.Content.ReadAsStreamAsync().ConfigureAwait(false)))
-                    {
-                        var addressString = reader.ReadToEnd();
-                        result = JsonConvert.DeserializeObject<AddressResult>(addressString);
+                        result = JsonConvert.DeserializeObject<AddressResult>(response);
                         result.IsValid = true;
+
+                        File.WriteAllText(GenerateFileName(latRef, absLat, lonRef, absLon), JsonConvert.SerializeObject(result));
+                    }
+                    else
+                    {
+                        Console.WriteLine(string.Format("[LocationCache]################ Failed to LoadRawAddressFromServerAsync: {0}", GenerateFileName(latRef, absLat, lonRef, absLon)));
+
                     }
                 }
             }
@@ -357,7 +389,7 @@ namespace Cluj.PhotoLocation
                 {
                     var addressString = reader.ReadToEnd();
                     var address = JsonConvert.DeserializeObject<AddressResult>(addressString);
-                    Console.WriteLine("test ################ LoadRawAddressFromCacheAsync");
+                    // Console.WriteLine("test ################ LoadRawAddressFromCacheAsync");
 
                     var result = await Task.FromResult(address);
                     result.IsValid = true;

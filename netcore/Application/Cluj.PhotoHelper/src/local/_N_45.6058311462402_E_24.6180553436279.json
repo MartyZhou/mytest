@@ -1,0 +1,191 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Transfăgărășan",
+               "short_name" : "DN7C",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Comuna Cârțișoara",
+               "short_name" : "Comuna Cârțișoara",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Județul Sibiu",
+               "short_name" : "SB",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Transfăgărășan, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 45.6067635,
+                  "lng" : 24.6200046
+               },
+               "southwest" : {
+                  "lat" : 45.60401299999999,
+                  "lng" : 24.6125829
+               }
+            },
+            "location" : {
+               "lat" : 45.606382,
+               "lng" : 24.6200025
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.6067635,
+                  "lng" : 24.6200046
+               },
+               "southwest" : {
+                  "lat" : 45.60401299999999,
+                  "lng" : 24.6125829
+               }
+            }
+         },
+         "place_id" : "ChIJ7eQfc9LrTEcRpAznP8i6C_U",
+         "types" : [ "route" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cartisoara",
+               "short_name" : "Cartisoara",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Sibiu",
+               "short_name" : "SB",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cartisoara, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 45.761689,
+                  "lng" : 24.647511
+               },
+               "southwest" : {
+                  "lat" : 45.582853,
+                  "lng" : 24.549762
+               }
+            },
+            "location" : {
+               "lat" : 45.6762133,
+               "lng" : 24.5765432
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 45.761689,
+                  "lng" : 24.647511
+               },
+               "southwest" : {
+                  "lat" : 45.582853,
+                  "lng" : 24.549762
+               }
+            }
+         },
+         "place_id" : "ChIJbRr5lLDsTEcRgrD4nSBkKjU",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Sibiu",
+               "short_name" : "SB",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Sibiu, Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.2799851,
+                  "lng" : 24.9482721
+               },
+               "southwest" : {
+                  "lat" : 45.466212,
+                  "lng" : 23.590129
+               }
+            },
+            "location" : {
+               "lat" : 45.9269106,
+               "lng" : 24.2254807
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.2799851,
+                  "lng" : 24.9482721
+               },
+               "southwest" : {
+                  "lat" : 45.466212,
+                  "lng" : 23.590129
+               }
+            }
+         },
+         "place_id" : "ChIJ1Rws_YhnTEcRYHxhnkL6sqE",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Romania",
+               "short_name" : "RO",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Romania",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 48.265274,
+                  "lng" : 29.77839999999999
+               },
+               "southwest" : {
+                  "lat" : 43.6186193,
+                  "lng" : 20.2617593
+               }
+            },
+            "location" : {
+               "lat" : 45.943161,
+               "lng" : 24.96676
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.265274,
+                  "lng" : 29.7570806
+               },
+               "southwest" : {
+                  "lat" : 43.62329769999999,
+                  "lng" : 20.2617593
+               }
+            }
+         },
+         "place_id" : "ChIJw3aJlSb_sUARlLEEqJJP74Q",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}
