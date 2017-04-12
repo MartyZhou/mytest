@@ -1,0 +1,255 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "47",
+               "short_name" : "47",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Harborview Road",
+               "short_name" : "Harborview Rd",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Hull",
+               "short_name" : "Hull",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Plymouth County",
+               "short_name" : "Plymouth County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "02045",
+               "short_name" : "02045",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "1213",
+               "short_name" : "1213",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "47 Harborview Rd, Hull, MA 02045, USA",
+         "geometry" : {
+            "location" : {
+               "lat" : 42.3072732,
+               "lng" : -70.9070158
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.30862218029149,
+                  "lng" : -70.9056668197085
+               },
+               "southwest" : {
+                  "lat" : 42.3059242197085,
+                  "lng" : -70.90836478029151
+               }
+            }
+         },
+         "place_id" : "ChIJI4gTVXVm44kRQpSdX6qzt8A",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Plymouth County",
+               "short_name" : "Plymouth County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Plymouth County, MA, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.3750983,
+                  "lng" : -70.3225219
+               },
+               "southwest" : {
+                  "lat" : 41.5658509,
+                  "lng" : -71.08036299999999
+               }
+            },
+            "location" : {
+               "lat" : 41.9120406,
+               "lng" : -70.71684689999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.3666882,
+                  "lng" : -70.52557689999999
+               },
+               "southwest" : {
+                  "lat" : 41.6151192,
+                  "lng" : -71.0803628
+               }
+            }
+         },
+         "place_id" : "ChIJgZI3cb8O5IkRWOr57wXcX00",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Boston Metropolitan Area",
+               "short_name" : "Boston Metropolitan Area",
+               "types" : [ "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Boston Metropolitan Area, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.573012,
+                  "lng" : -70.3225219
+               },
+               "southwest" : {
+                  "lat" : 41.5658509,
+                  "lng" : -71.8987159
+               }
+            },
+            "location" : {
+               "lat" : 42.3600709,
+               "lng" : -71.0588305
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.573012,
+                  "lng" : -70.3225219
+               },
+               "southwest" : {
+                  "lat" : 41.5658509,
+                  "lng" : -71.8987159
+               }
+            }
+         },
+         "place_id" : "ChIJQ-TFt5IL44kR1kcVhdMVrXg",
+         "types" : [ "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [
+                  "administrative_area_level_1",
+                  "establishment",
+                  "point_of_interest",
+                  "political"
+               ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Massachusetts, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.88679,
+                  "lng" : -69.85886099999999
+               },
+               "southwest" : {
+                  "lat" : 41.18705300000001,
+                  "lng" : -73.5081419
+               }
+            },
+            "location" : {
+               "lat" : 42.4072107,
+               "lng" : -71.3824374
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.886691,
+                  "lng" : -69.9287422
+               },
+               "southwest" : {
+                  "lat" : 41.2390737,
+                  "lng" : -73.5081419
+               }
+            }
+         },
+         "place_id" : "ChIJ_b9z6W1l44kRHA2DVTbQxkU",
+         "types" : [
+            "administrative_area_level_1",
+            "establishment",
+            "point_of_interest",
+            "political"
+         ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "United States",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 71.5388001,
+                  "lng" : -66.885417
+               },
+               "southwest" : {
+                  "lat" : 18.7763,
+                  "lng" : 170.5957
+               }
+            },
+            "location" : {
+               "lat" : 37.09024,
+               "lng" : -95.712891
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 49.38,
+                  "lng" : -66.94
+               },
+               "southwest" : {
+                  "lat" : 25.82,
+                  "lng" : -124.39
+               }
+            }
+         },
+         "place_id" : "ChIJCzYy5IS16lQRQrfeQ5K5Oxw",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

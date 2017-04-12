@@ -50,15 +50,15 @@ namespace Cluj.PhotoLocation
             return areaLevel2AddressComponentCache;
         }
 
-        public static async Task<string> GetCityName(char latRef, double lat, char lonRef, double lon)
+        public static async Task<CityLocation> GetCityName(char latRef, double lat, char lonRef, double lon)
         {
-            var city = string.Empty;
+            var cityLocation = new CityLocation();
 
             AddressDetails addressDetailsInCache;
             AddressDetails parentAddressDetailsInCache;
             if (TryGetAddressComponentFromCache(latRef, lat, lonRef, lon, out addressDetailsInCache, out parentAddressDetailsInCache))
             {
-                city = addressDetailsInCache.AddressComponents[0].LongName;
+                cityLocation = ParseCityNameAndInsertCache(addressDetailsInCache, new AddressResult());
             }
             else
             {
@@ -66,15 +66,15 @@ namespace Cluj.PhotoLocation
 
                 if (address.IsValid)
                 {
-                    city = ParseCityNameAndInsertCache(address);
+                    cityLocation = ParseCityNameAndInsertCache(address.Results[0], address);
                 }
                 else if (!string.IsNullOrWhiteSpace(parentAddressDetailsInCache.PlaceId))
                 {
-                    city = parentAddressDetailsInCache.AddressComponents[0].LongName;
+                    cityLocation = ParseCityNameAndInsertCache(parentAddressDetailsInCache, new AddressResult());
                 }
             }
 
-            return city;
+            return cityLocation;
         }
 
         private static void InitLocalRawAddresses()
@@ -91,8 +91,10 @@ namespace Cluj.PhotoLocation
                     {
                         using (var reader = new StreamReader(stream))
                         {
-                            var cityName = ParseCityNameAndInsertCache(JsonConvert.DeserializeObject<AddressResult>(reader.ReadToEnd()));
-                            // Console.WriteLine("test ################ cityName " + cityName);
+                            var address = JsonConvert.DeserializeObject<AddressResult>(reader.ReadToEnd());
+                            address.IsValid = true;
+                            var cityLocation = ParseCityNameAndInsertCache(address.Results[0], address);
+                            // Console.WriteLine("test ################ city location " + JsonConvert.SerializeObject(cityLocation));
                         }
                     }
                 }
@@ -103,81 +105,72 @@ namespace Cluj.PhotoLocation
             }
         }
 
-        private static string ParseCityNameAndInsertCache(AddressResult address)
+        private static CityLocation ParseCityNameAndInsertCache(AddressDetails addressDetails, AddressResult addressResult)
         {
-            var city = string.Empty;
-            var areaLevel1 = string.Empty;
-            var areaLevel2 = string.Empty;
-            var country = string.Empty;
+            var cityLocation = new CityLocation();
             var areaLevel = string.Empty;
 
-            for (var i = address.Results[0].AddressComponents.Length - 1; i > -1; i--)
+            for (var i = addressDetails.AddressComponents.Length - 1; i > -1; i--)
             {
-                var addressComponent = address.Results[0].AddressComponents[i];
-
-                var cityFound = false;
+                var addressComponent = addressDetails.AddressComponents[i];
 
                 foreach (var addressType in addressComponent.Types)
                 {
                     if (addressType == CITY_LEVEL)
                     {
-                        city = addressComponent.LongName;
-                        cityFound = true;
-                        break;
+                        cityLocation.City = addressComponent.LongName;
                     }
                     else if (addressType == AREA_LEVEL2)
                     {
-                        areaLevel2 = addressComponent.LongName;
+                        cityLocation.AreaLevel2 = addressComponent.LongName;
                     }
                     else if (addressType == AREA_LEVEL1)
                     {
-                        areaLevel1 = addressComponent.LongName;
+                        cityLocation.AreaLevel1 = addressComponent.LongName;
                     }
                     else if (addressType == COUNTRY_LEVEL)
                     {
-                        country = addressComponent.LongName;
+                        cityLocation.Country = addressComponent.LongName;
                     }
-                }
-
-                if (cityFound)
-                {
-                    break;
                 }
             }
 
-            if (string.IsNullOrWhiteSpace(city))
+            if (addressResult.IsValid)
             {
-                if (string.IsNullOrWhiteSpace(areaLevel2))
+                if (string.IsNullOrWhiteSpace(cityLocation.City))
                 {
-                    if (string.IsNullOrWhiteSpace(areaLevel1))
+                    if (string.IsNullOrWhiteSpace(cityLocation.AreaLevel2))
                     {
-                        if (!string.IsNullOrWhiteSpace(country))
+                        if (string.IsNullOrWhiteSpace(cityLocation.AreaLevel1))
                         {
-                            areaLevel = COUNTRY_LEVEL;
+                            if (!string.IsNullOrWhiteSpace(cityLocation.Country))
+                            {
+                                areaLevel = COUNTRY_LEVEL;
+                            }
+                        }
+                        else
+                        {
+                            areaLevel = AREA_LEVEL1;
                         }
                     }
                     else
                     {
-                        areaLevel = AREA_LEVEL1;
+                        areaLevel = AREA_LEVEL2;
                     }
                 }
                 else
                 {
-                    areaLevel = AREA_LEVEL2;
+                    areaLevel = CITY_LEVEL;
+                }
+
+                if (!string.IsNullOrWhiteSpace(areaLevel))
+                {
+                    // Console.WriteLine("test ################ IsValid " + areaLevel);
+                    InsertAddressComponentToCache(addressResult, areaLevel);
                 }
             }
-            else
-            {
-                areaLevel = CITY_LEVEL;
-            }
 
-            if (!string.IsNullOrWhiteSpace(areaLevel))
-            {
-                // Console.WriteLine("test ################ IsValid " + areaLevel);
-                InsertAddressComponentToCache(address, areaLevel);
-            }
-
-            return city;
+            return cityLocation;
         }
 
         private static void InsertAddressComponentToCache(AddressResult addressResult, string areaLevel)

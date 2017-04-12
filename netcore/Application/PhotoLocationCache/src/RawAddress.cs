@@ -3,6 +3,14 @@ using Newtonsoft.Json;
 
 namespace Cluj.PhotoLocation
 {
+    public struct CityLocation
+    {
+        public string City { get; set; }
+        public string AreaLevel2 { get; set; }
+        public string AreaLevel1 { get; set; }
+        public string Country { get; set; }
+    }
+
     public struct AddressType
     {
         [JsonProperty("long_name")]

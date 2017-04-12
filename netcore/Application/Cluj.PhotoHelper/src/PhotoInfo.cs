@@ -8,6 +8,8 @@ namespace Cluj.PhotoHelper
 
         public string City { get; set; }
 
+        public string Country { get; set; }
+
         public string NewPath { get; set; }
     }
 }

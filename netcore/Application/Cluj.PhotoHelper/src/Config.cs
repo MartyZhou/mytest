@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Cluj.PhotoLocation;
 using Newtonsoft.Json;
 
 namespace Cluj.PhotoHelper
@@ -12,5 +14,11 @@ namespace Cluj.PhotoHelper
 
         [JsonProperty("new_path_format")]
         public string NewPhotoPathFormat { get; set; }
+
+        [JsonProperty("excluded_area")]
+        public List<Bounds> ExcludedArea { get; set; }
+
+        [JsonProperty("time_tolerance")]
+        public int TimeTolerance { get; set; }
     }
 }
