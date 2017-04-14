@@ -5,7 +5,7 @@
     "photo_dest_path": "D:/users/MartyZhou/Pictures/PhotoHelperTestDestination/TestAppend",
     "new_path_format_gps": "/{date:yyyy.MM} {country}/{city}/{device}/{country}_{city}_{device}_{date:yyyy-MM-dd HH-mm-ss}",
     "new_path_format": "/{date:yyyy.MM}/{device}/{device}_{date:yyyy-MM-dd HH-mm-ss}",
-    "center_tolerance": 0.015,
+    "center_tolerance": 0.035,
     "span_limit_days": 30,
     "excluded_cities": [
         "beijing", "zhangjiakou", "langfang", "chengde"

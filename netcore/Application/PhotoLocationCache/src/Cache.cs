@@ -346,11 +346,13 @@ namespace Cluj.PhotoLocation
                 var bounds = leaf.Value.Bounds;
                 if (bounds.Norteast.Lat != 0 && bounds.Norteast.Lng != 0 && bounds.Southwest.Lat != 0 && bounds.Southwest.Lng != 0)
                 {
-                    if (leaf.Value.LocationType == LocationType.GEOMETRIC_CENTER)
+                    if (leaf.Value.LocationType == LocationType.GEOMETRIC_CENTER || leaf.Value.LocationType == LocationType.RANGE_INTERPOLATED)
                     {
                         var location = leaf.Value.Location;
                         latTest = lat <= location.Lat + config.CenterTolerance && lat >= location.Lat - config.CenterTolerance;
                         lonTest = lon <= location.Lng + config.CenterTolerance && lon >= location.Lng - config.CenterTolerance;
+
+                        // Console.WriteLine(string.Format("################ LocationType.GEOMETRIC_CENTER lat: {0}, lon: {1}, Lat: {2}|{3}, Lon: {4}|{5}", lat, lon, location.Lat + config.CenterTolerance, location.Lat - config.CenterTolerance, location.Lng + config.CenterTolerance, location.Lng - config.CenterTolerance));
                     }
                     else
                     {
@@ -447,6 +449,7 @@ namespace Cluj.PhotoLocation
             catch (Exception e)
             {
                 Console.WriteLine(string.Format("Failed to call google map API: {0}", e.Message));
+                throw;
             }
 
             return result;
@@ -492,14 +495,20 @@ namespace Cluj.PhotoLocation
             if (!leafAddressCache.ContainsKey(firstPlaceId))
             {
                 var firstNode = new Node(raw.Results[0]);
-                leafAddressCache.Add(firstNode.PlaceId, firstNode);
+                if (firstNode.LocationType != LocationType.NONE)
+                {
+                    leafAddressCache.Add(firstNode.PlaceId, firstNode);
+                }
             }
 
-            var leaf = leafAddressCache[firstPlaceId];
+            Node leaf;
 
-            if (leaf.Parent == null && raw.Results.Length > 1)
+            if (leafAddressCache.TryGetValue(firstPlaceId, out leaf))
             {
-                LinkToParent(raw, 1, leaf);
+                if (leaf.Parent == null && raw.Results.Length > 1)
+                {
+                    LinkToParent(raw, 1, leaf);
+                }
             }
         }
 

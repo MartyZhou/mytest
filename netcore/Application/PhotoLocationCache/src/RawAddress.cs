@@ -5,6 +5,7 @@ namespace Cluj.PhotoLocation
 {
     public enum LocationType
     {
+        NONE,
         APPROXIMATE,
         GEOMETRIC_CENTER,
         ROOFTOP,

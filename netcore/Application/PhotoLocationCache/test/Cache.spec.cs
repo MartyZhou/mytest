@@ -33,24 +33,20 @@ namespace Cluj.PhotoLocation.Test
         public async void ParseCityNameSuccessfully()
         {
             var beijing = await Cache.GetLeafNode('N', 40.0608159, 'E', 116.514625).ConfigureAwait(false);
-
-            Assert.Equal<string>("Chaoyang, Beijing, China", beijing.FormattedAddress);
+            Assert.NotNull(beijing);
+            Assert.Equal<string>("155 Shun Huang Lu, Chaoyang Qu, Beijing Shi, China", beijing.FormattedAddress);
 
             var boston = await Cache.GetLeafNode('N', 42.32788, 'W', 70.849455).ConfigureAwait(false);
-
-            Assert.Equal<string>("Boston, MA, USA", boston.FormattedAddress);
+            Assert.NotNull(boston);
+            Assert.Equal<string>("Plymouth County, MA, USA", boston.FormattedAddress);
 
             var capetown = await Cache.GetLeafNode('S', 30, 'E', 22).ConfigureAwait(false);
-
+            Assert.NotNull(capetown);
             Assert.Equal<string>("South Africa", capetown.FormattedAddress);
 
             var buenos = await Cache.GetLeafNode('S', 34.6, 'W', 58.4).ConfigureAwait(false);
-
+            Assert.NotNull(buenos);
             Assert.Equal<string>("Balvanera, Autonomous City of Buenos Aires, Argentina", buenos.FormattedAddress);
-
-            var puertoPrincesa = await Cache.GetLeafNode('N', 11.2597217559814, 'E', 119.570831298828).ConfigureAwait(false);
-
-            Assert.Equal<string>("Unnamed Road, El Nido, Philippines", puertoPrincesa.FormattedAddress);
         }
 
         [Fact]
@@ -62,14 +58,19 @@ namespace Cluj.PhotoLocation.Test
             Assert.NotEmpty(leafCache);
             Assert.NotEmpty(totalCache);
 
-            var leaf = leafCache["ChIJB4CXTdVhzB0RI8X6FPKfvXM"];
-            Assert.Equal<string>("83 S Perimeter Rd, Robben Island, 7400, South Africa", leaf.FormattedAddress);
-            Assert.Equal<LocationType>(LocationType.ROOFTOP, leaf.LocationType);
+            var leaf = leafCache["ChIJWUa248bgtjER3HD5mAfvesg"];
+            Assert.Equal<string>("Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia", leaf.FormattedAddress);
+            // Console.WriteLine(JsonConvert.SerializeObject(leaf));
+            Assert.Equal<LocationType>(LocationType.GEOMETRIC_CENTER, leaf.LocationType);
             Assert.NotNull(leaf.Parent);
-            Assert.Equal<string>("ChIJURLu2YmmNBwRoOikHwxjXeg", leaf.Parent.PlaceId);
+            Assert.Equal<string>("ChIJV9P7V3XdtjER_qPy7a_lj2o", leaf.Parent.PlaceId);
 
             Console.WriteLine(string.Format("Total address cache count: {0}", totalCache.Count));
             Console.WriteLine(string.Format("Leaf address cache count: {0}", leafCache.Count));
+
+            var puertoPrincesa = await Cache.GetLeafNode('N', 5.8997220993042, 'E', 102.715270996094).ConfigureAwait(false);
+            Assert.NotNull(puertoPrincesa);
+            Assert.Equal<string>("Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia", puertoPrincesa.FormattedAddress);
 
             var buenosNode = await Cache.GetLeafNode('S', 34.6, 'W', 58.4).ConfigureAwait(false);
             Assert.NotNull(buenosNode);

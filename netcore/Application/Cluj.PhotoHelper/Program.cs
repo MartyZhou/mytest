@@ -484,14 +484,7 @@ namespace Cluj.PhotoHelper
 
         private static bool IsCityExcluded(string cityName)
         {
-            var result = config.ExcludedCities.Contains(cityName.ToLower());
-
-            if (result)
-            {
-                Console.WriteLine(string.Format("[PhotoHelper]###################### city {0} is excluded for location appending", cityName));
-            }
-
-            return result;
+            return config.ExcludedCities.Contains(cityName.ToLower());
         }
 
         private static bool IsLocationExcluded(GPSInfo gps)

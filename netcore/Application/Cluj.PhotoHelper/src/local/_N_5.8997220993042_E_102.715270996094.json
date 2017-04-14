@@ -1,1 +1,157 @@
-{"results":[{"address_components":[{"long_name":"Unnamed Road","short_name":"Unnamed Road","types":["route"]},{"long_name":"Pulau Perhentian Kecil","short_name":"Pulau Perhentian Kecil","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Kuala Besut","short_name":"Kuala Besut","types":["locality","political"]},{"long_name":"Terengganu","short_name":"Terengganu","types":["administrative_area_level_1","political"]},{"long_name":"Malaysia","short_name":"MY","types":["country","political"]}],"formatted_address":"Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia","place_id":"ChIJWUa248bgtjER3HD5mAfvesg","geometry":{"bounds":{"northeast":{"lat":5.8965853000000008,"lng":102.7292746},"southwest":{"lat":5.8962664999999994,"lng":102.7284409}},"location":{"lat":5.8965033999999994,"lng":102.7288847},"location_type":"GEOMETRIC_CENTER","types":null},"types":["route"]},{"address_components":[{"long_name":"Terengganu","short_name":"Terengganu","types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"long_name":"Malaysia","short_name":"MY","types":["country","political"]}],"formatted_address":"Terengganu, Malaysia","place_id":"ChIJV9P7V3XdtjER_qPy7a_lj2o","geometry":{"bounds":{"northeast":{"lat":5.9856609,"lng":103.7654641},"southwest":{"lat":3.8808629,"lng":102.379055}},"location":{"lat":5.3116916,"lng":103.1324154},"location_type":"APPROXIMATE","types":null},"types":["administrative_area_level_1","establishment","point_of_interest","political"]},{"address_components":[{"long_name":"Malaysia","short_name":"MY","types":["country","political"]}],"formatted_address":"Malaysia","place_id":"ChIJrzBnX5fTNDAR2BwhKJOWRQc","geometry":{"bounds":{"northeast":{"lat":7.5191,"lng":119.4000001},"southwest":{"lat":0.8538209,"lng":98.9353999}},"location":{"lat":4.210484,"lng":101.975766},"location_type":"APPROXIMATE","types":null},"types":["country","political"]}],"City":null,"IsValid":true}
+{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "Unnamed Road",
+                    "short_name": "Unnamed Road",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Pulau Perhentian Kecil",
+                    "short_name": "Pulau Perhentian Kecil",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Kuala Besut",
+                    "short_name": "Kuala Besut",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Terengganu",
+                    "short_name": "Terengganu",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Malaysia",
+                    "short_name": "MY",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia",
+            "place_id": "ChIJWUa248bgtjER3HD5mAfvesg",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 5.8965853,
+                        "lng": 102.7292746
+                    },
+                    "southwest": {
+                        "lat": 5.8962664999999994,
+                        "lng": 102.7284409
+                    }
+                },
+                "location": {
+                    "lat": 5.8965033999999994,
+                    "lng": 102.7288847
+                },
+                "location_type": "GEOMETRIC_CENTER",
+                "types": [ "street_address" ]
+            },
+            "types": [
+                "route"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Terengganu",
+                    "short_name": "Terengganu",
+                    "types": [
+                        "administrative_area_level_1",
+                        "establishment",
+                        "point_of_interest",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Malaysia",
+                    "short_name": "MY",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Terengganu, Malaysia",
+            "place_id": "ChIJV9P7V3XdtjER_qPy7a_lj2o",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 5.9856609,
+                        "lng": 103.7654641
+                    },
+                    "southwest": {
+                        "lat": 3.8808629,
+                        "lng": 102.379055
+                    }
+                },
+                "location": {
+                    "lat": 5.3116916,
+                    "lng": 103.1324154
+                },
+                "location_type": "APPROXIMATE",
+                "types": null
+            },
+            "types": [
+                "administrative_area_level_1",
+                "establishment",
+                "point_of_interest",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Malaysia",
+                    "short_name": "MY",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Malaysia",
+            "place_id": "ChIJrzBnX5fTNDAR2BwhKJOWRQc",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 7.5191,
+                        "lng": 119.4000001
+                    },
+                    "southwest": {
+                        "lat": 0.8538209,
+                        "lng": 98.9353999
+                    }
+                },
+                "location": {
+                    "lat": 4.210484,
+                    "lng": 101.975766
+                },
+                "location_type": "APPROXIMATE",
+                "types": null
+            },
+            "types": [
+                "country",
+                "political"
+            ]
+        }
+    ],
+    "City": null,
+    "IsValid": true
+}
