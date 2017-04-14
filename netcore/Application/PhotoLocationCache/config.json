@@ -1,4 +1,5 @@
 {
     "path": "D:/github/mytest/netcore/Application/PhotoLocationCache/src/local",
-    "api_key": "AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE"
+    "api_key": "AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE",
+    "center_tolerance": 0.015
 }

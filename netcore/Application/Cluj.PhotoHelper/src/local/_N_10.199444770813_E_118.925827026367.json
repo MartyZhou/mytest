@@ -1,0 +1,264 @@
+{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "Unnamed Road",
+                    "short_name": "Unnamed Road",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Puerto Princesa",
+                    "short_name": "PPC",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Palawan",
+                    "short_name": "Palawan",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "MIMAROPA",
+                    "short_name": "MIMAROPA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Unnamed Road, Puerto Princesa, Palawan, Philippines",
+            "place_id": "ChIJ-7UYaN-TtTMRJhEgJ8PkKmU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 10.2005173,
+                        "lng": 118.9255439
+                    },
+                    "southwest": {
+                        "lat": 10.1989993,
+                        "lng": 118.9244802
+                    }
+                },
+                "location": {
+                    "lat": 10.2000299,
+                    "lng": 118.9254054
+                },
+                "location_type": "GEOMETRIC_CENTER",
+                "types": null
+            },
+            "types": [
+                "route"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Puerto Princesa",
+                    "short_name": "PPC",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Palawan",
+                    "short_name": "Palawan",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "MIMAROPA",
+                    "short_name": "MIMAROPA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Puerto Princesa, Palawan, Philippines",
+            "place_id": "ChIJpdYJytBjtTMRjW9JV1d5yZA",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 10.3378871,
+                        "lng": 119.2080976
+                    },
+                    "southwest": {
+                        "lat": 9.5596181,
+                        "lng": 118.3460999
+                    }
+                },
+                "location": {
+                    "lat": 9.9672162999999987,
+                    "lng": 118.78551
+                },
+                "location_type": "APPROXIMATE",
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Palawan",
+                    "short_name": "Palawan",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "MIMAROPA",
+                    "short_name": "MIMAROPA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Palawan, Philippines",
+            "place_id": "ChIJRZ65UOe8tTMR6zuNDGxfxt8",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 12.6679941,
+                        "lng": 121.302864
+                    },
+                    "southwest": {
+                        "lat": 6.0727149,
+                        "lng": 116.9315639
+                    }
+                },
+                "location": {
+                    "lat": 9.8349493,
+                    "lng": 118.7383615
+                },
+                "location_type": "APPROXIMATE",
+                "types": null
+            },
+            "types": [
+                "administrative_area_level_2",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "MIMAROPA",
+                    "short_name": "MIMAROPA",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "MIMAROPA, Philippines",
+            "place_id": "ChIJ15tKmiSnvDMRgqZLXnp65v0",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 13.89903,
+                        "lng": 122.6986519
+                    },
+                    "southwest": {
+                        "lat": 7.5010339999999989,
+                        "lng": 112.5771771
+                    }
+                },
+                "location": {
+                    "lat": 9.8432064999999991,
+                    "lng": 118.7364783
+                },
+                "location_type": "APPROXIMATE",
+                "types": null
+            },
+            "types": [
+                "administrative_area_level_1",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Philippines",
+                    "short_name": "PH",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Philippines",
+            "place_id": "ChIJY96HXyFTQDIRV9opeu-QR3g",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 19.932,
+                        "lng": 127.6444784
+                    },
+                    "southwest": {
+                        "lat": 4.2259,
+                        "lng": 116.1474999
+                    }
+                },
+                "location": {
+                    "lat": 12.879721,
+                    "lng": 121.774017
+                },
+                "location_type": "APPROXIMATE",
+                "types": null
+            },
+            "types": [
+                "country",
+                "political"
+            ]
+        }
+    ],
+    "City": null,
+    "IsValid": true
+}

@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Cluj.Exif" Version="1.0.0.7" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
-    <PackageReference Include="PhotoLocationCache" Version="1.0.3-beta" />
+    <PackageReference Include="PhotoLocationCache" Version="1.0.4-beta" />
   </ItemGroup>
   <ItemGroup>
     <None Include="config.json" CopyToOutputDirectory="Always" />
