@@ -76,7 +76,7 @@ namespace Cluj.PhotoHelper
         {
             try
             {
-                // Console.WriteLine(string.Format("************************** Trying to copy file: {0}", info.NewPath));
+                //Console.WriteLine(string.Format("************************** Trying to copy file: {0}", info.NewPath));
                 var directory = Path.GetDirectoryName(info.NewPath);
                 if (!Directory.Exists(directory))
                 {
@@ -109,9 +109,10 @@ namespace Cluj.PhotoHelper
             {
                 var reader = new PhotoMetadataReader(stream);
                 var meta = reader.ParseMetadata();
-                if (meta != null)
+                if (meta != null && !string.IsNullOrWhiteSpace(meta.Model))
                 {
                     meta.FilePath = stream.Name;
+                    //Console.WriteLine(string.Format("[PhotoHelper]###################### ReadMeta for file {0}, model: {1}. meta: {2}", meta.FilePath, meta.Model, JsonConvert.SerializeObject(meta)));
                     meta.Model = meta.Model.Trim('\x00');
 
                     //Console.WriteLine(string.Format("[PhotoHelper]###################### ReadMeta for file {0}. meta: {1}", meta.FilePath, JsonConvert.SerializeObject(meta)));
@@ -153,7 +154,7 @@ namespace Cluj.PhotoHelper
         {
             if (info.PhotoMetadata.HasLocation && !string.IsNullOrWhiteSpace(info.City))
             {
-                // Console.WriteLine(string.Format("[PhotoHelper]###################### CreateNewPhotoPathWithLocation for city {0}. Info: {1}", info.City, JsonConvert.SerializeObject(info)));
+                //Console.WriteLine(string.Format("[PhotoHelper]###################### CreateNewPhotoPathWithLocation for city {0}. Info: {1}", info.City, JsonConvert.SerializeObject(info)));
                 info.NewPath = CreateGPSNewPath(info);
 
                 if (!IsCityExcluded(info.City) && !IsLocationExcluded(info.PhotoMetadata.GPS))
@@ -183,7 +184,7 @@ namespace Cluj.PhotoHelper
                 locationTimeSpan[info.City] = new Tuple<DateTime, DateTime, string>(dateSpan.Item1, info.PhotoMetadata.TakenDate, info.Country);
             }*/
 
-            //Console.WriteLine(string.Format("[PhotoHelper]###################### after city {0} adjusted time span {1}", info.City, JsonConvert.SerializeObject(dateSpan)));
+            //Console.WriteLine(string.Format("[PhotoHelper]###################### after city {0} adjusted time span {1}", info.City, JsonConvert.SerializeObject(info)));
 
             if (info.Node != null)
             {
@@ -270,7 +271,7 @@ namespace Cluj.PhotoHelper
             var pathParams = GeneratePathParams(gpsFilePathParts, info);
 
             var result = string.Format(format, pathParams);
-            //Console.WriteLine(result + "  ********** " + pathParams.Length + " gpsFilePathParts count" + gpsFilePathParts.Count);
+            // Console.WriteLine(result + "  ********** " + pathParams.Length + " gpsFilePathParts count" + gpsFilePathParts.Count);
             return result;
             //return string.Format(@"{0}/{1} {4:yyyy.MM}/{2}/{3}/{1}_{2}_{4:yyyy-MM-dd HH-mm-ss}.jpg", config.PhotoDestinationFolder, info.Country, info.City, info.PhotoMetadata.Model, info.PhotoMetadata.TakenDate);
         }
@@ -484,6 +485,7 @@ namespace Cluj.PhotoHelper
 
         private static bool IsCityExcluded(string cityName)
         {
+            //Console.WriteLine(string.Format("[PhotoHelper]###################### IsCityExcluded : {0}", cityName));
             return config.ExcludedCities.Contains(cityName.ToLower());
         }
 
@@ -496,6 +498,7 @@ namespace Cluj.PhotoHelper
 
             foreach (var area in config.ExcludedArea)
             {
+                //Console.WriteLine(string.Format("[PhotoHelper]###################### IsLocationExcluded location: {0}", JsonConvert.SerializeObject(area)));
                 var latTest = lat <= area.Norteast.Lat && lat >= area.Southwest.Lat;
                 var lonTest = lon <= area.Norteast.Lng && lon >= area.Southwest.Lng;
 
