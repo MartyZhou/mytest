@@ -1,1 +1,447 @@
-{"results":[{"address_components":[{"long_name":"70号-96号","short_name":"70号-96号","types":["street_number"]},{"long_name":"An Ding Men Nei Da Jie","short_name":"An Ding Men Nei Da Jie","types":["route"]},{"long_name":"Dongcheng Qu","short_name":"Dongcheng Qu","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Beijing","short_name":"Beijing","types":["locality","political"]},{"long_name":"Beijing Shi","short_name":"Beijing Shi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]},{"long_name":"100009","short_name":"100009","types":["postal_code"]}],"formatted_address":"70号-96 An Ding Men Nei Da Jie, Dongcheng Qu, Beijing Shi, China, 100009","place_id":"EkrkuK3lm73ljJfkuqzluILkuJzln47ljLrlronlrprpl6jlhoXlpKfooZc3MOWPty05NuWPtyDpgq7mlL_nvJbnoIE6IDEwMDAwOQ","geometry":{"bounds":{"northeast":{"lat":39.9468115,"lng":116.4083512},"southwest":{"lat":39.9461701,"lng":116.4083272}},"types":null},"types":["street_address"]},{"address_components":[{"long_name":"安定门内","short_name":"安定门内","types":["bus_station","establishment","point_of_interest","transit_station"]},{"long_name":"Dongcheng Qu","short_name":"Dongcheng Qu","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Beijing Shi","short_name":"Beijing Shi","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]},{"long_name":"100009","short_name":"100009","types":["postal_code"]}],"formatted_address":"China, Beijing Shi, Dongcheng Qu, 安定门内 邮政编码: 100009","place_id":"ChIJHwBIDUhT8DURTr37Bp4lLWc","geometry":{"bounds":{"northeast":{"lat":0.0,"lng":0.0},"southwest":{"lat":0.0,"lng":0.0}},"types":null},"types":["bus_station","establishment","point_of_interest","transit_station"]},{"address_components":[{"long_name":"Dongcheng","short_name":"Dongcheng","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Beijing","short_name":"Beijing","types":["locality","political"]},{"long_name":"Beijing","short_name":"Beijing","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Dongcheng, Beijing, China","place_id":"ChIJLwKYcTNT8DUR8DZJ7J2CieA","geometry":{"bounds":{"northeast":{"lat":39.9740366,"lng":116.4523907},"southwest":{"lat":39.8586253,"lng":116.3771342}},"types":null},"types":["political","sublocality","sublocality_level_1"]},{"address_components":[{"long_name":"Beijing","short_name":"Beijing","types":["locality","political"]},{"long_name":"Beijing","short_name":"Beijing","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Beijing, China","place_id":"ChIJuSwU55ZS8DURiqkPryBWYrk","geometry":{"bounds":{"northeast":{"lat":41.0608159,"lng":117.514625},"southwest":{"lat":39.4427581,"lng":115.4234116}},"types":null},"types":["locality","political"]},{"address_components":[{"long_name":"100007","short_name":"100007","types":["postal_code"]},{"long_name":"Dongcheng","short_name":"Dongcheng","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Beijing","short_name":"Beijing","types":["locality","political"]},{"long_name":"Beijing","short_name":"Beijing","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Dongcheng, Beijing, China, 100007","place_id":"ChIJf3lqhLWs8TUR2Wbmfx189lE","geometry":{"bounds":{"northeast":{"lat":39.9650695,"lng":116.4518457},"southwest":{"lat":39.9255355,"lng":116.3928302}},"types":null},"types":["postal_code"]},{"address_components":[{"long_name":"100009","short_name":"100009","types":["postal_code"]},{"long_name":"Xicheng","short_name":"Xicheng","types":["political","sublocality","sublocality_level_1"]},{"long_name":"Beijing","short_name":"Beijing","types":["locality","political"]},{"long_name":"Beijing","short_name":"Beijing","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Xicheng, Beijing, China, 100009","place_id":"ChIJo3VSFuBS8DURhgUei5pw7mw","geometry":{"bounds":{"northeast":{"lat":39.9514417,"lng":116.4149626},"southwest":{"lat":39.8998093,"lng":116.3780739}},"types":null},"types":["postal_code"]},{"address_components":[{"long_name":"Beijing","short_name":"Beijing","types":["administrative_area_level_1","political"]},{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"Beijing, China","place_id":"ChIJuSwU55ZS8DURp8_dOLuVd8A","geometry":{"bounds":{"northeast":{"lat":41.0608159,"lng":117.514625},"southwest":{"lat":39.4427581,"lng":115.4234116}},"types":null},"types":["administrative_area_level_1","political"]},{"address_components":[{"long_name":"China","short_name":"CN","types":["country","political"]}],"formatted_address":"China","place_id":"ChIJwULG5WSOUDERbzafNHyqHZU","geometry":{"bounds":{"northeast":{"lat":53.560973999999987,"lng":134.7728099},"southwest":{"lat":17.9996,"lng":73.4994136}},"types":null},"types":["country","political"]}],"City":null,"IsValid":false}
+{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "70号-96号",
+                    "short_name": "70号-96号",
+                    "types": [
+                        "street_number"
+                    ]
+                },
+                {
+                    "long_name": "An Ding Men Nei Da Jie",
+                    "short_name": "An Ding Men Nei Da Jie",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Dongcheng Qu",
+                    "short_name": "Dongcheng Qu",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Beijing Shi",
+                    "short_name": "Beijing Shi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "100009",
+                    "short_name": "100009",
+                    "types": [
+                        "postal_code"
+                    ]
+                }
+            ],
+            "formatted_address": "70号-96 An Ding Men Nei Da Jie, Dongcheng Qu, Beijing Shi, China, 100009",
+            "place_id": "EkrkuK3lm73ljJfkuqzluILkuJzln47ljLrlronlrprpl6jlhoXlpKfooZc3MOWPty05NuWPtyDpgq7mlL_nvJbnoIE6IDEwMDAwOQ",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 39.9468115,
+                        "lng": 116.4083512
+                    },
+                    "southwest": {
+                        "lat": 39.9461701,
+                        "lng": 116.4083272
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "street_address"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "安定门内",
+                    "short_name": "安定门内",
+                    "types": [
+                        "bus_station",
+                        "establishment",
+                        "point_of_interest",
+                        "transit_station"
+                    ]
+                },
+                {
+                    "long_name": "Dongcheng Qu",
+                    "short_name": "Dongcheng Qu",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Beijing Shi",
+                    "short_name": "Beijing Shi",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "100009",
+                    "short_name": "100009",
+                    "types": [
+                        "postal_code"
+                    ]
+                }
+            ],
+            "formatted_address": "China, Beijing Shi, Dongcheng Qu, 安定门内 邮政编码: 100009",
+            "place_id": "ChIJHwBIDUhT8DURTr37Bp4lLWc",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 0.0,
+                        "lng": 0.0
+                    },
+                    "southwest": {
+                        "lat": 0.0,
+                        "lng": 0.0
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "bus_station",
+                "establishment",
+                "point_of_interest",
+                "transit_station"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Dongcheng",
+                    "short_name": "Dongcheng",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Dongcheng, Beijing, China",
+            "place_id": "ChIJLwKYcTNT8DUR8DZJ7J2CieA",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 39.9740366,
+                        "lng": 116.4523907
+                    },
+                    "southwest": {
+                        "lat": 39.8586253,
+                        "lng": 116.3771342
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "political",
+                "sublocality",
+                "sublocality_level_1"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Beijing, China",
+            "place_id": "ChIJuSwU55ZS8DURiqkPryBWYrk",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 41.0608159,
+                        "lng": 117.514625
+                    },
+                    "southwest": {
+                        "lat": 39.4427581,
+                        "lng": 115.4234116
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "locality",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "100007",
+                    "short_name": "100007",
+                    "types": [
+                        "postal_code"
+                    ]
+                },
+                {
+                    "long_name": "Dongcheng",
+                    "short_name": "Dongcheng",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Dongcheng, Beijing, China, 100007",
+            "place_id": "ChIJf3lqhLWs8TUR2Wbmfx189lE",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 39.9650695,
+                        "lng": 116.4518457
+                    },
+                    "southwest": {
+                        "lat": 39.9255355,
+                        "lng": 116.3928302
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "postal_code"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "100009",
+                    "short_name": "100009",
+                    "types": [
+                        "postal_code"
+                    ]
+                },
+                {
+                    "long_name": "Xicheng",
+                    "short_name": "Xicheng",
+                    "types": [
+                        "political",
+                        "sublocality",
+                        "sublocality_level_1"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Xicheng, Beijing, China, 100009",
+            "place_id": "ChIJo3VSFuBS8DURhgUei5pw7mw",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 39.9514417,
+                        "lng": 116.4149626
+                    },
+                    "southwest": {
+                        "lat": 39.8998093,
+                        "lng": 116.3780739
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "postal_code"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "Beijing",
+                    "short_name": "Beijing",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "Beijing, China",
+            "place_id": "ChIJuSwU55ZS8DURp8_dOLuVd8A",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 41.0608159,
+                        "lng": 117.514625
+                    },
+                    "southwest": {
+                        "lat": 39.4427581,
+                        "lng": 115.4234116
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "administrative_area_level_1",
+                "political"
+            ]
+        },
+        {
+            "address_components": [
+                {
+                    "long_name": "China",
+                    "short_name": "CN",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                }
+            ],
+            "formatted_address": "China",
+            "place_id": "ChIJwULG5WSOUDERbzafNHyqHZU",
+            "geometry": {
+                "bounds": {
+                    "northeast": {
+                        "lat": 53.560973999999987,
+                        "lng": 134.7728099
+                    },
+                    "southwest": {
+                        "lat": 17.9996,
+                        "lng": 73.4994136
+                    }
+                },
+                "types": null
+            },
+            "types": [
+                "country",
+                "political"
+            ]
+        }
+    ],
+    "City": null,
+    "IsValid": false
+}
