@@ -1,4 +1,5 @@
-/*using System.Collections.Generic;
+/*using System;
+using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Xunit;
@@ -31,25 +32,51 @@ namespace Cluj.PhotoLocation.Test
         [Fact]
         public async void ParseCityNameSuccessfully()
         {
-            var beijing = await Cache.GetCityName('N', 40.0608159, 'E', 116.514625).ConfigureAwait(false);
+            var beijing = await Cache.GetLeafNode('N', 40.0608159, 'E', 116.514625).ConfigureAwait(false);
+            Assert.NotNull(beijing);
+            Assert.Equal<string>("155 Shun Huang Lu, Chaoyang Qu, Beijing Shi, China", beijing.FormattedAddress);
 
-            Assert.Equal<string>("Beijing", beijing.City);
+            var boston = await Cache.GetLeafNode('N', 42.32788, 'W', 70.849455).ConfigureAwait(false);
+            Assert.NotNull(boston);
+            Assert.Equal<string>("Plymouth County, MA, USA", boston.FormattedAddress);
 
-            var boston = await Cache.GetCityName('N', 42.32788, 'W', 70.849455).ConfigureAwait(false);
+            var capetown = await Cache.GetLeafNode('S', 30, 'E', 22).ConfigureAwait(false);
+            Assert.NotNull(capetown);
+            Assert.Equal<string>("South Africa", capetown.FormattedAddress);
 
-            Assert.Equal<string>("Boston", boston.City);
+            var buenos = await Cache.GetLeafNode('S', 34.6, 'W', 58.4).ConfigureAwait(false);
+            Assert.NotNull(buenos);
+            Assert.Equal<string>("Balvanera, Autonomous City of Buenos Aires, Argentina", buenos.FormattedAddress);
+        }
 
-            var capetown = await Cache.GetCityName('S', 30, 'E', 22).ConfigureAwait(false);
+        [Fact]
+        public async void NodesAreLinked()
+        {
+            var leafCache = Cache.TestLeafAddressCache();
+            var totalCache = Cache.TestTotalAddressCache();
 
-            Assert.Equal<string>("Benede Oranje", capetown.AreaLevel2);
+            Assert.NotEmpty(leafCache);
+            Assert.NotEmpty(totalCache);
 
-            var buenos = await Cache.GetCityName('S', 34.6, 'W', 58.4).ConfigureAwait(false);
+            var leaf = leafCache["ChIJWUa248bgtjER3HD5mAfvesg"];
+            Assert.Equal<string>("Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia", leaf.FormattedAddress);
+            // Console.WriteLine(JsonConvert.SerializeObject(leaf));
+            Assert.Equal<LocationType>(LocationType.GEOMETRIC_CENTER, leaf.LocationType);
+            Assert.NotNull(leaf.Parent);
+            Assert.Equal<string>("ChIJV9P7V3XdtjER_qPy7a_lj2o", leaf.Parent.PlaceId);
 
-            Assert.Equal<string>("Buenos Aires", buenos.City);
+            Console.WriteLine(string.Format("Total address cache count: {0}", totalCache.Count));
+            Console.WriteLine(string.Format("Leaf address cache count: {0}", leafCache.Count));
 
-            var puertoPrincesa = await Cache.GetCityName('N', 11.2597217559814, 'E', 119.570831298828).ConfigureAwait(false);
+            var puertoPrincesa = await Cache.GetLeafNode('N', 5.8997220993042, 'E', 102.715270996094).ConfigureAwait(false);
+            Assert.NotNull(puertoPrincesa);
+            Assert.Equal<string>("Unnamed Road, Pulau Perhentian Kecil, Kuala Besut, Terengganu, Malaysia", puertoPrincesa.FormattedAddress);
 
-            Assert.Equal<string>("El Nido", puertoPrincesa.City);
+            var buenosNode = await Cache.GetLeafNode('S', 34.6, 'W', 58.4).ConfigureAwait(false);
+            Assert.NotNull(buenosNode);
+            Assert.Equal<string>("Balvanera, Autonomous City of Buenos Aires, Argentina", buenosNode.FormattedAddress);
+            Assert.Equal<LocationType>(LocationType.APPROXIMATE, buenosNode.LocationType);
+            Assert.Equal<string>("ChIJUaOV2u_KvJURIbHgKZTw24g", buenosNode.PlaceId);
         }
 
         //[Fact]

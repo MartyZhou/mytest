@@ -1,4 +1,6 @@
 {
-    "path": "D:/github/mytest/netcore/Application/PhotoLocationCache/src/local",
-    "api_key": "AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE"
+    "path": "D:/github/mytest/netcore/Application/Cluj.PhotoHelper/src/local",
+    //"path": "D:/github/mytest/netcore/Application/PhotoLocationCache/test2",
+    "api_key": "AIzaSyDQw1khA5tgbDFLv4pGRd1_yOp747LnXdE",
+    "center_tolerance": 0.03
 }

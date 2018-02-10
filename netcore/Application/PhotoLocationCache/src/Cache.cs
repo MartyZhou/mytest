@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -14,18 +15,20 @@ namespace Cluj.PhotoLocation
         private const string AREA_LEVEL1 = "administrative_area_level_1";
         private const string AREA_LEVEL2 = "administrative_area_level_2";
         private const string LOCATION_TYPE_GEOMETRIC_CENTER = "GEOMETRIC_CENTER";
-
         private static readonly string API_KEY;
         private static readonly string LOCAL_PATH;
+        private static readonly Config config;
 
         private static ConcurrentDictionary<string, AddressDetails> cityLevelAddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
         private static ConcurrentDictionary<string, AddressDetails> areaLevel1AddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
         private static ConcurrentDictionary<string, AddressDetails> areaLevel2AddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
         private static ConcurrentDictionary<string, AddressDetails> countryLevelAddressComponentCache = new ConcurrentDictionary<string, AddressDetails>();
+        private static Dictionary<string, Node> leafAddressCache = new Dictionary<string, Node>();
+        private static Dictionary<string, Node> totalAddressCache = new Dictionary<string, Node>();
 
         static Cache()
         {
-            var config = GetConfig();
+            config = GetConfig();
             API_KEY = config.API_KEY;
             LOCAL_PATH = config.Path;
             InitLocalRawAddresses();
@@ -49,6 +52,34 @@ namespace Cluj.PhotoLocation
         public static ConcurrentDictionary<string, AddressDetails> TestAreaLevel2Cache()
         {
             return areaLevel2AddressComponentCache;
+        }
+
+        public static Dictionary<string, Node> TestLeafAddressCache()
+        {
+            return leafAddressCache;
+        }
+
+        public static Dictionary<string, Node> TestTotalAddressCache()
+        {
+            return totalAddressCache;
+        }
+
+        public static async Task<Node> GetLeafNode(char latRef, double absLat, char lonRef, double absLon)
+        {
+            Node result = null;
+
+            var lat = latRef == 'N' ? absLat : -absLat;
+            var lon = lonRef == 'E' ? absLon : -absLon;
+
+            if (!TryGetAddressFromLeafCache(lat, lon, out result))
+            {
+                var address = await LoadRawAddressFromServerAsync(latRef, absLat, lonRef, absLon).ConfigureAwait(false);
+                ParseRawAddress(address);
+
+                TryGetAddressFromLeafCache(lat, lon, out result);
+            }
+
+            return result;
         }
 
         public static async Task<CityLocation> GetCityName(char latRef, double lat, char lonRef, double lon)
@@ -93,16 +124,27 @@ namespace Cluj.PhotoLocation
                         using (var reader = new StreamReader(stream))
                         {
                             var address = JsonConvert.DeserializeObject<AddressResult>(reader.ReadToEnd());
-                            address.IsValid = true;
-                            var cityLocation = ParseCityNameAndInsertCache(address.Results[0], address);
+                            if (address.Results != null && address.Results.Length > 0)
+                            {
+                                ParseRawAddress(address);
+                            }
+
+                            //address.IsValid = true;
+                            //var cityLocation = ParseCityNameAndInsertCache(address.Results[0], address);
                             // Console.WriteLine("test ################ city location " + JsonConvert.SerializeObject(cityLocation));
                         }
                     }
                 }
+
+                var totalPath = string.Format("{0}/total_address.json", LOCAL_PATH);
+                File.WriteAllText(totalPath, JsonConvert.SerializeObject(totalAddressCache));
+                var leafPath = string.Format("{0}/leaf_address.json", LOCAL_PATH);
+                File.WriteAllText(leafPath, JsonConvert.SerializeObject(leafAddressCache));
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                throw;
             }
         }
 
@@ -168,12 +210,12 @@ namespace Cluj.PhotoLocation
 
                 if (!string.IsNullOrWhiteSpace(areaLevel))
                 {
-                    Console.WriteLine(string.Format("[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: {0}", areaLevel));
+                    //Console.WriteLine(string.Format("[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel: {0}", areaLevel));
                     InsertAddressComponentToCache(addressResult, areaLevel);
                 }
                 else
                 {
-                    Console.WriteLine("[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel is empty");
+                    //Console.WriteLine("[LocationCache]################ ParseCityNameAndInsertCache. AddressLevel is empty");
                 }
 
                 if (addressDetails.Geometry.LocationType == LOCATION_TYPE_GEOMETRIC_CENTER)
@@ -201,7 +243,7 @@ namespace Cluj.PhotoLocation
                         if (!cityLevelAddressComponentCache.ContainsKey(addressComponent.PlaceId))
                         {
                             cityLevelAddressComponentCache.TryAdd(addressComponent.PlaceId, addressComponent);
-                            Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", areaLevel, addressComponent.PlaceId, addressComponent.FormattedAddress));
+                            //Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", areaLevel, addressComponent.PlaceId, addressComponent.FormattedAddress));
                         }
 
                         break;
@@ -230,7 +272,7 @@ namespace Cluj.PhotoLocation
                 if (!countryLevelAddressComponentCache.ContainsKey(countryArea.PlaceId))
                 {
                     countryLevelAddressComponentCache.TryAdd(countryArea.PlaceId, countryArea);
-                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", COUNTRY_LEVEL, countryArea.PlaceId, addressResult.Results[0].FormattedAddress));
+                    //Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", COUNTRY_LEVEL, countryArea.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
 
@@ -239,7 +281,7 @@ namespace Cluj.PhotoLocation
                 if (!areaLevel1AddressComponentCache.ContainsKey(areaLevel1.PlaceId))
                 {
                     areaLevel1AddressComponentCache.TryAdd(areaLevel1.PlaceId, areaLevel1);
-                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", AREA_LEVEL1, areaLevel1.PlaceId, addressResult.Results[0].FormattedAddress));
+                    // Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", AREA_LEVEL1, areaLevel1.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
 
@@ -248,7 +290,7 @@ namespace Cluj.PhotoLocation
                 if (!areaLevel2AddressComponentCache.ContainsKey(areaLevel2.PlaceId))
                 {
                     areaLevel2AddressComponentCache.TryAdd(areaLevel2.PlaceId, areaLevel2);
-                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", AREA_LEVEL2, areaLevel2.PlaceId, addressResult.Results[0].FormattedAddress));
+                    //Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", AREA_LEVEL2, areaLevel2.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
 
@@ -257,7 +299,7 @@ namespace Cluj.PhotoLocation
                 if (!cityLevelAddressComponentCache.ContainsKey(cityArea.PlaceId))
                 {
                     cityLevelAddressComponentCache.TryAdd(cityArea.PlaceId, cityArea);
-                    Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", CITY_LEVEL, cityArea.PlaceId, addressResult.Results[0].FormattedAddress));
+                    //Console.WriteLine(string.Format("[LocationCache]################ InsertAddressComponentToCache. AddressLevel: {0}, PlaceId: {1}, Address: {2}", CITY_LEVEL, cityArea.PlaceId, addressResult.Results[0].FormattedAddress));
                 }
             }
         }
@@ -294,6 +336,42 @@ namespace Cluj.PhotoLocation
             return result;
         }
 
+        private static bool TryGetAddressFromLeafCache(double lat, double lon, out Node node)
+        {
+            var latTest = false;
+            var lonTest = false;
+            node = null;
+            foreach (var leaf in leafAddressCache)
+            {
+                var bounds = leaf.Value.Bounds;
+                if (bounds.Norteast.Lat != 0 && bounds.Norteast.Lng != 0 && bounds.Southwest.Lat != 0 && bounds.Southwest.Lng != 0)
+                {
+                    if (leaf.Value.LocationType == LocationType.GEOMETRIC_CENTER || leaf.Value.LocationType == LocationType.RANGE_INTERPOLATED)
+                    {
+                        var location = leaf.Value.Location;
+                        latTest = lat <= location.Lat + config.CenterTolerance && lat >= location.Lat - config.CenterTolerance;
+                        lonTest = lon <= location.Lng + config.CenterTolerance && lon >= location.Lng - config.CenterTolerance;
+
+                        // Console.WriteLine(string.Format("################ LocationType.GEOMETRIC_CENTER lat: {0}, lon: {1}, Lat: {2}|{3}, Lon: {4}|{5}", lat, lon, location.Lat + config.CenterTolerance, location.Lat - config.CenterTolerance, location.Lng + config.CenterTolerance, location.Lng - config.CenterTolerance));
+                    }
+                    else
+                    {
+                        latTest = lat <= bounds.Norteast.Lat && lat >= bounds.Southwest.Lat;
+                        lonTest = lon <= bounds.Norteast.Lng && lon >= bounds.Southwest.Lng;
+                    }
+
+                    if (latTest && lonTest)
+                    {
+                        node = leaf.Value;
+                        break;
+                    }
+                }
+            }
+
+
+            return latTest && lonTest;
+        }
+
         private static bool TryGetAddressComponentFromCache(char latRef, double lat, char lonRef, double lon, ConcurrentDictionary<string, AddressDetails> cache, out AddressDetails match)
         {
             var result = false;
@@ -304,8 +382,8 @@ namespace Cluj.PhotoLocation
                 if (addressComponent.Value.Geometry.LocationType == LOCATION_TYPE_GEOMETRIC_CENTER)
                 {
                     var location = addressComponent.Value.Geometry.Location;
-                    var latTest = lat <= location.Lat + 0.01 && lat >= location.Lat - 0.01;
-                    var lonTest = lon <= location.Lng + 0.01 && lon >= location.Lng - 0.01;
+                    var latTest = lat <= location.Lat + config.CenterTolerance && lat >= location.Lat - config.CenterTolerance;
+                    var lonTest = lon <= location.Lng + config.CenterTolerance && lon >= location.Lng - config.CenterTolerance;
 
                     if (latTest && lonTest)
                     {
@@ -371,6 +449,7 @@ namespace Cluj.PhotoLocation
             catch (Exception e)
             {
                 Console.WriteLine(string.Format("Failed to call google map API: {0}", e.Message));
+                throw;
             }
 
             return result;
@@ -407,6 +486,57 @@ namespace Cluj.PhotoLocation
                 {
                     return JsonConvert.DeserializeObject<Config>(reader.ReadToEnd());
                 }
+            }
+        }
+
+        private static void ParseRawAddress(AddressResult raw)
+        {
+            var firstPlaceId = raw.Results[0].PlaceId;
+            if (!leafAddressCache.ContainsKey(firstPlaceId))
+            {
+                var firstNode = new Node(raw.Results[0]);
+                if (firstNode.LocationType != LocationType.NONE)
+                {
+                    leafAddressCache.Add(firstNode.PlaceId, firstNode);
+                }
+            }
+
+            Node leaf;
+
+            if (leafAddressCache.TryGetValue(firstPlaceId, out leaf))
+            {
+                if (leaf.Parent == null && raw.Results.Length > 1)
+                {
+                    LinkToParent(raw, 1, leaf);
+                }
+            }
+        }
+
+        private static void LinkToParent(AddressResult raw, int index, Node node)
+        {
+            var parentPlaceId = raw.Results[index].PlaceId;
+            if (!totalAddressCache.ContainsKey(parentPlaceId))
+            {
+                var parent = new Node(raw.Results[index]);
+                totalAddressCache.Add(parent.PlaceId, parent);
+            }
+
+            var parentNode = totalAddressCache[parentPlaceId];
+            node.LinkParent(parentNode);
+
+            if (node.Bounds.Norteast.Lat == 0
+            && node.Bounds.Norteast.Lng == 0
+            && node.Bounds.Southwest.Lat == 0
+            && node.Bounds.Southwest.Lng == 0
+            && !leafAddressCache.ContainsKey(parentNode.PlaceId))
+            {
+                leafAddressCache.Add(parentNode.PlaceId, parentNode);
+            }
+
+            index++;
+            if (parentNode.Parent == null && index < raw.Results.Length)
+            {
+                LinkToParent(raw, index, parentNode);
             }
         }
     }

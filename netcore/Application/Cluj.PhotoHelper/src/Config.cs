@@ -11,9 +11,10 @@ namespace Cluj.PhotoHelper
 
         [JsonProperty("photo_dest_path")]
         public string PhotoDestinationFolder { get; set; }
-
+        [JsonProperty("new_path_format_gps")]
+        public string NewPhotoPathFormatGPS { get; set; }
         [JsonProperty("new_path_format")]
-        public string NewPhotoPathFormat { get; set; }
+        public string NewPhotoPathFormatNoneGPS { get; set; }
 
         [JsonProperty("excluded_cities")]
         public List<string> ExcludedCities { get; set; }

@@ -1,0 +1,14 @@
+{
+    "Endian": 0,
+    "Make": null,
+    "Model": null,
+    "TakenDate": "0001-01-01T00:00:00",
+    "HasLocation": false,
+    "GPS": {
+        "LatRef": "\u0000",
+        "Lat": 0.0,
+        "LonRef": "\u0000",
+        "Lon": 0.0
+    },
+    "FilePath": "D:\\users\\MartyZhou\\Pictures\\PhotoHelperTestSource\\NullPhoto\\IMG_9182.JPG"
+}

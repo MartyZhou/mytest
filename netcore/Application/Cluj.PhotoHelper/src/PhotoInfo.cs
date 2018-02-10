@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using Cluj.Exif;
+using Cluj.PhotoLocation;
 
 namespace Cluj.PhotoHelper
 {
@@ -11,5 +14,21 @@ namespace Cluj.PhotoHelper
         public string Country { get; set; }
 
         public string NewPath { get; set; }
+        public Node Node { get; set; }
+    }
+
+    internal class NodeTimeSpan
+    {
+        public NodeTimeSpan()
+        {
+            Children = new Dictionary<string, NodeTimeSpan>();
+        }
+        public Node Node { get; set; }
+
+        public DateTime LeftDate { get; set; }
+
+        public DateTime RightDate { get; set; }
+
+        public Dictionary<string, NodeTimeSpan> Children { get; set; }
     }
 }
